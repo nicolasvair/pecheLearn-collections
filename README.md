@@ -5,10 +5,19 @@ Les collections de cartes et les séries d'exercices proposées dans l'onglet
 
 ## Ajouter ou mettre à jour une collection
 
-1. Déposer le fichier `.json` dans le dossier de la langue (par exemple
-   `français-serbe/`). Le nom du fichier est celui affiché dans l'app : suivre
-   la convention « Langue — Type — Nom », par exemple
-   `Serbe — Vocabulaire — Cuisine.json`.
+1. Déposer le fichier `.json` dans le dossier de son niveau, lui-même dans
+   celui de la langue :
+
+   ```
+   français-serbe/
+     A1 - débutant/
+       Cuisine.json
+     A2 - …/
+   ```
+
+   Le nom du dossier de niveau s'affiche tel quel dans l'app, et les niveaux
+   sont triés par ordre alphabétique : commencer par A1, A2, B1… suffit à les
+   garder dans l'ordre. Le nom du fichier est le titre de la collection.
 2. Pousser sur `main`.
 
 C'est tout : l'app lit la liste des fichiers depuis GitHub. Il n'y a pas
