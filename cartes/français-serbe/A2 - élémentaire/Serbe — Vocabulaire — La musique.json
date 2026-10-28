@@ -1,0 +1,1302 @@
+{
+  "collections": [
+    {
+      "id": "srpski.musique",
+      "name": "Serbe — Vocabulaire — La musique",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics",
+            "ignorePunctuation"
+          ],
+          "fields": [
+            {
+              "key": "latin",
+              "label": "Serbe (latin)",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "cyrillique",
+              "label": "Serbe (cyrillique)",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "francais",
+              "label": "Français",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "notes",
+              "label": "Notes",
+              "required": false,
+              "type": "richText"
+            }
+          ],
+          "id": "srpski.model.musique",
+          "name": "Vocabulaire serbe",
+          "templates": [
+            {
+              "backKeys": [
+                "francais",
+                "notes"
+              ],
+              "frontKeys": [
+                "latin",
+                "cyrillique"
+              ],
+              "id": "sr2fr",
+              "inputMode": "reveal",
+              "name": "Serbe → Français"
+            },
+            {
+              "answerKey": "latin",
+              "backKeys": [
+                "latin",
+                "cyrillique",
+                "notes"
+              ],
+              "frontKeys": [
+                "francais"
+              ],
+              "id": "fr2sr",
+              "inputMode": "textEntry",
+              "name": "Français → Serbe"
+            }
+          ],
+          "variantGroups": [
+            {
+              "key": "alphabet",
+              "label": "Alphabet serbe",
+              "options": [
+                {
+                  "fieldKeys": [
+                    "latin"
+                  ],
+                  "key": "latin",
+                  "label": "Latin"
+                },
+                {
+                  "fieldKeys": [
+                    "cyrillique"
+                  ],
+                  "key": "cyrillic",
+                  "label": "Cyrillique"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "музика"
+            },
+            "francais": {
+              "text": "la musique"
+            },
+            "latin": {
+              "text": "muzika"
+            },
+            "notes": {
+              "text": "Féminin. « Volim muziku. » — J'aime la musique."
+            }
+          },
+          "id": "srpski.musique.048ee69676f2",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "песма"
+            },
+            "francais": {
+              "text": "la chanson"
+            },
+            "latin": {
+              "text": "pesma"
+            },
+            "notes": {
+              "text": "Féminin, pl. pesme. Veut aussi dire « le poème ». « Ovo je moja omiljena pesma. »"
+            }
+          },
+          "id": "srpski.musique.864c1f1ba2ee",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "певати"
+            },
+            "francais": {
+              "text": "chanter"
+            },
+            "latin": {
+              "text": "pevati"
+            },
+            "notes": {
+              "text": "Présent : pevam, pevaš, peva… « Ona lepo peva. » — Elle chante bien."
+            }
+          },
+          "id": "srpski.musique.99d5c17a1413",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "свирати"
+            },
+            "francais": {
+              "text": "jouer (d'un instrument)"
+            },
+            "latin": {
+              "text": "svirati"
+            },
+            "notes": {
+              "text": "Présent : sviram, sviraš… + accusatif : « Sviram gitaru. » Pour un jeu ou un sport, on dit igrati."
+            }
+          },
+          "id": "srpski.musique.fdafa54d8875",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "слушати музику"
+            },
+            "francais": {
+              "text": "écouter de la musique"
+            },
+            "latin": {
+              "text": "slušati muziku"
+            },
+            "notes": {
+              "text": "« Slušam muziku svaki dan. »"
+            }
+          },
+          "id": "srpski.musique.a74c4324dd30",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "концерт"
+            },
+            "francais": {
+              "text": "le concert"
+            },
+            "latin": {
+              "text": "koncert"
+            },
+            "notes": {
+              "text": "Masculin. « Idemo na koncert. » (na + accusatif)"
+            }
+          },
+          "id": "srpski.musique.e96d680b18c2",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "гитара"
+            },
+            "francais": {
+              "text": "la guitare"
+            },
+            "latin": {
+              "text": "gitara"
+            },
+            "notes": {
+              "text": "Féminin. električna / akustična gitara — guitare électrique / acoustique."
+            }
+          },
+          "id": "srpski.musique.7017032239df",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "клавир"
+            },
+            "francais": {
+              "text": "le piano"
+            },
+            "latin": {
+              "text": "klavir"
+            },
+            "notes": {
+              "text": "Masculin. « Svira klavir. » — klavijature : les claviers."
+            }
+          },
+          "id": "srpski.musique.c166681502b6",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "бубњеви"
+            },
+            "francais": {
+              "text": "la batterie"
+            },
+            "latin": {
+              "text": "bubnjevi"
+            },
+            "notes": {
+              "text": "Pluriel de bubanj (le tambour). « Svira bubnjeve. »"
+            }
+          },
+          "id": "srpski.musique.63dd4947b1ec",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "виолина"
+            },
+            "francais": {
+              "text": "le violon"
+            },
+            "latin": {
+              "text": "violina"
+            },
+            "notes": {
+              "text": "Féminin. Le violoniste : violinista."
+            }
+          },
+          "id": "srpski.musique.782db8ed1703",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "труба"
+            },
+            "francais": {
+              "text": "la trompette"
+            },
+            "latin": {
+              "text": "truba"
+            },
+            "notes": {
+              "text": "Féminin. « Svira trubu. » La trompette est l'instrument roi des fanfares serbes."
+            }
+          },
+          "id": "srpski.musique.234ba1541689",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "глас"
+            },
+            "francais": {
+              "text": "la voix"
+            },
+            "latin": {
+              "text": "glas"
+            },
+            "notes": {
+              "text": "Masculin, pl. glasovi. « Ima divan glas. » — Il / Elle a une voix magnifique."
+            }
+          },
+          "id": "srpski.musique.6320a65a1ccd",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "ритам"
+            },
+            "francais": {
+              "text": "le rythme"
+            },
+            "latin": {
+              "text": "ritam"
+            },
+            "notes": {
+              "text": "Masculin, gén. ritma (le a disparaît)."
+            }
+          },
+          "id": "srpski.musique.11e07cc9b177",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "мелодија"
+            },
+            "francais": {
+              "text": "la mélodie"
+            },
+            "latin": {
+              "text": "melodija"
+            },
+            "notes": {
+              "text": "Féminin."
+            }
+          },
+          "id": "srpski.musique.91fe88c06d6d",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "текст песме"
+            },
+            "francais": {
+              "text": "les paroles (d'une chanson)"
+            },
+            "latin": {
+              "text": "tekst pesme"
+            },
+            "notes": {
+              "text": "On dit aussi reči. « Ne znam tekst. » — Je ne connais pas les paroles."
+            }
+          },
+          "id": "srpski.musique.5db0924e1980",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "бенд"
+            },
+            "francais": {
+              "text": "le groupe (de musique)"
+            },
+            "latin": {
+              "text": "bend"
+            },
+            "notes": {
+              "text": "Masculin. On dit aussi grupa. « Svira u bendu. » — Il joue dans un groupe."
+            }
+          },
+          "id": "srpski.musique.abf1da7e9fd4",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "публика"
+            },
+            "francais": {
+              "text": "le public"
+            },
+            "latin": {
+              "text": "publika"
+            },
+            "notes": {
+              "text": "Féminin singulier, même pour une foule. « Publika je bila sjajna. »"
+            }
+          },
+          "id": "srpski.musique.e21d1715f427",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "бина"
+            },
+            "francais": {
+              "text": "la scène (de concert)"
+            },
+            "latin": {
+              "text": "bina"
+            },
+            "notes": {
+              "text": "Féminin. « na bini » — sur scène. Pour le théâtre, on dit plutôt scena."
+            }
+          },
+          "id": "srpski.musique.b837d11ca5a9",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "слушалице"
+            },
+            "francais": {
+              "text": "le casque / les écouteurs"
+            },
+            "latin": {
+              "text": "slušalice"
+            },
+            "notes": {
+              "text": "Féminin pluriel. Les écouteurs intra : bubice (familier)."
+            }
+          },
+          "id": "srpski.musique.534611f22e43",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Појачај!"
+            },
+            "francais": {
+              "text": "Monte le son !"
+            },
+            "latin": {
+              "text": "Pojačaj!"
+            },
+            "notes": {
+              "text": "De pojačati. L'inverse : « Utišaj! » — Baisse le son !"
+            }
+          },
+          "id": "srpski.musique.7c81eb0407ba",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "карта за концерт"
+            },
+            "francais": {
+              "text": "le billet de concert"
+            },
+            "latin": {
+              "text": "karta za koncert"
+            },
+            "notes": {
+              "text": "On dit aussi ulaznica (plus formel)."
+            }
+          },
+          "id": "srpski.musique.f74a6457424f",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "плесати"
+            },
+            "francais": {
+              "text": "danser"
+            },
+            "latin": {
+              "text": "plesati"
+            },
+            "notes": {
+              "text": "Présent irrégulier : plešem, plešeš, pleše…"
+            }
+          },
+          "id": "srpski.musique.4ef99e0b1542",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "quotidien"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "певач / певачица"
+            },
+            "francais": {
+              "text": "le chanteur / la chanteuse"
+            },
+            "latin": {
+              "text": "pevač / pevačica"
+            },
+            "notes": {
+              "text": "glavni pevač — le chanteur principal ; prateći vokali — les chœurs."
+            }
+          },
+          "id": "srpski.musique.937cca5daea1",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "трубач"
+            },
+            "francais": {
+              "text": "le trompettiste"
+            },
+            "latin": {
+              "text": "trubač"
+            },
+            "notes": {
+              "text": "Masculin. Le festival de Guča s'appelle « Sabor trubača » — le rassemblement des trompettistes."
+            }
+          },
+          "id": "srpski.musique.4ceda976eb4e",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "гитариста"
+            },
+            "francais": {
+              "text": "le guitariste"
+            },
+            "latin": {
+              "text": "gitarista"
+            },
+            "notes": {
+              "text": "Masculin en -a, qui se décline comme un féminin : gén. gitariste, instr. gitaristom."
+            }
+          },
+          "id": "srpski.musique.53e05540e4cc",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "басиста"
+            },
+            "francais": {
+              "text": "le bassiste"
+            },
+            "latin": {
+              "text": "basista"
+            },
+            "notes": {
+              "text": "Masculin en -a, comme gitarista. La basse : bas-gitara."
+            }
+          },
+          "id": "srpski.musique.91e86a0746c8",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "бубњар"
+            },
+            "francais": {
+              "text": "le batteur"
+            },
+            "latin": {
+              "text": "bubnjar"
+            },
+            "notes": {
+              "text": "Masculin. De bubanj, le tambour."
+            }
+          },
+          "id": "srpski.musique.032d91972507",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "клавијатуриста"
+            },
+            "francais": {
+              "text": "le claviériste"
+            },
+            "latin": {
+              "text": "klavijaturista"
+            },
+            "notes": {
+              "text": "Masculin en -a. De klavijature, les claviers."
+            }
+          },
+          "id": "srpski.musique.484905d37999",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "музичар / музичарка"
+            },
+            "francais": {
+              "text": "le musicien / la musicienne"
+            },
+            "latin": {
+              "text": "muzičar / muzičarka"
+            },
+            "notes": {
+              "text": "On entend aussi muzikant, plus familier."
+            }
+          },
+          "id": "srpski.musique.20a407ea52e6",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "тонац"
+            },
+            "francais": {
+              "text": "l'ingé son"
+            },
+            "latin": {
+              "text": "tonac"
+            },
+            "notes": {
+              "text": "Familier pour tonski majstor (ingénieur du son). Gén. tonca."
+            }
+          },
+          "id": "srpski.musique.88c2ee02d476",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "миксета"
+            },
+            "francais": {
+              "text": "la console de mixage"
+            },
+            "latin": {
+              "text": "mikseta"
+            },
+            "notes": {
+              "text": "Féminin. On dit aussi miks pult. « Tonac je za miksetom. » — L'ingé son est à la console."
+            }
+          },
+          "id": "srpski.musique.745f6cbfd2ab",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "монитори"
+            },
+            "francais": {
+              "text": "les retours (sur scène)"
+            },
+            "latin": {
+              "text": "monitori"
+            },
+            "notes": {
+              "text": "Masculin pluriel. « Više glasa u monitoru, molim! » — Plus de voix dans le retour, s'il te plaît ! Les in-ears : in-ear monitori."
+            }
+          },
+          "id": "srpski.musique.4bf008f27a70",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "микрофон"
+            },
+            "francais": {
+              "text": "le micro"
+            },
+            "latin": {
+              "text": "mikrofon"
+            },
+            "notes": {
+              "text": "Masculin. « Proba mikrofona: jedan, dva… »"
+            }
+          },
+          "id": "srpski.musique.27373746854b",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "сталак за микрофон"
+            },
+            "francais": {
+              "text": "le pied de micro"
+            },
+            "latin": {
+              "text": "stalak za mikrofon"
+            },
+            "notes": {
+              "text": "stalak, gén. stalka."
+            }
+          },
+          "id": "srpski.musique.41e615372bd5",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "појачало"
+            },
+            "francais": {
+              "text": "l'ampli"
+            },
+            "latin": {
+              "text": "pojačalo"
+            },
+            "notes": {
+              "text": "Neutre. pojačalo za gitaru — l'ampli guitare. De pojačati, amplifier."
+            }
+          },
+          "id": "srpski.musique.b9ad5f1dbe8e",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "звучник"
+            },
+            "francais": {
+              "text": "l'enceinte / le haut-parleur"
+            },
+            "latin": {
+              "text": "zvučnik"
+            },
+            "notes": {
+              "text": "Masculin, pl. zvučnici."
+            }
+          },
+          "id": "srpski.musique.354354bd40e9",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "кабл"
+            },
+            "francais": {
+              "text": "le câble"
+            },
+            "latin": {
+              "text": "kabl"
+            },
+            "notes": {
+              "text": "Masculin, pl. kablovi."
+            }
+          },
+          "id": "srpski.musique.b4adcd31d49a",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "микрофонија"
+            },
+            "francais": {
+              "text": "le larsen"
+            },
+            "latin": {
+              "text": "mikrofonija"
+            },
+            "notes": {
+              "text": "Féminin. « Ima mikrofonije! » — Il y a du larsen !"
+            }
+          },
+          "id": "srpski.musique.0143250f1d2b",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "тонска проба"
+            },
+            "francais": {
+              "text": "la balance (soundcheck)"
+            },
+            "latin": {
+              "text": "tonska proba"
+            },
+            "notes": {
+              "text": "Féminin. Familier : saundček."
+            }
+          },
+          "id": "srpski.musique.8c76933cdf8f",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "проба"
+            },
+            "francais": {
+              "text": "la répétition"
+            },
+            "latin": {
+              "text": "proba"
+            },
+            "notes": {
+              "text": "Féminin. « Imamo probu u sedam. » Attention : ponavljanje = la répétition au sens « redire »."
+            }
+          },
+          "id": "srpski.musique.9f47b814230f",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "наступ"
+            },
+            "francais": {
+              "text": "la prestation (sur scène)"
+            },
+            "latin": {
+              "text": "nastup"
+            },
+            "notes": {
+              "text": "Masculin. Le verbe : nastupati — se produire."
+            }
+          },
+          "id": "srpski.musique.21f5605d0215",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "свирка"
+            },
+            "francais": {
+              "text": "le concert, le gig (familier)"
+            },
+            "latin": {
+              "text": "svirka"
+            },
+            "notes": {
+              "text": "Féminin. « Imamo svirku u petak. » — On joue vendredi."
+            }
+          },
+          "id": "srpski.musique.9ce3e6f5a2a5",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "турнеја"
+            },
+            "francais": {
+              "text": "la tournée"
+            },
+            "latin": {
+              "text": "turneja"
+            },
+            "notes": {
+              "text": "Féminin. « ići na turneju » — partir en tournée."
+            }
+          },
+          "id": "srpski.musique.11fed6c64c5c",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "сет листа"
+            },
+            "francais": {
+              "text": "la setlist"
+            },
+            "latin": {
+              "text": "set lista"
+            },
+            "notes": {
+              "text": "Féminin. On dit aussi spisak pesama."
+            }
+          },
+          "id": "srpski.musique.b184a70e7690",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "бис"
+            },
+            "francais": {
+              "text": "le rappel"
+            },
+            "latin": {
+              "text": "bis"
+            },
+            "notes": {
+              "text": "« Bis! Bis! » — Une autre ! « Svirali su dve pesme na bis. » — Ils ont joué deux chansons en rappel."
+            }
+          },
+          "id": "srpski.musique.1094cd06521b",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "снимање"
+            },
+            "francais": {
+              "text": "l'enregistrement"
+            },
+            "latin": {
+              "text": "snimanje"
+            },
+            "notes": {
+              "text": "Neutre. snimati album u studiju — enregistrer un album en studio."
+            }
+          },
+          "id": "srpski.musique.d130d66e4123",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "продуцент"
+            },
+            "francais": {
+              "text": "le producteur"
+            },
+            "latin": {
+              "text": "producent"
+            },
+            "notes": {
+              "text": "Masculin. La productrice : producentkinja."
+            }
+          },
+          "id": "srpski.musique.91b4cc69c1c2",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "аранжман"
+            },
+            "francais": {
+              "text": "l'arrangement"
+            },
+            "latin": {
+              "text": "aranžman"
+            },
+            "notes": {
+              "text": "Masculin. L'arrangeur : aranžer."
+            }
+          },
+          "id": "srpski.musique.59f2f079acb8",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "акорд"
+            },
+            "francais": {
+              "text": "l'accord"
+            },
+            "latin": {
+              "text": "akord"
+            },
+            "notes": {
+              "text": "Masculin. dur / mol — majeur / mineur."
+            }
+          },
+          "id": "srpski.musique.f7c7472ceb3c",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "хонорар"
+            },
+            "francais": {
+              "text": "le cachet"
+            },
+            "latin": {
+              "text": "honorar"
+            },
+            "notes": {
+              "text": "Masculin. « Koliki je honorar? » — Le cachet est de combien ?"
+            }
+          },
+          "id": "srpski.musique.c0b5eeb03d7c",
+          "modelID": "srpski.model.musique",
+          "tags": [
+            "serbe",
+            "mot",
+            "musique",
+            "pro"
+          ]
+        }
+      ],
+      "summary": "Le vocabulaire de la musique : celui de tous les jours et celui de la scène (musiciens, sono, retours, console…)."
+    }
+  ],
+  "seedVersion": 1
+}
