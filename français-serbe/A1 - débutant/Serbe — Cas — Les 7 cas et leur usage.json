@@ -1,0 +1,206 @@
+{
+  "collections": [
+    {
+      "id": "srpski.cas.definitions",
+      "name": "Serbe — Cas — Les 7 cas et leur usage",
+      "noteModels": [
+        {
+          "fields": [
+            {
+              "key": "nom_cas_fr",
+              "label": "Nom du cas (FR)",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "nom_cas_sr",
+              "label": "Nom du cas (SR)",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "usage",
+              "label": "Usage",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "exemple",
+              "label": "Exemple",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "id": "srpski.cas.definitions.modele",
+          "name": "Cas grammatical",
+          "templates": [
+            {
+              "backKeys": [
+                "nom_cas_fr",
+                "usage",
+                "exemple"
+              ],
+              "frontKeys": [
+                "nom_cas_sr"
+              ],
+              "id": "sr-vers-usage",
+              "inputMode": "reveal",
+              "name": "Nom du cas → usage"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "exemple": {
+              "text": "Grad je lep. (La ville est belle.) — grad = sujet"
+            },
+            "nom_cas_fr": {
+              "text": "Nominatif"
+            },
+            "nom_cas_sr": {
+              "text": "Nominativ"
+            },
+            "usage": {
+              "text": "Sujet de la phrase. C'est aussi la forme du dictionnaire (celle qu'on apprend par défaut)."
+            }
+          },
+          "id": "srpski.cas.nominativ",
+          "modelID": "srpski.cas.definitions.modele",
+          "tags": [
+            "cas"
+          ]
+        },
+        {
+          "fields": {
+            "exemple": {
+              "text": "Vidim grad. (Je vois la ville.) — grad = COD"
+            },
+            "nom_cas_fr": {
+              "text": "Accusatif"
+            },
+            "nom_cas_sr": {
+              "text": "Akuzativ"
+            },
+            "usage": {
+              "text": "Complément d'objet direct (qui/quoi est affecté par l'action). Utilisé aussi après des prépositions de mouvement (u, na, kroz...)."
+            }
+          },
+          "id": "srpski.cas.akuzativ",
+          "modelID": "srpski.cas.definitions.modele",
+          "tags": [
+            "cas"
+          ]
+        },
+        {
+          "fields": {
+            "exemple": {
+              "text": "Nema hleba. (Il n'y a pas de pain.) — hleba = génitif après négation"
+            },
+            "nom_cas_fr": {
+              "text": "Génitif"
+            },
+            "nom_cas_sr": {
+              "text": "Genitiv"
+            },
+            "usage": {
+              "text": "Possession/appartenance (équivalent du \"de\" français), absence ou négation, et après des prépositions comme bez (sans), iz (de/depuis), od (de), do (jusqu'à)."
+            }
+          },
+          "id": "srpski.cas.genitiv",
+          "modelID": "srpski.cas.definitions.modele",
+          "tags": [
+            "cas"
+          ]
+        },
+        {
+          "fields": {
+            "exemple": {
+              "text": "Dajem knjigu studentu. (Je donne le livre à l'étudiant.) — studentu = COI"
+            },
+            "nom_cas_fr": {
+              "text": "Datif"
+            },
+            "nom_cas_sr": {
+              "text": "Dativ"
+            },
+            "usage": {
+              "text": "Complément d'objet indirect (à qui ?), destinataire d'une action."
+            }
+          },
+          "id": "srpski.cas.dativ",
+          "modelID": "srpski.cas.definitions.modele",
+          "tags": [
+            "cas"
+          ]
+        },
+        {
+          "fields": {
+            "exemple": {
+              "text": "Studente! (Étudiant !) — pour interpeller"
+            },
+            "nom_cas_fr": {
+              "text": "Vocatif"
+            },
+            "nom_cas_sr": {
+              "text": "Vokativ"
+            },
+            "usage": {
+              "text": "Interpellation directe : sert à appeler ou s'adresser à quelqu'un."
+            }
+          },
+          "id": "srpski.cas.vokativ",
+          "modelID": "srpski.cas.definitions.modele",
+          "tags": [
+            "cas"
+          ]
+        },
+        {
+          "fields": {
+            "exemple": {
+              "text": "Živim u gradu. (J'habite dans la ville.) — gradu = locatif après \"u\""
+            },
+            "nom_cas_fr": {
+              "text": "Locatif"
+            },
+            "nom_cas_sr": {
+              "text": "Lokativ"
+            },
+            "usage": {
+              "text": "Localisation (où ?). S'emploie toujours avec une préposition (u, na, o...). Mêmes terminaisons que le datif dans la quasi-totalité des cas."
+            }
+          },
+          "id": "srpski.cas.lokativ",
+          "modelID": "srpski.cas.definitions.modele",
+          "tags": [
+            "cas"
+          ]
+        },
+        {
+          "fields": {
+            "exemple": {
+              "text": "Pišem olovkom. (J'écris avec un stylo.) — olovkom = instrumental"
+            },
+            "nom_cas_fr": {
+              "text": "Instrumental"
+            },
+            "nom_cas_sr": {
+              "text": "Instrumental"
+            },
+            "usage": {
+              "text": "Moyen ou instrument (avec quoi ?), et accompagnement (avec qui ?, avec s/sa)."
+            }
+          },
+          "id": "srpski.cas.instrumental",
+          "modelID": "srpski.cas.definitions.modele",
+          "tags": [
+            "cas"
+          ]
+        }
+      ],
+      "summary": "Les 7 cas du serbe : nom et usage"
+    }
+  ],
+  "seedVersion": 1
+}

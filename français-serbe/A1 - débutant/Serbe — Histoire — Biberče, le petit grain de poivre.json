@@ -1,0 +1,1067 @@
+{
+  "collections": [
+    {
+      "id": "srpski.biberce",
+      "name": "Serbe — Histoire — Biberče, le petit grain de poivre",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics",
+            "ignorePunctuation"
+          ],
+          "fields": [
+            {
+              "key": "numero",
+              "label": "Phrase",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "sr",
+              "label": "Serbe (latin)",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "sr_cyrillique",
+              "label": "Serbe (cyrillique)",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "fr",
+              "label": "Français",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "vocab",
+              "label": "Vocabulaire",
+              "required": false,
+              "type": "richText"
+            }
+          ],
+          "id": "srpski.biberce.model.phrase",
+          "name": "Phrase d'histoire",
+          "reading": {
+            "annotationKey": "vocab",
+            "indexKey": "numero",
+            "label": "Lire l'histoire",
+            "primaryKey": "sr",
+            "secondaryKey": "fr"
+          },
+          "templates": [
+            {
+              "backKeys": [
+                "fr",
+                "vocab"
+              ],
+              "frontKeys": [
+                "sr",
+                "sr_cyrillique"
+              ],
+              "id": "sr2fr",
+              "inputMode": "reveal",
+              "name": "Serbe → Français"
+            },
+            {
+              "backKeys": [
+                "sr",
+                "sr_cyrillique",
+                "vocab"
+              ],
+              "frontKeys": [
+                "fr"
+              ],
+              "id": "fr2sr",
+              "inputMode": "reveal",
+              "name": "Français → Serbe"
+            }
+          ],
+          "variantGroups": [
+            {
+              "key": "alphabet",
+              "label": "Alphabet serbe",
+              "options": [
+                {
+                  "fieldKeys": [
+                    "sr"
+                  ],
+                  "key": "latin",
+                  "label": "Latin"
+                },
+                {
+                  "fieldKeys": [
+                    "sr_cyrillique"
+                  ],
+                  "key": "cyrillic",
+                  "label": "Cyrillique"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics",
+            "ignorePunctuation",
+            "splitAlternatives"
+          ],
+          "fields": [
+            {
+              "key": "latin",
+              "label": "Serbe (latin)",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "cyrillique",
+              "label": "Serbe (cyrillique)",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "francais",
+              "label": "Français",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "contexte",
+              "label": "Dans l'histoire",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "id": "srpski.biberce.model.vocabulaire",
+          "name": "Vocabulaire de l'histoire",
+          "templates": [
+            {
+              "backKeys": [
+                "francais",
+                "contexte"
+              ],
+              "frontKeys": [
+                "latin",
+                "cyrillique"
+              ],
+              "id": "sr2fr",
+              "inputMode": "reveal",
+              "name": "Serbe → Français"
+            },
+            {
+              "answerKey": "latin",
+              "backKeys": [
+                "latin",
+                "cyrillique",
+                "contexte"
+              ],
+              "frontKeys": [
+                "francais"
+              ],
+              "id": "fr2sr",
+              "inputMode": "textEntry",
+              "name": "Français → Serbe"
+            }
+          ],
+          "variantGroups": [
+            {
+              "key": "alphabet",
+              "label": "Alphabet serbe",
+              "options": [
+                {
+                  "fieldKeys": [
+                    "latin"
+                  ],
+                  "key": "latin",
+                  "label": "Latin"
+                },
+                {
+                  "fieldKeys": [
+                    "cyrillique"
+                  ],
+                  "key": "cyrillic",
+                  "label": "Cyrillique"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "fr": {
+              "text": "Il était une fois une femme."
+            },
+            "numero": {
+              "text": "Phrase 1"
+            },
+            "sr": {
+              "text": "Bila jednom jedna žena."
+            },
+            "sr_cyrillique": {
+              "text": "Била једном једна жена."
+            },
+            "vocab": {
+              "text": "žena — femme"
+            }
+          },
+          "id": "srpski.biberce.phrase.714f44474d58",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "La femme n'a pas d'enfants."
+            },
+            "numero": {
+              "text": "Phrase 2"
+            },
+            "sr": {
+              "text": "Žena nema dece."
+            },
+            "sr_cyrillique": {
+              "text": "Жена нема деце."
+            },
+            "vocab": {
+              "text": "nemati — ne pas avoir\ndete / deca — enfant / enfants"
+            }
+          },
+          "id": "srpski.biberce.phrase.832bc3d6a4e1",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "La femme dit : « Je veux un enfant, même petit comme un grain de poivre ! »"
+            },
+            "numero": {
+              "text": "Phrase 3"
+            },
+            "sr": {
+              "text": "Žena kaže: \"Hoću dete, makar bilo malo kao zrno bibera!\""
+            },
+            "sr_cyrillique": {
+              "text": "Жена каже: \"Хоћу дете, макар било мало као зрно бибера!\""
+            },
+            "vocab": {
+              "text": "hteti (hoću) — vouloir (je veux)\nzrno bibera — grain de poivre"
+            }
+          },
+          "id": "srpski.biberce.phrase.8ae41ae89e20",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "Bientôt, la femme a un fils."
+            },
+            "numero": {
+              "text": "Phrase 4"
+            },
+            "sr": {
+              "text": "Uskoro žena dobija sina."
+            },
+            "sr_cyrillique": {
+              "text": "Ускоро жена добија сина."
+            },
+            "vocab": {
+              "text": "uskoro — bientôt\nsin — fils"
+            }
+          },
+          "id": "srpski.biberce.phrase.d91292643e41",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "Le fils est petit comme un grain de poivre."
+            },
+            "numero": {
+              "text": "Phrase 5"
+            },
+            "sr": {
+              "text": "Sin je mali kao zrno bibera."
+            },
+            "sr_cyrillique": {
+              "text": "Син је мали као зрно бибера."
+            },
+            "vocab": {
+              "text": "mali — petit"
+            }
+          },
+          "id": "srpski.biberce.phrase.3286eadb25eb",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "La femme l'appelle Biberče."
+            },
+            "numero": {
+              "text": "Phrase 6"
+            },
+            "sr": {
+              "text": "Žena ga zove Biberče."
+            },
+            "sr_cyrillique": {
+              "text": "Жена га зове Биберче."
+            },
+            "vocab": {
+              "text": "zvati — appeler"
+            }
+          },
+          "id": "srpski.biberce.phrase.2c7b46e3c812",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "Biberče est un garçon intelligent et courageux."
+            },
+            "numero": {
+              "text": "Phrase 7"
+            },
+            "sr": {
+              "text": "Biberče je pametan i hrabar dečak."
+            },
+            "sr_cyrillique": {
+              "text": "Биберче је паметан и храбар дечак."
+            },
+            "vocab": {
+              "text": "pametan — intelligent\nhrabar — courageux\ndečak — garçon"
+            }
+          },
+          "id": "srpski.biberce.phrase.ed2bc62f99ff",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "Un jour, Biberče va au champ avec son père."
+            },
+            "numero": {
+              "text": "Phrase 8"
+            },
+            "sr": {
+              "text": "Jednog dana, Biberče ide u polje sa ocem."
+            },
+            "sr_cyrillique": {
+              "text": "Једног дана, Биберче иде у поље са оцем."
+            },
+            "vocab": {
+              "text": "polje — champ\notac — père"
+            }
+          },
+          "id": "srpski.biberce.phrase.8a9a5b9bd9c4",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "Un grand bœuf avale Biberče."
+            },
+            "numero": {
+              "text": "Phrase 9"
+            },
+            "sr": {
+              "text": "Veliki vo proguta Biberčeta."
+            },
+            "sr_cyrillique": {
+              "text": "Велики во прогута Биберчета."
+            },
+            "vocab": {
+              "text": "vo — bœuf\nprogutati — avaler"
+            }
+          },
+          "id": "srpski.biberce.phrase.9d14e2c4dc72",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "Biberče crie depuis le ventre du bœuf."
+            },
+            "numero": {
+              "text": "Phrase 10"
+            },
+            "sr": {
+              "text": "Biberče viče iz stomaka vola."
+            },
+            "sr_cyrillique": {
+              "text": "Биберче виче из стомака вола."
+            },
+            "vocab": {
+              "text": "vikati — crier\nstomak — ventre"
+            }
+          },
+          "id": "srpski.biberce.phrase.5a1b7050386d",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "Le père entend une voix, mais ne voit pas son fils."
+            },
+            "numero": {
+              "text": "Phrase 11"
+            },
+            "sr": {
+              "text": "Otac čuje glas, ali ne vidi sina."
+            },
+            "sr_cyrillique": {
+              "text": "Отац чује глас, али не види сина."
+            },
+            "vocab": {
+              "text": "čuti — entendre\nglas — voix\nvideti — voir"
+            }
+          },
+          "id": "srpski.biberce.phrase.92ec092dc6aa",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "fr": {
+              "text": "À la fin, la mère retrouve Biberče et il sort entier et vivant."
+            },
+            "numero": {
+              "text": "Phrase 12"
+            },
+            "sr": {
+              "text": "Na kraju, majka pronalazi Biberčeta i on izlazi ceo i živ."
+            },
+            "sr_cyrillique": {
+              "text": "На крају, мајка проналази Биберчета и он излази цео и жив."
+            },
+            "vocab": {
+              "text": "na kraju — à la fin\npronaći — retrouver\nživ — vivant"
+            }
+          },
+          "id": "srpski.biberce.phrase.7bd182759d56",
+          "modelID": "srpski.biberce.model.phrase",
+          "tags": [
+            "histoire",
+            "biberce",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Bila jednom jedna žena."
+            },
+            "cyrillique": {
+              "text": "жена"
+            },
+            "francais": {
+              "text": "femme"
+            },
+            "latin": {
+              "text": "žena"
+            }
+          },
+          "id": "srpski.biberce.vocab.959e3352a7f3",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Žena nema dece."
+            },
+            "cyrillique": {
+              "text": "немати"
+            },
+            "francais": {
+              "text": "ne pas avoir"
+            },
+            "latin": {
+              "text": "nemati"
+            }
+          },
+          "id": "srpski.biberce.vocab.2f307e3165ea",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Žena nema dece."
+            },
+            "cyrillique": {
+              "text": "дете / деца"
+            },
+            "francais": {
+              "text": "enfant / enfants"
+            },
+            "latin": {
+              "text": "dete / deca"
+            }
+          },
+          "id": "srpski.biberce.vocab.6b0afeed1234",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Žena kaže: \"Hoću dete, makar bilo malo kao zrno bibera!\""
+            },
+            "cyrillique": {
+              "text": "хтети (хоћу)"
+            },
+            "francais": {
+              "text": "vouloir (je veux)"
+            },
+            "latin": {
+              "text": "hteti (hoću)"
+            }
+          },
+          "id": "srpski.biberce.vocab.bd9e13fe128d",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Žena kaže: \"Hoću dete, makar bilo malo kao zrno bibera!\""
+            },
+            "cyrillique": {
+              "text": "зрно бибера"
+            },
+            "francais": {
+              "text": "grain de poivre"
+            },
+            "latin": {
+              "text": "zrno bibera"
+            }
+          },
+          "id": "srpski.biberce.vocab.81e659542dc4",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Uskoro žena dobija sina."
+            },
+            "cyrillique": {
+              "text": "ускоро"
+            },
+            "francais": {
+              "text": "bientôt"
+            },
+            "latin": {
+              "text": "uskoro"
+            }
+          },
+          "id": "srpski.biberce.vocab.3e583c6e79b0",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Uskoro žena dobija sina."
+            },
+            "cyrillique": {
+              "text": "син"
+            },
+            "francais": {
+              "text": "fils"
+            },
+            "latin": {
+              "text": "sin"
+            }
+          },
+          "id": "srpski.biberce.vocab.7d14c04a713a",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Sin je mali kao zrno bibera."
+            },
+            "cyrillique": {
+              "text": "мали"
+            },
+            "francais": {
+              "text": "petit"
+            },
+            "latin": {
+              "text": "mali"
+            }
+          },
+          "id": "srpski.biberce.vocab.9426e2eba89c",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Žena ga zove Biberče."
+            },
+            "cyrillique": {
+              "text": "звати"
+            },
+            "francais": {
+              "text": "appeler"
+            },
+            "latin": {
+              "text": "zvati"
+            }
+          },
+          "id": "srpski.biberce.vocab.24a6f2a939b9",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Biberče je pametan i hrabar dečak."
+            },
+            "cyrillique": {
+              "text": "паметан"
+            },
+            "francais": {
+              "text": "intelligent"
+            },
+            "latin": {
+              "text": "pametan"
+            }
+          },
+          "id": "srpski.biberce.vocab.4a7a9f1385b6",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Biberče je pametan i hrabar dečak."
+            },
+            "cyrillique": {
+              "text": "храбар"
+            },
+            "francais": {
+              "text": "courageux"
+            },
+            "latin": {
+              "text": "hrabar"
+            }
+          },
+          "id": "srpski.biberce.vocab.6b4db6b74e41",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Biberče je pametan i hrabar dečak."
+            },
+            "cyrillique": {
+              "text": "дечак"
+            },
+            "francais": {
+              "text": "garçon"
+            },
+            "latin": {
+              "text": "dečak"
+            }
+          },
+          "id": "srpski.biberce.vocab.55197f9129fb",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Jednog dana, Biberče ide u polje sa ocem."
+            },
+            "cyrillique": {
+              "text": "поље"
+            },
+            "francais": {
+              "text": "champ"
+            },
+            "latin": {
+              "text": "polje"
+            }
+          },
+          "id": "srpski.biberce.vocab.b468a8ab0655",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Jednog dana, Biberče ide u polje sa ocem."
+            },
+            "cyrillique": {
+              "text": "отац"
+            },
+            "francais": {
+              "text": "père"
+            },
+            "latin": {
+              "text": "otac"
+            }
+          },
+          "id": "srpski.biberce.vocab.7a43ba959f03",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Veliki vo proguta Biberčeta."
+            },
+            "cyrillique": {
+              "text": "во"
+            },
+            "francais": {
+              "text": "bœuf"
+            },
+            "latin": {
+              "text": "vo"
+            }
+          },
+          "id": "srpski.biberce.vocab.fadd56ec452f",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Veliki vo proguta Biberčeta."
+            },
+            "cyrillique": {
+              "text": "прогутати"
+            },
+            "francais": {
+              "text": "avaler"
+            },
+            "latin": {
+              "text": "progutati"
+            }
+          },
+          "id": "srpski.biberce.vocab.1134e32690c0",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Biberče viče iz stomaka vola."
+            },
+            "cyrillique": {
+              "text": "викати"
+            },
+            "francais": {
+              "text": "crier"
+            },
+            "latin": {
+              "text": "vikati"
+            }
+          },
+          "id": "srpski.biberce.vocab.5110b5fa0638",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Biberče viče iz stomaka vola."
+            },
+            "cyrillique": {
+              "text": "стомак"
+            },
+            "francais": {
+              "text": "ventre"
+            },
+            "latin": {
+              "text": "stomak"
+            }
+          },
+          "id": "srpski.biberce.vocab.1e0654477d51",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Otac čuje glas, ali ne vidi sina."
+            },
+            "cyrillique": {
+              "text": "чути"
+            },
+            "francais": {
+              "text": "entendre"
+            },
+            "latin": {
+              "text": "čuti"
+            }
+          },
+          "id": "srpski.biberce.vocab.3e4ba281c9d3",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Otac čuje glas, ali ne vidi sina."
+            },
+            "cyrillique": {
+              "text": "глас"
+            },
+            "francais": {
+              "text": "voix"
+            },
+            "latin": {
+              "text": "glas"
+            }
+          },
+          "id": "srpski.biberce.vocab.6320a65a1ccd",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Otac čuje glas, ali ne vidi sina."
+            },
+            "cyrillique": {
+              "text": "видети"
+            },
+            "francais": {
+              "text": "voir"
+            },
+            "latin": {
+              "text": "videti"
+            }
+          },
+          "id": "srpski.biberce.vocab.e611298025d3",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Na kraju, majka pronalazi Biberčeta i on izlazi ceo i živ."
+            },
+            "cyrillique": {
+              "text": "на крају"
+            },
+            "francais": {
+              "text": "à la fin"
+            },
+            "latin": {
+              "text": "na kraju"
+            }
+          },
+          "id": "srpski.biberce.vocab.30340ee47a4e",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Na kraju, majka pronalazi Biberčeta i on izlazi ceo i živ."
+            },
+            "cyrillique": {
+              "text": "пронаћи"
+            },
+            "francais": {
+              "text": "retrouver"
+            },
+            "latin": {
+              "text": "pronaći"
+            }
+          },
+          "id": "srpski.biberce.vocab.17cee32a9a26",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "contexte": {
+              "text": "Na kraju, majka pronalazi Biberčeta i on izlazi ceo i živ."
+            },
+            "cyrillique": {
+              "text": "жив"
+            },
+            "francais": {
+              "text": "vivant"
+            },
+            "latin": {
+              "text": "živ"
+            }
+          },
+          "id": "srpski.biberce.vocab.c4d9378e27e7",
+          "modelID": "srpski.biberce.model.vocabulaire",
+          "tags": [
+            "histoire",
+            "biberce",
+            "mot"
+          ]
+        }
+      ],
+      "summary": "Le petit grain de poivre · A1 (débutant)"
+    }
+  ],
+  "seedVersion": 1
+}

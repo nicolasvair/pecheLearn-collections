@@ -1,0 +1,619 @@
+{
+  "collections": [
+    {
+      "id": "sr.padezi.dopuna",
+      "name": "Serbe — Cas — Compléter la phrase avec la bonne forme",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics"
+          ],
+          "fields": [
+            {
+              "key": "recenica",
+              "label": "Phrase",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "osnova",
+              "label": "Mot de base",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "odgovor",
+              "label": "Forme déclinée",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "padez",
+              "label": "Cas",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "zasto",
+              "label": "Pourquoi",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "prevod",
+              "label": "Traduction",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "id": "sr.padezi.dopuna.model",
+          "name": "Phrase à trou → forme",
+          "templates": [
+            {
+              "answerKey": "odgovor",
+              "backKeys": [
+                "odgovor",
+                "padez",
+                "zasto",
+                "prevod"
+              ],
+              "frontKeys": [
+                "recenica",
+                "osnova"
+              ],
+              "id": "dopuna2oblik",
+              "inputMode": "textEntry",
+              "name": "Phrase à trou → forme"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "odgovor": {
+              "text": "vodu"
+            },
+            "osnova": {
+              "text": "voda"
+            },
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "Je bois de l'eau chaque matin."
+            },
+            "recenica": {
+              "text": "Pijem ___ svako jutro."
+            },
+            "zasto": {
+              "text": "COD féminin en -a : -a devient -u."
+            }
+          },
+          "id": "sr.padezi.dop.001",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "kartu"
+            },
+            "osnova": {
+              "text": "karta"
+            },
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "J'achète un billet pour le concert."
+            },
+            "recenica": {
+              "text": "Kupujem ___ za koncert."
+            },
+            "zasto": {
+              "text": "COD féminin en -a : -a devient -u."
+            }
+          },
+          "id": "sr.padezi.dop.002",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "banku"
+            },
+            "osnova": {
+              "text": "banka"
+            },
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "Je vais à la banque."
+            },
+            "recenica": {
+              "text": "Idem u ___."
+            },
+            "zasto": {
+              "text": "« u » + accusatif : déplacement vers un lieu."
+            }
+          },
+          "id": "sr.padezi.dop.003",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "Milana"
+            },
+            "osnova": {
+              "text": "Milan"
+            },
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "J'attends Milan devant l'école."
+            },
+            "recenica": {
+              "text": "Čekam ___ ispred škole."
+            },
+            "zasto": {
+              "text": "COD masculin animé : on ajoute -a."
+            }
+          },
+          "id": "sr.padezi.dop.004",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "Pariza"
+            },
+            "osnova": {
+              "text": "Pariz"
+            },
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Je viens de Paris."
+            },
+            "recenica": {
+              "text": "Dolazim iz ___."
+            },
+            "zasto": {
+              "text": "« iz » (origine) régit le génitif : masculin + -a."
+            }
+          },
+          "id": "sr.padezi.dop.005",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "šećera"
+            },
+            "osnova": {
+              "text": "šećer"
+            },
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Je bois le thé sans sucre."
+            },
+            "recenica": {
+              "text": "Pijem čaj bez ___."
+            },
+            "zasto": {
+              "text": "« bez » (sans) régit le génitif : masculin + -a."
+            }
+          },
+          "id": "sr.padezi.dop.006",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "parka"
+            },
+            "osnova": {
+              "text": "park"
+            },
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "L'appartement est près du parc."
+            },
+            "recenica": {
+              "text": "Stan je blizu ___."
+            },
+            "zasto": {
+              "text": "« blizu » (près de) régit le génitif : masculin + -a."
+            }
+          },
+          "id": "sr.padezi.dop.007",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "sestre"
+            },
+            "osnova": {
+              "text": "sestra"
+            },
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "C'est la chambre de ma sœur."
+            },
+            "recenica": {
+              "text": "Ovo je soba moje ___."
+            },
+            "zasto": {
+              "text": "Possession : féminin en -a, -a devient -e."
+            }
+          },
+          "id": "sr.padezi.dop.008",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "Ani"
+            },
+            "osnova": {
+              "text": "Ana"
+            },
+            "padez": {
+              "text": "dativ"
+            },
+            "prevod": {
+              "text": "Je donne le livre à Ana."
+            },
+            "recenica": {
+              "text": "Dajem knjigu ___."
+            },
+            "zasto": {
+              "text": "Destinataire : féminin en -a, -a devient -i."
+            }
+          },
+          "id": "sr.padezi.dop.009",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "dativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "mami"
+            },
+            "osnova": {
+              "text": "mama"
+            },
+            "padez": {
+              "text": "dativ"
+            },
+            "prevod": {
+              "text": "J'envoie un message à maman."
+            },
+            "recenica": {
+              "text": "Šaljem poruku ___."
+            },
+            "zasto": {
+              "text": "Destinataire : féminin en -a, -a devient -i."
+            }
+          },
+          "id": "sr.padezi.dop.010",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "dativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "Marku"
+            },
+            "osnova": {
+              "text": "Marko"
+            },
+            "padez": {
+              "text": "dativ"
+            },
+            "prevod": {
+              "text": "Je montre la ville à Marko."
+            },
+            "recenica": {
+              "text": "Pokazujem grad ___."
+            },
+            "zasto": {
+              "text": "Destinataire : masculin, terminaison -u."
+            }
+          },
+          "id": "sr.padezi.dop.011",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "dativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "Marijo"
+            },
+            "osnova": {
+              "text": "Marija"
+            },
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Marija, où es-tu ?"
+            },
+            "recenica": {
+              "text": "___, gde si?"
+            },
+            "zasto": {
+              "text": "On interpelle : féminin en -a, -a devient -o."
+            }
+          },
+          "id": "sr.padezi.dop.012",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "doktore"
+            },
+            "osnova": {
+              "text": "doktor"
+            },
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Docteur, j'ai mal à la tête."
+            },
+            "recenica": {
+              "text": "___, boli me glava."
+            },
+            "zasto": {
+              "text": "On interpelle : masculin + -e."
+            }
+          },
+          "id": "sr.padezi.dop.013",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "brate"
+            },
+            "osnova": {
+              "text": "brat"
+            },
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Frérot, comment ça va ?"
+            },
+            "recenica": {
+              "text": "___, kako si?"
+            },
+            "zasto": {
+              "text": "On interpelle : masculin + -e."
+            }
+          },
+          "id": "sr.padezi.dop.014",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "biciklom"
+            },
+            "osnova": {
+              "text": "bicikl"
+            },
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je vais au travail à vélo."
+            },
+            "recenica": {
+              "text": "Idem na posao ___."
+            },
+            "zasto": {
+              "text": "Moyen de transport, sans préposition : masculin + -om."
+            }
+          },
+          "id": "sr.padezi.dop.015",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "Anom"
+            },
+            "osnova": {
+              "text": "Ana"
+            },
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je déjeune avec Ana."
+            },
+            "recenica": {
+              "text": "Ručam sa ___."
+            },
+            "zasto": {
+              "text": "« sa » + instrumental : féminin en -a, -a devient -om."
+            }
+          },
+          "id": "sr.padezi.dop.016",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "vozom"
+            },
+            "osnova": {
+              "text": "voz"
+            },
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je vais à Novi Sad en train."
+            },
+            "recenica": {
+              "text": "Putujem u Novi Sad ___."
+            },
+            "zasto": {
+              "text": "Moyen de transport, sans préposition : masculin + -om."
+            }
+          },
+          "id": "sr.padezi.dop.017",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "kancelariji"
+            },
+            "osnova": {
+              "text": "kancelarija"
+            },
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Je travaille au bureau."
+            },
+            "recenica": {
+              "text": "Radim u ___."
+            },
+            "zasto": {
+              "text": "« u » + locatif : position. Féminin en -a, -a devient -i."
+            }
+          },
+          "id": "sr.padezi.dop.018",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "koncertu"
+            },
+            "osnova": {
+              "text": "koncert"
+            },
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Nous parlons du concert."
+            },
+            "recenica": {
+              "text": "Pričamo o ___."
+            },
+            "zasto": {
+              "text": "« o » régit le locatif : masculin + -u."
+            }
+          },
+          "id": "sr.padezi.dop.019",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "odgovor": {
+              "text": "polici"
+            },
+            "osnova": {
+              "text": "polica"
+            },
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Les clés sont sur l'étagère."
+            },
+            "recenica": {
+              "text": "Ključevi su na ___."
+            },
+            "zasto": {
+              "text": "« na » + locatif : position. Féminin en -a, -a devient -i."
+            }
+          },
+          "id": "sr.padezi.dop.020",
+          "modelID": "sr.padezi.dopuna.model",
+          "tags": [
+            "lokativ"
+          ]
+        }
+      ],
+      "summary": "20 phrases — taper la forme déclinée du mot donné"
+    }
+  ],
+  "seedVersion": 1
+}

@@ -1,0 +1,3465 @@
+{
+  "collections": [
+    {
+      "id": "srpski.vocabulaire",
+      "name": "Serbe — Vocabulaire — Mots et phrases du cours",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics",
+            "ignorePunctuation"
+          ],
+          "fields": [
+            {
+              "key": "latin",
+              "label": "Serbe (latin)",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "cyrillique",
+              "label": "Serbe (cyrillique)",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "francais",
+              "label": "Français",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "notes",
+              "label": "Notes",
+              "required": false,
+              "type": "richText"
+            }
+          ],
+          "id": "srpski.model.vocabulaire",
+          "name": "Vocabulaire serbe",
+          "templates": [
+            {
+              "backKeys": [
+                "francais",
+                "notes"
+              ],
+              "frontKeys": [
+                "latin",
+                "cyrillique"
+              ],
+              "id": "sr2fr",
+              "inputMode": "reveal",
+              "name": "Serbe → Français"
+            },
+            {
+              "answerKey": "latin",
+              "backKeys": [
+                "latin",
+                "cyrillique",
+                "notes"
+              ],
+              "frontKeys": [
+                "francais"
+              ],
+              "id": "fr2sr",
+              "inputMode": "textEntry",
+              "name": "Français → Serbe"
+            }
+          ],
+          "variantGroups": [
+            {
+              "key": "alphabet",
+              "label": "Alphabet serbe",
+              "options": [
+                {
+                  "fieldKeys": [
+                    "latin"
+                  ],
+                  "key": "latin",
+                  "label": "Latin"
+                },
+                {
+                  "fieldKeys": [
+                    "cyrillique"
+                  ],
+                  "key": "cyrillic",
+                  "label": "Cyrillique"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "пензионер / пензионерка"
+            },
+            "francais": {
+              "text": "retraité / retraitée"
+            },
+            "latin": {
+              "text": "penzioner / penzionerka"
+            }
+          },
+          "id": "srpski.vocab.19b80073759a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "бити у пензији"
+            },
+            "francais": {
+              "text": "être à la retraite"
+            },
+            "latin": {
+              "text": "biti u penziji"
+            }
+          },
+          "id": "srpski.vocab.06438a165bce",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "ускоро"
+            },
+            "francais": {
+              "text": "bientôt"
+            },
+            "latin": {
+              "text": "uskoro"
+            }
+          },
+          "id": "srpski.vocab.3e583c6e79b0",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "правити / направити"
+            },
+            "francais": {
+              "text": "faire"
+            },
+            "latin": {
+              "text": "praviti / napraviti"
+            }
+          },
+          "id": "srpski.vocab.1347ec2b1e8e",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "остати"
+            },
+            "francais": {
+              "text": "rester"
+            },
+            "latin": {
+              "text": "ostati"
+            }
+          },
+          "id": "srpski.vocab.276b52b0e07d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "сањати"
+            },
+            "francais": {
+              "text": "rêver"
+            },
+            "latin": {
+              "text": "sanjati"
+            }
+          },
+          "id": "srpski.vocab.0a0d5a6f34c7",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "сањар"
+            },
+            "francais": {
+              "text": "un rêveur"
+            },
+            "latin": {
+              "text": "sanjar"
+            }
+          },
+          "id": "srpski.vocab.4968a3be8b6d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "верзија"
+            },
+            "francais": {
+              "text": "version"
+            },
+            "latin": {
+              "text": "verzija"
+            }
+          },
+          "id": "srpski.vocab.9e9db7ab63f0",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "сваки пут"
+            },
+            "francais": {
+              "text": "à chaque fois"
+            },
+            "latin": {
+              "text": "svaki put"
+            }
+          },
+          "id": "srpski.vocab.2e47ed81de29",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Било је 60-тих година"
+            },
+            "francais": {
+              "text": "C'était les années 60"
+            },
+            "latin": {
+              "text": "Bilo je 60-tih godina"
+            }
+          },
+          "id": "srpski.vocab.6320b3861d5b",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "војска"
+            },
+            "francais": {
+              "text": "l'armée"
+            },
+            "latin": {
+              "text": "vojska"
+            }
+          },
+          "id": "srpski.vocab.6b6090a2f668",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "кројач"
+            },
+            "francais": {
+              "text": "tailleur"
+            },
+            "latin": {
+              "text": "krojač"
+            }
+          },
+          "id": "srpski.vocab.76ef344225e6",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "обоје"
+            },
+            "francais": {
+              "text": "tous les deux"
+            },
+            "latin": {
+              "text": "oboje"
+            }
+          },
+          "id": "srpski.vocab.118aab6d752d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "скуп/а/о"
+            },
+            "francais": {
+              "text": "cher/e"
+            },
+            "latin": {
+              "text": "skup/a/o"
+            }
+          },
+          "id": "srpski.vocab.035bd91ddf1c",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "због"
+            },
+            "francais": {
+              "text": "à cause de"
+            },
+            "latin": {
+              "text": "zbog"
+            }
+          },
+          "id": "srpski.vocab.ccf6287e6b33",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "журка"
+            },
+            "francais": {
+              "text": "la fête"
+            },
+            "latin": {
+              "text": "žurka"
+            }
+          },
+          "id": "srpski.vocab.9edd1fc6afee",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "тужан"
+            },
+            "francais": {
+              "text": "triste"
+            },
+            "latin": {
+              "text": "tužan"
+            }
+          },
+          "id": "srpski.vocab.8621814554f1",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "филм о рату"
+            },
+            "francais": {
+              "text": "un film sur la guerre"
+            },
+            "latin": {
+              "text": "film o ratu"
+            }
+          },
+          "id": "srpski.vocab.71266a0f2bec",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "титлови"
+            },
+            "francais": {
+              "text": "sous-titres"
+            },
+            "latin": {
+              "text": "titlovi"
+            }
+          },
+          "id": "srpski.vocab.8e8c61cb712e",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "схватати"
+            },
+            "francais": {
+              "text": "comprendre (2)"
+            },
+            "latin": {
+              "text": "shvatati"
+            }
+          },
+          "id": "srpski.vocab.2810bca47af0",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "схватам"
+            },
+            "francais": {
+              "text": "je comprends"
+            },
+            "latin": {
+              "text": "shvatam"
+            }
+          },
+          "id": "srpski.vocab.e09cf32cd573",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Знам ову причу"
+            },
+            "francais": {
+              "text": "je connais cette histoire"
+            },
+            "latin": {
+              "text": "Znam ovu priču"
+            }
+          },
+          "id": "srpski.vocab.7a2f9cef47a4",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "током + ген"
+            },
+            "francais": {
+              "text": "durant \"...\""
+            },
+            "latin": {
+              "text": "tokom + gen"
+            }
+          },
+          "id": "srpski.vocab.6949299b9eff",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Он ради све да види своју жену"
+            },
+            "francais": {
+              "text": "il fait tout pour voir sa femme"
+            },
+            "latin": {
+              "text": "On radi sve da vidi svoju ženu"
+            }
+          },
+          "id": "srpski.vocab.b2be8f7970d5",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "прича"
+            },
+            "francais": {
+              "text": "une histoire"
+            },
+            "latin": {
+              "text": "priča"
+            }
+          },
+          "id": "srpski.vocab.97c332793a1b",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Гледао сам један филм"
+            },
+            "francais": {
+              "text": "j'ai vu un film"
+            },
+            "latin": {
+              "text": "Gledao sam jedan film"
+            }
+          },
+          "id": "srpski.vocab.bf6659da0414",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Гледао сам 2/3/4 филма"
+            },
+            "francais": {
+              "text": "j'ai vu 2/3/4 films"
+            },
+            "latin": {
+              "text": "Gledao sam 2/3/4 filma"
+            }
+          },
+          "id": "srpski.vocab.49b5cec3092e",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Гледао сам 5/6/7/8/9/10 филмова"
+            },
+            "francais": {
+              "text": "J'ai vu 5/6/7/8/9/10 films"
+            },
+            "latin": {
+              "text": "Gledao sam 5/6/7/8/9/10 filmova"
+            }
+          },
+          "id": "srpski.vocab.df3b6ad758da",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "из целог света"
+            },
+            "francais": {
+              "text": "de partout dans le monde"
+            },
+            "latin": {
+              "text": "iz celog sveta"
+            }
+          },
+          "id": "srpski.vocab.fb00fdc00d51",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "сићи"
+            },
+            "francais": {
+              "text": "descendre"
+            },
+            "latin": {
+              "text": "sići"
+            }
+          },
+          "id": "srpski.vocab.5eaf46a7f925",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "шума"
+            },
+            "francais": {
+              "text": "forêt"
+            },
+            "latin": {
+              "text": "šuma"
+            }
+          },
+          "id": "srpski.vocab.22d5bd357602",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "природа"
+            },
+            "francais": {
+              "text": "la nature"
+            },
+            "latin": {
+              "text": "priroda"
+            }
+          },
+          "id": "srpski.vocab.991667bf2462",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "јести"
+            },
+            "francais": {
+              "text": "manger"
+            },
+            "latin": {
+              "text": "jesti"
+            }
+          },
+          "id": "srpski.vocab.340a9c69d53b",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Пошто нас има много"
+            },
+            "francais": {
+              "text": "Parce que nous sommes nombreux"
+            },
+            "latin": {
+              "text": "Pošto nas ima mnogo"
+            }
+          },
+          "id": "srpski.vocab.0358212a153a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Он је питао жену (akuzativ)"
+            },
+            "francais": {
+              "text": "il a demandé à la dame (accusatif)"
+            },
+            "latin": {
+              "text": "On je pitao ženu (akuzativ)"
+            }
+          },
+          "id": "srpski.vocab.eaad4064514a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "чудан / чудна/ чудно"
+            },
+            "francais": {
+              "text": "Étrange, bizarre"
+            },
+            "latin": {
+              "text": "čudan / čudna/ čudno"
+            }
+          },
+          "id": "srpski.vocab.ac97455cc676",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "практичан/ практична/ практично"
+            },
+            "francais": {
+              "text": "pratique / pratique / pratiquement"
+            },
+            "latin": {
+              "text": "praktičan/ praktična/ praktično"
+            }
+          },
+          "id": "srpski.vocab.1738eeb830bc",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "згодан/ згодна/ згодно"
+            },
+            "francais": {
+              "text": "beau (z…)"
+            },
+            "latin": {
+              "text": "zgodan/ zgodna/ zgodno"
+            }
+          },
+          "id": "srpski.vocab.014130a3c949",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Има много људи"
+            },
+            "francais": {
+              "text": "il y a beaucoup de monde"
+            },
+            "latin": {
+              "text": "Ima mnogo ljudi"
+            }
+          },
+          "id": "srpski.vocab.8375b230119a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Ја ћу бити у Црној Гори."
+            },
+            "francais": {
+              "text": "je serai au Monténégro"
+            },
+            "latin": {
+              "text": "Ja ću biti u Crnoj Gori."
+            }
+          },
+          "id": "srpski.vocab.f915d7107909",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "ја се нећу шетати"
+            },
+            "francais": {
+              "text": "je ne me promènerai pas"
+            },
+            "latin": {
+              "text": "ja se neću šetati"
+            }
+          },
+          "id": "srpski.vocab.ab2cff297745",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Ја ћу причати са ујаком данас"
+            },
+            "francais": {
+              "text": "je parlerai à mon oncle aujourd'hui"
+            },
+            "latin": {
+              "text": "Ja ću pričati sa ujakom danas"
+            }
+          },
+          "id": "srpski.vocab.32f0216fc548",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "причати (futur)\n\nја ћу причати\nти ћеш причати\nон ће причати\nми ћемо причати\nви ћете причати\nони ће причати"
+            },
+            "francais": {
+              "text": "parler (futur)\n\nJe vais parler\ntu parleras\nil parlera\nnous parlerons\nvous parlerez\nils parleront"
+            },
+            "latin": {
+              "text": "pričati (futur)\n\nja ću pričati\nti ćeš pričati\non će pričati\nmi ćemo pričati\nvi ćete pričati\noni će pričati"
+            }
+          },
+          "id": "srpski.vocab.b78cec3c1631",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "tableau"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "миран / мирна/ мирно"
+            },
+            "francais": {
+              "text": "calme"
+            },
+            "latin": {
+              "text": "miran / mirna/ mirno"
+            }
+          },
+          "id": "srpski.vocab.d5c284b56279",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "казати (present)\n\nкажем\nкажеш\nкаже\nкажемо\nкажете\nкажу"
+            },
+            "francais": {
+              "text": "dire (présent)\n\nje dis\ntu dis\nil dit\nnous disons\nvous dites\nils disent"
+            },
+            "latin": {
+              "text": "kazati (present)\n\nkažem\nkažeš\nkaže\nkažemo\nkažete\nkažu"
+            }
+          },
+          "id": "srpski.vocab.03b3beec6cf5",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "tableau"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Нико није хтео да ми каже"
+            },
+            "francais": {
+              "text": "Personne n'a voulu me le dire."
+            },
+            "latin": {
+              "text": "Niko nije hteo da mi kaže"
+            }
+          },
+          "id": "srpski.vocab.f2535ab556f8",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Има нас дванаест"
+            },
+            "francais": {
+              "text": "Nous sommes douze"
+            },
+            "latin": {
+              "text": "Ima nas dvanaest"
+            }
+          },
+          "id": "srpski.vocab.b17d97caa84b",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Нисам нашао аутобус на интернету."
+            },
+            "francais": {
+              "text": "Je n'ai pas trouvé le bus sur internet."
+            },
+            "latin": {
+              "text": "Nisam našao autobus na internetu."
+            }
+          },
+          "id": "srpski.vocab.df3e86eb1096",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "наћи"
+            },
+            "francais": {
+              "text": "trouver"
+            },
+            "latin": {
+              "text": "naći"
+            }
+          },
+          "id": "srpski.vocab.282e546303de",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "враћати се / вратити се"
+            },
+            "francais": {
+              "text": "rentrer"
+            },
+            "latin": {
+              "text": "vraćati se / vratiti se"
+            }
+          },
+          "id": "srpski.vocab.8f10a4ce6858",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "разговарати"
+            },
+            "francais": {
+              "text": "parler (long)"
+            },
+            "latin": {
+              "text": "razgovarati"
+            }
+          },
+          "id": "srpski.vocab.b53d0d5d3a71",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "миксовати"
+            },
+            "francais": {
+              "text": "mélanger"
+            },
+            "latin": {
+              "text": "miksovati"
+            }
+          },
+          "id": "srpski.vocab.bf3e89b03d5f",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "пролеће"
+            },
+            "francais": {
+              "text": "le printemps"
+            },
+            "latin": {
+              "text": "proleće"
+            }
+          },
+          "id": "srpski.vocab.90b7de1eb979",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "лето"
+            },
+            "francais": {
+              "text": "l'été"
+            },
+            "latin": {
+              "text": "leto"
+            }
+          },
+          "id": "srpski.vocab.6380c4e73cf2",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "јесен"
+            },
+            "francais": {
+              "text": "l'automne"
+            },
+            "latin": {
+              "text": "jesen"
+            }
+          },
+          "id": "srpski.vocab.ae1165e3cc70",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "зима"
+            },
+            "francais": {
+              "text": "l'hiver"
+            },
+            "latin": {
+              "text": "zima"
+            }
+          },
+          "id": "srpski.vocab.e6772fc0c939",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "подрум"
+            },
+            "francais": {
+              "text": "sous-sol"
+            },
+            "latin": {
+              "text": "podrum"
+            }
+          },
+          "id": "srpski.vocab.4da392acdba5",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Идем на одмор"
+            },
+            "francais": {
+              "text": "je vais en vacances"
+            },
+            "latin": {
+              "text": "Idem na odmor"
+            }
+          },
+          "id": "srpski.vocab.c26e1e56af26",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "сећати се / сетити се"
+            },
+            "francais": {
+              "text": "se souvenir"
+            },
+            "latin": {
+              "text": "sećati se / setiti se"
+            }
+          },
+          "id": "srpski.vocab.d2d4694f6ddc",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Не знам како ће бити"
+            },
+            "francais": {
+              "text": "je ne sais pas comment ce sera"
+            },
+            "latin": {
+              "text": "Ne znam kako će biti"
+            }
+          },
+          "id": "srpski.vocab.80e0f082e3d1",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "читати/ прочитати"
+            },
+            "francais": {
+              "text": "lire"
+            },
+            "latin": {
+              "text": "čitati/ pročitati"
+            }
+          },
+          "id": "srpski.vocab.dbf781ff38f4",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "социологија"
+            },
+            "francais": {
+              "text": "sociologie"
+            },
+            "latin": {
+              "text": "sociologija"
+            }
+          },
+          "id": "srpski.vocab.3e2eb941bec8",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "понекад"
+            },
+            "francais": {
+              "text": "parfois"
+            },
+            "latin": {
+              "text": "ponekad"
+            }
+          },
+          "id": "srpski.vocab.55f5befc3e3d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "некад(a)"
+            },
+            "francais": {
+              "text": "parfois"
+            },
+            "latin": {
+              "text": "nekad(a)"
+            }
+          },
+          "id": "srpski.vocab.04fd3ddb3fcd",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "посебан / посебни"
+            },
+            "francais": {
+              "text": "spécial"
+            },
+            "latin": {
+              "text": "poseban / posebni"
+            }
+          },
+          "id": "srpski.vocab.a122cba08926",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "хватити / ухватити"
+            },
+            "francais": {
+              "text": "attraper / prendre"
+            },
+            "latin": {
+              "text": "hvatiti / uhvatiti"
+            }
+          },
+          "id": "srpski.vocab.4ab0ff6d24a4",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "белешка"
+            },
+            "francais": {
+              "text": "remarque / note"
+            },
+            "latin": {
+              "text": "beleška"
+            }
+          },
+          "id": "srpski.vocab.92dae7ec78b6",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "енглез"
+            },
+            "francais": {
+              "text": "anglais"
+            },
+            "latin": {
+              "text": "englez"
+            }
+          },
+          "id": "srpski.vocab.409c295792e8",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "француз"
+            },
+            "francais": {
+              "text": "français"
+            },
+            "latin": {
+              "text": "francuz"
+            }
+          },
+          "id": "srpski.vocab.11e0c95e6aa2",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "србин"
+            },
+            "francais": {
+              "text": "serbe"
+            },
+            "latin": {
+              "text": "srbin"
+            }
+          },
+          "id": "srpski.vocab.0953d987de92",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "То звучи занимљиво"
+            },
+            "francais": {
+              "text": "ça \"sonne\" intéressant"
+            },
+            "latin": {
+              "text": "To zvuči zanimljivo"
+            }
+          },
+          "id": "srpski.vocab.37e39e0a1014",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "савремен"
+            },
+            "francais": {
+              "text": "contemporain"
+            },
+            "latin": {
+              "text": "savremen"
+            }
+          },
+          "id": "srpski.vocab.f069f0ed4501",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "у последње време"
+            },
+            "francais": {
+              "text": "récemment, dernièrement"
+            },
+            "latin": {
+              "text": "u poslednje vreme"
+            }
+          },
+          "id": "srpski.vocab.7053ac9fe252",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "идентитет"
+            },
+            "francais": {
+              "text": "identité"
+            },
+            "latin": {
+              "text": "identitet"
+            }
+          },
+          "id": "srpski.vocab.1da3198a25da",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "у целом свету"
+            },
+            "francais": {
+              "text": "dans le monde entier"
+            },
+            "latin": {
+              "text": "u celom svetu"
+            }
+          },
+          "id": "srpski.vocab.fc4fe23d7e00",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "разумевати/ разумети"
+            },
+            "francais": {
+              "text": "comprendre"
+            },
+            "latin": {
+              "text": "razumevati/ razumeti"
+            }
+          },
+          "id": "srpski.vocab.ef24ebe6aed5",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "документарни филм/ документарац"
+            },
+            "francais": {
+              "text": "film documentaire"
+            },
+            "latin": {
+              "text": "dokumentarni film/ dokumentarac"
+            }
+          },
+          "id": "srpski.vocab.acdcb7cbb4e8",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "преко музике / путем музике"
+            },
+            "francais": {
+              "text": "à travers la musique"
+            },
+            "latin": {
+              "text": "preko muzike / putem muzike"
+            }
+          },
+          "id": "srpski.vocab.6275f3b0c535",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "прво"
+            },
+            "francais": {
+              "text": "le premier"
+            },
+            "latin": {
+              "text": "prvo"
+            }
+          },
+          "id": "srpski.vocab.5a37df31e482",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "друго"
+            },
+            "francais": {
+              "text": "le second"
+            },
+            "latin": {
+              "text": "drugo"
+            }
+          },
+          "id": "srpski.vocab.bab73015b330",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "треће"
+            },
+            "francais": {
+              "text": "le troisième"
+            },
+            "latin": {
+              "text": "treće"
+            }
+          },
+          "id": "srpski.vocab.d9876943d27d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "клише (m. r.)"
+            },
+            "francais": {
+              "text": "cliché"
+            },
+            "latin": {
+              "text": "kliše (m. r.)"
+            }
+          },
+          "id": "srpski.vocab.1f1bfab08436",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "земља"
+            },
+            "francais": {
+              "text": "pays"
+            },
+            "latin": {
+              "text": "zemlja"
+            }
+          },
+          "id": "srpski.vocab.50f16c8304e4",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Ја сам био 3 месеца у свакој држави."
+            },
+            "francais": {
+              "text": "J'ai passé 3 mois dans chaque pays."
+            },
+            "latin": {
+              "text": "Ja sam bio 3 meseca u svakoj državi."
+            }
+          },
+          "id": "srpski.vocab.29239c1e77eb",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Није успео"
+            },
+            "francais": {
+              "text": "ça n'a pas fonctionné"
+            },
+            "latin": {
+              "text": "Nije uspeo"
+            }
+          },
+          "id": "srpski.vocab.6af81cf604ad",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "глава"
+            },
+            "francais": {
+              "text": "tête"
+            },
+            "latin": {
+              "text": "glava"
+            }
+          },
+          "id": "srpski.vocab.e8e8f0f5cbdf",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "писати / написати"
+            },
+            "francais": {
+              "text": "écrire"
+            },
+            "latin": {
+              "text": "pisati / napisati"
+            }
+          },
+          "id": "srpski.vocab.c4500ac79292",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "хитан"
+            },
+            "francais": {
+              "text": "urgent"
+            },
+            "latin": {
+              "text": "hitan"
+            }
+          },
+          "id": "srpski.vocab.0a87117f8484",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "тражити"
+            },
+            "francais": {
+              "text": "chercher"
+            },
+            "latin": {
+              "text": "tražiti"
+            }
+          },
+          "id": "srpski.vocab.595d2bf06dca",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "досадан / досадна / досадно"
+            },
+            "francais": {
+              "text": "ennuyeux"
+            },
+            "latin": {
+              "text": "dosadan / dosadna / dosadno"
+            }
+          },
+          "id": "srpski.vocab.518f23158566",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "врста"
+            },
+            "francais": {
+              "text": "espèce, sorte"
+            },
+            "latin": {
+              "text": "vrsta"
+            }
+          },
+          "id": "srpski.vocab.161b17853119",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "познат/а/о по"
+            },
+            "francais": {
+              "text": "connu pour"
+            },
+            "latin": {
+              "text": "poznat/a/o po"
+            }
+          },
+          "id": "srpski.vocab.e914b790d544",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "случајан / случајна / случајно"
+            },
+            "francais": {
+              "text": "par hasard"
+            },
+            "latin": {
+              "text": "slučajan / slučajna / slučajno"
+            }
+          },
+          "id": "srpski.vocab.6a333d34d8ae",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "храм"
+            },
+            "francais": {
+              "text": "le temple"
+            },
+            "latin": {
+              "text": "hram"
+            }
+          },
+          "id": "srpski.vocab.8fd23ea33a4e",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "нешто тако велико"
+            },
+            "francais": {
+              "text": "quelque chose de si grand"
+            },
+            "latin": {
+              "text": "nešto tako veliko"
+            }
+          },
+          "id": "srpski.vocab.e7a8f064ff4d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "у вези са"
+            },
+            "francais": {
+              "text": "dans une relation avec"
+            },
+            "latin": {
+              "text": "u vezi sa"
+            }
+          },
+          "id": "srpski.vocab.a152ed7a4a92",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "задовољан / задовољна / задовољно"
+            },
+            "francais": {
+              "text": "satisfait"
+            },
+            "latin": {
+              "text": "zadovoljan / zadovoljna / zadovoljno"
+            }
+          },
+          "id": "srpski.vocab.f368f40f5d48",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Срећан сам што сам се вратио"
+            },
+            "francais": {
+              "text": "Je suis content d'être de retour"
+            },
+            "latin": {
+              "text": "Srećan sam što sam se vratio"
+            }
+          },
+          "id": "srpski.vocab.b40a9570cf51",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Није ми се свидео"
+            },
+            "francais": {
+              "text": "Je n'ai pas aimé"
+            },
+            "latin": {
+              "text": "Nije mi se svideo"
+            }
+          },
+          "id": "srpski.vocab.498a446b811a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "другачији/а/е"
+            },
+            "francais": {
+              "text": "différent"
+            },
+            "latin": {
+              "text": "drugačiji/a/e"
+            }
+          },
+          "id": "srpski.vocab.1fd2111f6b70",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "смешан / смешна / смешно"
+            },
+            "francais": {
+              "text": "drôle"
+            },
+            "latin": {
+              "text": "smešan / smešna / smešno"
+            }
+          },
+          "id": "srpski.vocab.3238c34b323d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "тврђава"
+            },
+            "francais": {
+              "text": "forteresse"
+            },
+            "latin": {
+              "text": "tvrđava"
+            }
+          },
+          "id": "srpski.vocab.8ddb3faba9a5",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "степенице"
+            },
+            "francais": {
+              "text": "escaliers"
+            },
+            "latin": {
+              "text": "stepenice"
+            }
+          },
+          "id": "srpski.vocab.610f47f5b5cf",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Аргентинац / Аргентинка"
+            },
+            "francais": {
+              "text": "Argentin / Argentine"
+            },
+            "latin": {
+              "text": "Argentinac / Argentinka"
+            }
+          },
+          "id": "srpski.vocab.b530d1b13f02",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "упознавати се/ упознати се"
+            },
+            "francais": {
+              "text": "faire connaissance"
+            },
+            "latin": {
+              "text": "upoznavati se/ upoznati se"
+            }
+          },
+          "id": "srpski.vocab.00dc7938f6b8",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Он је код свог пријатеља."
+            },
+            "francais": {
+              "text": "Il est chez son ami"
+            },
+            "latin": {
+              "text": "On je kod svog prijatelja."
+            }
+          },
+          "id": "srpski.vocab.7a114f12b7ef",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Његов пријатељ је"
+            },
+            "francais": {
+              "text": "son ami est"
+            },
+            "latin": {
+              "text": "Njegov prijatelj je"
+            }
+          },
+          "id": "srpski.vocab.7f2ef7dd0469",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "арапски/а/о"
+            },
+            "francais": {
+              "text": "arabe"
+            },
+            "latin": {
+              "text": "arapski/a/o"
+            }
+          },
+          "id": "srpski.vocab.0f7a49fc0c75",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "снимак- снимци"
+            },
+            "francais": {
+              "text": "enregistrement (objet)"
+            },
+            "latin": {
+              "text": "snimak- snimci"
+            }
+          },
+          "id": "srpski.vocab.3b826444e93a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "завршавати/ завршити"
+            },
+            "francais": {
+              "text": "finir"
+            },
+            "latin": {
+              "text": "završavati/ završiti"
+            }
+          },
+          "id": "srpski.vocab.538f745d60c1",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "позив"
+            },
+            "francais": {
+              "text": "appel"
+            },
+            "latin": {
+              "text": "poziv"
+            }
+          },
+          "id": "srpski.vocab.62e39148d7f2",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "прекидати / прекинути"
+            },
+            "francais": {
+              "text": "interrompre"
+            },
+            "latin": {
+              "text": "prekidati / prekinuti"
+            }
+          },
+          "id": "srpski.vocab.fdf61928f5a8",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "сумњив / а / о"
+            },
+            "francais": {
+              "text": "suspect, louche"
+            },
+            "latin": {
+              "text": "sumnjiv / a / o"
+            }
+          },
+          "id": "srpski.vocab.862ccaf9ef47",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "мађарски/а/о"
+            },
+            "francais": {
+              "text": "hongrois"
+            },
+            "latin": {
+              "text": "mađarski/a/o"
+            }
+          },
+          "id": "srpski.vocab.e79226b848cf",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "премијер"
+            },
+            "francais": {
+              "text": "premier ministre"
+            },
+            "latin": {
+              "text": "premijer"
+            }
+          },
+          "id": "srpski.vocab.75fcf9aa875a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Мени се свиђа твој качкет"
+            },
+            "francais": {
+              "text": "J'aime ta casquette"
+            },
+            "latin": {
+              "text": "Meni se sviđa tvoj kačket"
+            }
+          },
+          "id": "srpski.vocab.224534aae43a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Мени се свиђају твоје биљке"
+            },
+            "francais": {
+              "text": "J'aime tes plantes"
+            },
+            "latin": {
+              "text": "Meni se sviđaju tvoje biljke"
+            }
+          },
+          "id": "srpski.vocab.48ec743bc2d6",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "ка планинама"
+            },
+            "francais": {
+              "text": "vers les montagnes"
+            },
+            "latin": {
+              "text": "ka planinama"
+            }
+          },
+          "id": "srpski.vocab.b1431a3a1cd7",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Мука ми је од политике"
+            },
+            "francais": {
+              "text": "La politique me fait vomir (datif)"
+            },
+            "latin": {
+              "text": "Muka mi je od politike"
+            }
+          },
+          "id": "srpski.vocab.d0d34599e4ae",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "странац / странкиња"
+            },
+            "francais": {
+              "text": "étranger/ère"
+            },
+            "latin": {
+              "text": "stranac / strankinja"
+            }
+          },
+          "id": "srpski.vocab.be26504623ac",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "реченица"
+            },
+            "francais": {
+              "text": "une phrase"
+            },
+            "latin": {
+              "text": "rečenica"
+            }
+          },
+          "id": "srpski.vocab.4c0207ee2d0a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Лепо ми је у Босни"
+            },
+            "francais": {
+              "text": "Ça se passe bien en Bosnie (datif)"
+            },
+            "latin": {
+              "text": "Lepo mi je u Bosni"
+            }
+          },
+          "id": "srpski.vocab.918855e51d6d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Добро ми је у Паризу"
+            },
+            "francais": {
+              "text": "Je suis bien à Paris (datif)"
+            },
+            "latin": {
+              "text": "Dobro mi je u Parizu"
+            }
+          },
+          "id": "srpski.vocab.fd3bfe9cf799",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Хладно је (to)"
+            },
+            "francais": {
+              "text": "C'est froid (ce truc)"
+            },
+            "latin": {
+              "text": "Hladno je (to)"
+            }
+          },
+          "id": "srpski.vocab.004b6fb344c5",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Хладно ми је."
+            },
+            "francais": {
+              "text": "J'ai froid."
+            },
+            "latin": {
+              "text": "Hladno mi je."
+            }
+          },
+          "id": "srpski.vocab.3cdeecc0fe49",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Хладно је (napolju)."
+            },
+            "francais": {
+              "text": "C'est froid (l'extérieur)."
+            },
+            "latin": {
+              "text": "Hladno je (napolju)."
+            }
+          },
+          "id": "srpski.vocab.64d79a0c8d9c",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "заједно"
+            },
+            "francais": {
+              "text": "ensemble"
+            },
+            "latin": {
+              "text": "zajedno"
+            }
+          },
+          "id": "srpski.vocab.d31071299a30",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "савршен/а/о"
+            },
+            "francais": {
+              "text": "parfait"
+            },
+            "latin": {
+              "text": "savršen/a/o"
+            }
+          },
+          "id": "srpski.vocab.0e143a65d126",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "скоро"
+            },
+            "francais": {
+              "text": "presque"
+            },
+            "latin": {
+              "text": "skoro"
+            }
+          },
+          "id": "srpski.vocab.77efeea8a674",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "будућност (ž.r)"
+            },
+            "francais": {
+              "text": "le futur"
+            },
+            "latin": {
+              "text": "budućnost (ž.r)"
+            }
+          },
+          "id": "srpski.vocab.50a8e566e853",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "прошлост (ž.r)"
+            },
+            "francais": {
+              "text": "le passé"
+            },
+            "latin": {
+              "text": "prošlost (ž.r)"
+            }
+          },
+          "id": "srpski.vocab.6b8331d1c2ce",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "садашњост (ž.r)"
+            },
+            "francais": {
+              "text": "le présent"
+            },
+            "latin": {
+              "text": "sadašnjost (ž.r)"
+            }
+          },
+          "id": "srpski.vocab.2b39af7fd81d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Не знам да ли знаш"
+            },
+            "francais": {
+              "text": "je ne sais pas si tu sais"
+            },
+            "latin": {
+              "text": "Ne znam da li znaš"
+            }
+          },
+          "id": "srpski.vocab.13f193663fe7",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "политички/а/о"
+            },
+            "francais": {
+              "text": "politique"
+            },
+            "latin": {
+              "text": "politički/a/o"
+            }
+          },
+          "id": "srpski.vocab.313902cbf098",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "климатске промене"
+            },
+            "francais": {
+              "text": "les changements climatiques"
+            },
+            "latin": {
+              "text": "klimatske promene"
+            }
+          },
+          "id": "srpski.vocab.19db2a4bd621",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "учествовати"
+            },
+            "francais": {
+              "text": "participer"
+            },
+            "latin": {
+              "text": "učestvovati"
+            }
+          },
+          "id": "srpski.vocab.6546599a98b9",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "подржавати/ подржати"
+            },
+            "francais": {
+              "text": "soutenir"
+            },
+            "latin": {
+              "text": "podržavati/ podržati"
+            }
+          },
+          "id": "srpski.vocab.36b69dd241d8",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "делити/ поделити"
+            },
+            "francais": {
+              "text": "partager"
+            },
+            "latin": {
+              "text": "deliti/ podeliti"
+            }
+          },
+          "id": "srpski.vocab.bc657b746f0a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "лево оријентисана странка"
+            },
+            "francais": {
+              "text": "un parti de gauche"
+            },
+            "latin": {
+              "text": "levo orijentisana stranka"
+            }
+          },
+          "id": "srpski.vocab.943876494184",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "левичар"
+            },
+            "francais": {
+              "text": "de gauche"
+            },
+            "latin": {
+              "text": "levičar"
+            }
+          },
+          "id": "srpski.vocab.21ea304ec035",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "десничар"
+            },
+            "francais": {
+              "text": "de droite"
+            },
+            "latin": {
+              "text": "desničar"
+            }
+          },
+          "id": "srpski.vocab.b7d5388cc550",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "степен"
+            },
+            "francais": {
+              "text": "degré / diplôme"
+            },
+            "latin": {
+              "text": "stepen"
+            }
+          },
+          "id": "srpski.vocab.147af4228666",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "напољу"
+            },
+            "francais": {
+              "text": "dehors"
+            },
+            "latin": {
+              "text": "napolju"
+            }
+          },
+          "id": "srpski.vocab.49727cc69198",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Можда ми се ради на мом документарцу"
+            },
+            "francais": {
+              "text": "peut être que j'ai envie de travailler sur mon documentaire"
+            },
+            "latin": {
+              "text": "Možda mi se radi na mom dokumentarcu"
+            }
+          },
+          "id": "srpski.vocab.c9179bd7a578",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Не шета ми се данас."
+            },
+            "francais": {
+              "text": "Je n'ai pas envie de marcher aujourd'hui (datif)"
+            },
+            "latin": {
+              "text": "Ne šeta mi se danas."
+            }
+          },
+          "id": "srpski.vocab.9a3d4925bb0d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "ја миксујем"
+            },
+            "francais": {
+              "text": "je mixe"
+            },
+            "latin": {
+              "text": "ja miksujem"
+            }
+          },
+          "id": "srpski.vocab.31f76136f644",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Свиђа ми се твоја веранда."
+            },
+            "francais": {
+              "text": "J'aime ta véranda (datif court)"
+            },
+            "latin": {
+              "text": "Sviđa mi se tvoja veranda."
+            }
+          },
+          "id": "srpski.vocab.4fe44c5f2324",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Мени се свиђа твоја веранда."
+            },
+            "francais": {
+              "text": "J'aime ta véranda (datif long)"
+            },
+            "latin": {
+              "text": "Meni se sviđa tvoja veranda."
+            }
+          },
+          "id": "srpski.vocab.4a13d7f841e0",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "чепићи за уши"
+            },
+            "francais": {
+              "text": "bouchons d'oreille"
+            },
+            "latin": {
+              "text": "čepići za uši"
+            }
+          },
+          "id": "srpski.vocab.68e61260936d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "уво"
+            },
+            "francais": {
+              "text": "une oreille"
+            },
+            "latin": {
+              "text": "uvo"
+            }
+          },
+          "id": "srpski.vocab.a45e7be72aa6",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "уши"
+            },
+            "francais": {
+              "text": "les oreilles"
+            },
+            "latin": {
+              "text": "uši"
+            }
+          },
+          "id": "srpski.vocab.5bf37b0641b7",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "свуда"
+            },
+            "francais": {
+              "text": "partout"
+            },
+            "latin": {
+              "text": "svuda"
+            }
+          },
+          "id": "srpski.vocab.b274b0d9dd57",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "опрема"
+            },
+            "francais": {
+              "text": "équipement"
+            },
+            "latin": {
+              "text": "oprema"
+            }
+          },
+          "id": "srpski.vocab.242dec562a0a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "гласан/ гласна/ гласно"
+            },
+            "francais": {
+              "text": "fort"
+            },
+            "latin": {
+              "text": "glasan/ glasna/ glasno"
+            }
+          },
+          "id": "srpski.vocab.c55354bc0f92",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "док"
+            },
+            "francais": {
+              "text": "tandis que"
+            },
+            "latin": {
+              "text": "dok"
+            }
+          },
+          "id": "srpski.vocab.3fa78fd63dd7",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "средњи/а/е"
+            },
+            "francais": {
+              "text": "moyen, milieu"
+            },
+            "latin": {
+              "text": "srednji/a/e"
+            }
+          },
+          "id": "srpski.vocab.caf7addc3715",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "у средини"
+            },
+            "francais": {
+              "text": "au milieu de"
+            },
+            "latin": {
+              "text": "u sredini"
+            }
+          },
+          "id": "srpski.vocab.57db233f5f80",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Немам пара"
+            },
+            "francais": {
+              "text": "je n'ai pas d'argent"
+            },
+            "latin": {
+              "text": "Nemam para"
+            }
+          },
+          "id": "srpski.vocab.1e7c837a3451",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "лак/а/о"
+            },
+            "francais": {
+              "text": "facile"
+            },
+            "latin": {
+              "text": "lak/a/o"
+            }
+          },
+          "id": "srpski.vocab.980169aed65b",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "лакши/а/е"
+            },
+            "francais": {
+              "text": "plus facile"
+            },
+            "latin": {
+              "text": "lakši/a/e"
+            }
+          },
+          "id": "srpski.vocab.cb7cfb4907b3",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "најлакши/а/е"
+            },
+            "francais": {
+              "text": "le plus facile"
+            },
+            "latin": {
+              "text": "najlakši/a/e"
+            }
+          },
+          "id": "srpski.vocab.251092f9bf3e",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "одлучивати/ одлучити"
+            },
+            "francais": {
+              "text": "décider"
+            },
+            "latin": {
+              "text": "odlučivati/ odlučiti"
+            }
+          },
+          "id": "srpski.vocab.74019d17bab8",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "закон"
+            },
+            "francais": {
+              "text": "la loi"
+            },
+            "latin": {
+              "text": "zakon"
+            }
+          },
+          "id": "srpski.vocab.76a51786be87",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "трошити/ потрошити"
+            },
+            "francais": {
+              "text": "dépenser"
+            },
+            "latin": {
+              "text": "trošiti/ potrošiti"
+            }
+          },
+          "id": "srpski.vocab.abde379a7067",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "на почетку"
+            },
+            "francais": {
+              "text": "au début"
+            },
+            "latin": {
+              "text": "na početku"
+            }
+          },
+          "id": "srpski.vocab.c59ebbf1aae5",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "на крају"
+            },
+            "francais": {
+              "text": "à la fin"
+            },
+            "latin": {
+              "text": "na kraju"
+            }
+          },
+          "id": "srpski.vocab.30340ee47a4e",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "почињати/почети"
+            },
+            "francais": {
+              "text": "commencer"
+            },
+            "latin": {
+              "text": "počinjati/početi"
+            }
+          },
+          "id": "srpski.vocab.e730be0e70d2",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "почетак"
+            },
+            "francais": {
+              "text": "le début"
+            },
+            "latin": {
+              "text": "početak"
+            }
+          },
+          "id": "srpski.vocab.76b1fa0aef7d",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "губити/изгубити"
+            },
+            "francais": {
+              "text": "perdre"
+            },
+            "latin": {
+              "text": "gubiti/izgubiti"
+            }
+          },
+          "id": "srpski.vocab.6a0f50cdb442",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "шеф/ шефица"
+            },
+            "francais": {
+              "text": "le chef"
+            },
+            "latin": {
+              "text": "šef/ šefica"
+            }
+          },
+          "id": "srpski.vocab.3ed2b8b31798",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Научио сам много"
+            },
+            "francais": {
+              "text": "j'ai beaucoup appris"
+            },
+            "latin": {
+              "text": "Naučio sam mnogo"
+            }
+          },
+          "id": "srpski.vocab.478846ff9d5c",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "phrase"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "фирма"
+            },
+            "francais": {
+              "text": "entreprise"
+            },
+            "latin": {
+              "text": "firma"
+            }
+          },
+          "id": "srpski.vocab.9841bfecf095",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "мењати/ променити"
+            },
+            "francais": {
+              "text": "changer"
+            },
+            "latin": {
+              "text": "menjati/ promeniti"
+            }
+          },
+          "id": "srpski.vocab.8351c055f613",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "певач/ певачица"
+            },
+            "francais": {
+              "text": "chanteur / chanteuse"
+            },
+            "latin": {
+              "text": "pevač/ pevačica"
+            }
+          },
+          "id": "srpski.vocab.f323d91d1a0c",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "песма"
+            },
+            "francais": {
+              "text": "chanson"
+            },
+            "latin": {
+              "text": "pesma"
+            }
+          },
+          "id": "srpski.vocab.864c1f1ba2ee",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "певати"
+            },
+            "francais": {
+              "text": "chanter"
+            },
+            "latin": {
+              "text": "pevati"
+            }
+          },
+          "id": "srpski.vocab.99d5c17a1413",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "чекам"
+            },
+            "francais": {
+              "text": "j'attends"
+            },
+            "latin": {
+              "text": "čekam"
+            }
+          },
+          "id": "srpski.vocab.82561116ad0a",
+          "modelID": "srpski.model.vocabulaire",
+          "tags": [
+            "serbe",
+            "mot"
+          ]
+        }
+      ],
+      "summary": "Mots et phrases du quotidien, dans les deux sens."
+    }
+  ],
+  "seedVersion": 1
+}

@@ -1,0 +1,1191 @@
+{
+  "collections": [
+    {
+      "id": "srpski.padezi.tableaux",
+      "name": "Serbe — Cas — Tableaux de déclinaison",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace"
+          ],
+          "fields": [
+            {
+              "key": "mot",
+              "label": "Mot",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "traduction",
+              "label": "Traduction",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "nombre",
+              "label": "Nombre",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "nominativ",
+              "label": "Nominativ",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "akuzativ",
+              "label": "Akusativ",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "lok_dativ",
+              "label": "Lok / Dativ",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "genitiv",
+              "label": "Genitiv",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "instrumental",
+              "label": "Instrumental",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "vokativ",
+              "label": "Vokativ",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "id": "srpski.padezi.tableaux.model",
+          "name": "Tableau de déclinaison",
+          "templates": [
+            {
+              "backKeys": [
+                "nominativ",
+                "akuzativ",
+                "lok_dativ",
+                "genitiv",
+                "instrumental",
+                "vokativ"
+              ],
+              "frontKeys": [
+                "mot",
+                "traduction",
+                "nombre"
+              ],
+              "headerKeys": [
+                "mot",
+                "traduction",
+                "nombre"
+              ],
+              "id": "tableau",
+              "inputMode": "reordering",
+              "name": "Remettre les cas en place",
+              "shuffleKeys": [
+                "nominativ",
+                "akuzativ",
+                "lok_dativ",
+                "genitiv",
+                "instrumental",
+                "vokativ"
+              ],
+              "targetKeys": [
+                "nominativ",
+                "akuzativ",
+                "lok_dativ",
+                "genitiv",
+                "instrumental",
+                "vokativ"
+              ],
+              "targetLabels": [
+                "Nominativ",
+                "Akusativ",
+                "Lok / Dativ",
+                "Genitiv",
+                "Instrumental",
+                "Vokativ"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "Centar"
+            },
+            "genitiv": {
+              "text": "Centra"
+            },
+            "instrumental": {
+              "text": "Centrom"
+            },
+            "lok_dativ": {
+              "text": "Centru"
+            },
+            "mot": {
+              "text": "Centar"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "Centar"
+            },
+            "traduction": {
+              "text": "centre"
+            },
+            "vokativ": {
+              "text": "Centre"
+            }
+          },
+          "id": "srpski.padezi.tableaux.centar.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "Centre"
+            },
+            "genitiv": {
+              "text": "Centara"
+            },
+            "instrumental": {
+              "text": "Centrima"
+            },
+            "lok_dativ": {
+              "text": "Centrima"
+            },
+            "mot": {
+              "text": "Centar"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "Centri"
+            },
+            "traduction": {
+              "text": "centre"
+            },
+            "vokativ": {
+              "text": "Centri"
+            }
+          },
+          "id": "srpski.padezi.tableaux.centar.pl.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "Ženu"
+            },
+            "genitiv": {
+              "text": "Žene"
+            },
+            "instrumental": {
+              "text": "Ženom"
+            },
+            "lok_dativ": {
+              "text": "Ženi"
+            },
+            "mot": {
+              "text": "Žena"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "Žena"
+            },
+            "traduction": {
+              "text": "femme"
+            },
+            "vokativ": {
+              "text": "Ženo"
+            }
+          },
+          "id": "srpski.padezi.tableaux.zena.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "Žene"
+            },
+            "genitiv": {
+              "text": "Žena"
+            },
+            "instrumental": {
+              "text": "Ženama"
+            },
+            "lok_dativ": {
+              "text": "Ženama"
+            },
+            "mot": {
+              "text": "Žena"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "Žene"
+            },
+            "traduction": {
+              "text": "femme"
+            },
+            "vokativ": {
+              "text": "Žene"
+            }
+          },
+          "id": "srpski.padezi.tableaux.zena.pl.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "Selo"
+            },
+            "genitiv": {
+              "text": "Sela"
+            },
+            "instrumental": {
+              "text": "Selom"
+            },
+            "lok_dativ": {
+              "text": "Selu"
+            },
+            "mot": {
+              "text": "Selo"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "Selo"
+            },
+            "traduction": {
+              "text": "village"
+            },
+            "vokativ": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.tableaux.selo.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "Sela"
+            },
+            "genitiv": {
+              "text": "Sela"
+            },
+            "instrumental": {
+              "text": "Selima"
+            },
+            "lok_dativ": {
+              "text": "Selima"
+            },
+            "mot": {
+              "text": "Selo"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "Sela"
+            },
+            "traduction": {
+              "text": "village"
+            },
+            "vokativ": {
+              "text": "Sela"
+            }
+          },
+          "id": "srpski.padezi.tableaux.selo.pl.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "nov stan"
+            },
+            "genitiv": {
+              "text": "novog stana"
+            },
+            "instrumental": {
+              "text": "novim stanom"
+            },
+            "lok_dativ": {
+              "text": "novom stanu"
+            },
+            "mot": {
+              "text": "nov stan"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "nov stan"
+            },
+            "traduction": {
+              "text": "appartement neuf"
+            },
+            "vokativ": {
+              "text": "novi stane"
+            }
+          },
+          "id": "srpski.padezi.tableaux.nov-stan.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "nove stanove"
+            },
+            "genitiv": {
+              "text": "novih stanova"
+            },
+            "instrumental": {
+              "text": "novim stanovima"
+            },
+            "lok_dativ": {
+              "text": "novim stanovima"
+            },
+            "mot": {
+              "text": "nov stan"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "novi stanovi"
+            },
+            "traduction": {
+              "text": "appartement neuf"
+            },
+            "vokativ": {
+              "text": "novi stanovi"
+            }
+          },
+          "id": "srpski.padezi.tableaux.nov-stan.pl.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "novu ženu"
+            },
+            "genitiv": {
+              "text": "nove žene"
+            },
+            "instrumental": {
+              "text": "novom ženom"
+            },
+            "lok_dativ": {
+              "text": "novoj ženi"
+            },
+            "mot": {
+              "text": "nov + žena"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "nova žena"
+            },
+            "traduction": {
+              "text": "nouvelle femme"
+            },
+            "vokativ": {
+              "text": "nova ženo"
+            }
+          },
+          "id": "srpski.padezi.tableaux.nov-zena.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "nove žene"
+            },
+            "genitiv": {
+              "text": "novih žena"
+            },
+            "instrumental": {
+              "text": "novim ženama"
+            },
+            "lok_dativ": {
+              "text": "novim ženama"
+            },
+            "mot": {
+              "text": "nov + žena"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "nove žene"
+            },
+            "traduction": {
+              "text": "nouvelle femme"
+            },
+            "vokativ": {
+              "text": "nove žene"
+            }
+          },
+          "id": "srpski.padezi.tableaux.nov-zena.pl.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "novo selo"
+            },
+            "genitiv": {
+              "text": "novog sela"
+            },
+            "instrumental": {
+              "text": "novim selom"
+            },
+            "lok_dativ": {
+              "text": "novom selu"
+            },
+            "mot": {
+              "text": "nov + selo"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "novo selo"
+            },
+            "traduction": {
+              "text": "nouveau village"
+            },
+            "vokativ": {
+              "text": "novo selo"
+            }
+          },
+          "id": "srpski.padezi.tableaux.nov-selo.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "nova sela"
+            },
+            "genitiv": {
+              "text": "novih sela"
+            },
+            "instrumental": {
+              "text": "novim selima"
+            },
+            "lok_dativ": {
+              "text": "novim selima"
+            },
+            "mot": {
+              "text": "nov + selo"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "nova sela"
+            },
+            "traduction": {
+              "text": "nouveau village"
+            },
+            "vokativ": {
+              "text": "nova sela"
+            }
+          },
+          "id": "srpski.padezi.tableaux.nov-selo.pl.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "grad"
+            },
+            "genitiv": {
+              "text": "grada"
+            },
+            "instrumental": {
+              "text": "gradom"
+            },
+            "lok_dativ": {
+              "text": "gradu"
+            },
+            "mot": {
+              "text": "grad"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "grad"
+            },
+            "traduction": {
+              "text": "ville"
+            },
+            "vokativ": {
+              "text": "grade"
+            }
+          },
+          "id": "srpski.padezi.tableaux.grad.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "grad"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "gradove"
+            },
+            "genitiv": {
+              "text": "gradova"
+            },
+            "instrumental": {
+              "text": "gradovima"
+            },
+            "lok_dativ": {
+              "text": "gradovima"
+            },
+            "mot": {
+              "text": "grad"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "gradovi"
+            },
+            "traduction": {
+              "text": "ville"
+            },
+            "vokativ": {
+              "text": "gradovi"
+            }
+          },
+          "id": "srpski.padezi.tableaux.grad.pl",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "grad"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "prozor"
+            },
+            "genitiv": {
+              "text": "prozora"
+            },
+            "instrumental": {
+              "text": "prozorom"
+            },
+            "lok_dativ": {
+              "text": "prozoru"
+            },
+            "mot": {
+              "text": "prozor"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "prozor"
+            },
+            "traduction": {
+              "text": "fenêtre"
+            },
+            "vokativ": {
+              "text": "prozore"
+            }
+          },
+          "id": "srpski.padezi.tableaux.prozor.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "prozor"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "prozore"
+            },
+            "genitiv": {
+              "text": "prozora"
+            },
+            "instrumental": {
+              "text": "prozorima"
+            },
+            "lok_dativ": {
+              "text": "prozorima"
+            },
+            "mot": {
+              "text": "prozor"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "prozori"
+            },
+            "traduction": {
+              "text": "fenêtre"
+            },
+            "vokativ": {
+              "text": "prozori"
+            }
+          },
+          "id": "srpski.padezi.tableaux.prozor.pl",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "prozor"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "hleb"
+            },
+            "genitiv": {
+              "text": "hleba"
+            },
+            "instrumental": {
+              "text": "hlebom"
+            },
+            "lok_dativ": {
+              "text": "hlebu"
+            },
+            "mot": {
+              "text": "hleb"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "hleb"
+            },
+            "traduction": {
+              "text": "pain"
+            },
+            "vokativ": {
+              "text": "hlebe"
+            }
+          },
+          "id": "srpski.padezi.tableaux.hleb.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "hleb"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "hlebove"
+            },
+            "genitiv": {
+              "text": "hlebova"
+            },
+            "instrumental": {
+              "text": "hlebovima"
+            },
+            "lok_dativ": {
+              "text": "hlebovima"
+            },
+            "mot": {
+              "text": "hleb"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "hlebovi"
+            },
+            "traduction": {
+              "text": "pain"
+            },
+            "vokativ": {
+              "text": "hlebovi"
+            }
+          },
+          "id": "srpski.padezi.tableaux.hleb.pl",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "hleb"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "studenta"
+            },
+            "genitiv": {
+              "text": "studenta"
+            },
+            "instrumental": {
+              "text": "studentom"
+            },
+            "lok_dativ": {
+              "text": "studentu"
+            },
+            "mot": {
+              "text": "student"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "student"
+            },
+            "traduction": {
+              "text": "étudiant"
+            },
+            "vokativ": {
+              "text": "studente"
+            }
+          },
+          "id": "srpski.padezi.tableaux.student.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "student"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "studente"
+            },
+            "genitiv": {
+              "text": "studenata"
+            },
+            "instrumental": {
+              "text": "studentima"
+            },
+            "lok_dativ": {
+              "text": "studentima"
+            },
+            "mot": {
+              "text": "student"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "studenti"
+            },
+            "traduction": {
+              "text": "étudiant"
+            },
+            "vokativ": {
+              "text": "studenti"
+            }
+          },
+          "id": "srpski.padezi.tableaux.student.pl",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "student"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "vodu"
+            },
+            "genitiv": {
+              "text": "vode"
+            },
+            "instrumental": {
+              "text": "vodom"
+            },
+            "lok_dativ": {
+              "text": "vodi"
+            },
+            "mot": {
+              "text": "voda"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "voda"
+            },
+            "traduction": {
+              "text": "eau"
+            },
+            "vokativ": {
+              "text": "vodo"
+            }
+          },
+          "id": "srpski.padezi.tableaux.voda.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "voda"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "vode"
+            },
+            "genitiv": {
+              "text": "voda"
+            },
+            "instrumental": {
+              "text": "vodama"
+            },
+            "lok_dativ": {
+              "text": "vodama"
+            },
+            "mot": {
+              "text": "voda"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "vode"
+            },
+            "traduction": {
+              "text": "eau"
+            },
+            "vokativ": {
+              "text": "vode"
+            }
+          },
+          "id": "srpski.padezi.tableaux.voda.pl",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "voda"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "knjigu"
+            },
+            "genitiv": {
+              "text": "knjige"
+            },
+            "instrumental": {
+              "text": "knjigom"
+            },
+            "lok_dativ": {
+              "text": "knjizi"
+            },
+            "mot": {
+              "text": "knjiga"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "knjiga"
+            },
+            "traduction": {
+              "text": "livre"
+            },
+            "vokativ": {
+              "text": "knjigo"
+            }
+          },
+          "id": "srpski.padezi.tableaux.knjiga.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "knjiga"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "knjige"
+            },
+            "genitiv": {
+              "text": "knjiga"
+            },
+            "instrumental": {
+              "text": "knjigama"
+            },
+            "lok_dativ": {
+              "text": "knjigama"
+            },
+            "mot": {
+              "text": "knjiga"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "knjige"
+            },
+            "traduction": {
+              "text": "livre"
+            },
+            "vokativ": {
+              "text": "knjige"
+            }
+          },
+          "id": "srpski.padezi.tableaux.knjiga.pl",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "knjiga"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "pismo"
+            },
+            "genitiv": {
+              "text": "pisma"
+            },
+            "instrumental": {
+              "text": "pismom"
+            },
+            "lok_dativ": {
+              "text": "pismu"
+            },
+            "mot": {
+              "text": "pismo"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "pismo"
+            },
+            "traduction": {
+              "text": "lettre"
+            },
+            "vokativ": {
+              "text": "pismo"
+            }
+          },
+          "id": "srpski.padezi.tableaux.pismo.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "pismo"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "pisma"
+            },
+            "genitiv": {
+              "text": "pisama"
+            },
+            "instrumental": {
+              "text": "pismima"
+            },
+            "lok_dativ": {
+              "text": "pismima"
+            },
+            "mot": {
+              "text": "pismo"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "pisma"
+            },
+            "traduction": {
+              "text": "lettre"
+            },
+            "vokativ": {
+              "text": "pisma"
+            }
+          },
+          "id": "srpski.padezi.tableaux.pismo.pl",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "pismo"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "more"
+            },
+            "genitiv": {
+              "text": "mora"
+            },
+            "instrumental": {
+              "text": "morem"
+            },
+            "lok_dativ": {
+              "text": "moru"
+            },
+            "mot": {
+              "text": "more"
+            },
+            "nombre": {
+              "text": "Singulier"
+            },
+            "nominativ": {
+              "text": "more"
+            },
+            "traduction": {
+              "text": "mer"
+            },
+            "vokativ": {
+              "text": "more"
+            }
+          },
+          "id": "srpski.padezi.tableaux.more.sg.v2",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "more"
+          ]
+        },
+        {
+          "fields": {
+            "akuzativ": {
+              "text": "mora"
+            },
+            "genitiv": {
+              "text": "mora"
+            },
+            "instrumental": {
+              "text": "morima"
+            },
+            "lok_dativ": {
+              "text": "morima"
+            },
+            "mot": {
+              "text": "more"
+            },
+            "nombre": {
+              "text": "Pluriel"
+            },
+            "nominativ": {
+              "text": "mora"
+            },
+            "traduction": {
+              "text": "mer"
+            },
+            "vokativ": {
+              "text": "mora"
+            }
+          },
+          "id": "srpski.padezi.tableaux.more.pl",
+          "modelID": "srpski.padezi.tableaux.model",
+          "tags": [
+            "padeži",
+            "tableau",
+            "more"
+          ]
+        }
+      ],
+      "summary": "Replacer les six cases d'un mot : Nominativ, Akusativ, Lok / Dativ, Genitiv, Instrumental, Vokativ."
+    }
+  ],
+  "seedVersion": 1
+}

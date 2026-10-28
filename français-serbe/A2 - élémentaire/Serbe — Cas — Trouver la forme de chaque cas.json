@@ -1,0 +1,1950 @@
+{
+  "collections": [
+    {
+      "id": "srpski.padezi",
+      "name": "Serbe — Cas — Trouver la forme de chaque cas",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics",
+            "ignorePunctuation"
+          ],
+          "fields": [
+            {
+              "key": "lemme",
+              "label": "Mot",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "cas",
+              "label": "Cas",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "forme",
+              "label": "Forme déclinée",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "declinaison",
+              "label": "Déclinaisons",
+              "required": true,
+              "type": "richText"
+            }
+          ],
+          "id": "srpski.padezi.model.casVersForme",
+          "name": "Déclinaison — cas vers forme",
+          "templates": [
+            {
+              "answerKey": "forme",
+              "backKeys": [
+                "forme",
+                "declinaison"
+              ],
+              "frontKeys": [
+                "lemme",
+                "cas"
+              ],
+              "id": "cas2forme",
+              "inputMode": "textEntry",
+              "name": "Cas → Forme"
+            }
+          ]
+        },
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics",
+            "ignorePunctuation"
+          ],
+          "fields": [
+            {
+              "key": "forme",
+              "label": "Forme",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "analyse",
+              "label": "Analyse",
+              "required": true,
+              "type": "richText"
+            }
+          ],
+          "id": "srpski.padezi.model.formeVersCas",
+          "name": "Déclinaison — forme vers cas",
+          "templates": [
+            {
+              "backKeys": [
+                "analyse"
+              ],
+              "frontKeys": [
+                "forme"
+              ],
+              "id": "forme2cas",
+              "inputMode": "reveal",
+              "name": "Forme → Cas"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ jednina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centar"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.2e14de36f967",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ jednina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centar"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.44f4d280ea8c",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ jednina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centru"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.41fd0195c0d0",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ jednina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centru"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.04c9fc7199e7",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv jednina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centra"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.19f5986238e3",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ množina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centri"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.5194d2f8c90f",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ množina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centre"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.8cb369bb6144",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ množina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centrima"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.daf37acab1e4",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ množina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centrima"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.3cd96c68503e",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv množina"
+            },
+            "declinaison": {
+              "text": "Centar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centara"
+            },
+            "lemme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.forme.a5d50ebb4385",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Centar"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ jednina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Žena"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.9a9b7130729b",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ jednina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Ženu"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.6f81dc9ab54f",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ jednina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Ženi"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.a3a3cb8ce7c9",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ jednina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Ženi"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.baeb1a70e747",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv jednina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Žene"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.16fe3a90e84b",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ množina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Žene"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.a0ffa71fb4f8",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ množina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Žene"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.4be179efa217",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ množina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Ženama"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.498bf026ffbe",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ množina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Ženama"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.17b01afe3870",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv množina"
+            },
+            "declinaison": {
+              "text": "Žena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Žena"
+            },
+            "lemme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.forme.dfb82f1bad40",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ jednina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selo"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.497280c8995c",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ jednina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selo"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.608bfb210260",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ jednina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selu"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.2f1b17ef4679",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ jednina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selu"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.3e656845965d",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv jednina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Sela"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.3fb7850d5f75",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ množina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Sela"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.80b9f741ed46",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ množina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Sela"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.6e0b46863d7c",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ množina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selima"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.5159856f6b97",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ množina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selima"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.29e805bbbf19",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv množina"
+            },
+            "declinaison": {
+              "text": "Selo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Sela"
+            },
+            "lemme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.forme.d00625b76c72",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "Selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "nov stan"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.8652341070bd",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "nov stan"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.c50b6a6b80f8",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novom stanu"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.c35bbecf5992",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novom stanu"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.a10d7e08da83",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv jednina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novog stana"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.aa8e9aa615eb",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ množina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novi stanovi"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.d7f2d607cca4",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ množina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "nove stanove"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.95f77f4a444d",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ množina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novim stanovima"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.2d1a63f12191",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ množina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novim stanovima"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.3ba3d40a3d28",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv množina"
+            },
+            "declinaison": {
+              "text": "nov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novih stanova"
+            },
+            "lemme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.forme.c81954c6df8f",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov stan"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "nova žena"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.15d116d190dd",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novu ženu"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.642bc0e1e898",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novoj ženi"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.9e3f5b9d4d9c",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novoj ženi"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.c307782a55c1",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv jednina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "nove žene"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.8ccd05863e84",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ množina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "nove žene"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.6affe8828af0",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ množina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "nove žene"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.9ed3c8bca06d",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ množina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novim ženama"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.bbfc8c218693",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ množina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novim ženama"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.ede005efa7c3",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv množina"
+            },
+            "declinaison": {
+              "text": "nov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novih žena"
+            },
+            "lemme": {
+              "text": "nov + žena"
+            }
+          },
+          "id": "srpski.padezi.forme.5b9c2b80e80b",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + žena"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novo selo"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.9075342b70a4",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novo selo"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.f861f2557e65",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novom selu"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.526e12cf3864",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ jednina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novom selu"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.6ea061984382",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv jednina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novog sela"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.b81f8608383c",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Nominativ množina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "nova sela"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.6268aa301611",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Akusativ množina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "nova sela"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.b3528e7319e4",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Lokativ množina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novim selima"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.ba2acbca7754",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Dativ množina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novim selima"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.7db94792ccf6",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "cas": {
+              "text": "Genitiv množina"
+            },
+            "declinaison": {
+              "text": "nov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novih sela"
+            },
+            "lemme": {
+              "text": "nov + selo"
+            }
+          },
+          "id": "srpski.padezi.forme.c482909f473a",
+          "modelID": "srpski.padezi.model.casVersForme",
+          "tags": [
+            "padeži",
+            "nov + selo"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ jednina — Centar\nAkusativ jednina — Centar\n\nCentar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centar"
+            }
+          },
+          "id": "srpski.padezi.analyse.42ddba02eeeb",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ jednina — Centar\nDativ jednina — Centar\n\nCentar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centru"
+            }
+          },
+          "id": "srpski.padezi.analyse.79d8ec9345cd",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv jednina — Centar\n\nCentar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centra"
+            }
+          },
+          "id": "srpski.padezi.analyse.b6b618602efa",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ množina — Centar\n\nCentar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centri"
+            }
+          },
+          "id": "srpski.padezi.analyse.6d0a75e2fbb5",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Akusativ množina — Centar\n\nCentar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centre"
+            }
+          },
+          "id": "srpski.padezi.analyse.16e5447a8046",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ množina — Centar\nDativ množina — Centar\n\nCentar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centrima"
+            }
+          },
+          "id": "srpski.padezi.analyse.1109aec89cc6",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv množina — Centar\n\nCentar — consonne + masculin (singulier / pluriel)\nNom : Centar / Centri\nAk : Centar / Centre\nLok / Dat : Centru / Centrima\nGen : Centra / Centara"
+            },
+            "forme": {
+              "text": "Centara"
+            }
+          },
+          "id": "srpski.padezi.analyse.1a1b18149668",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ jednina — Žena\nGenitiv množina — Žena\n\nŽena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Žena"
+            }
+          },
+          "id": "srpski.padezi.analyse.362e7a5ce304",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Akusativ jednina — Žena\n\nŽena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Ženu"
+            }
+          },
+          "id": "srpski.padezi.analyse.38fb7be02dd8",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ jednina — Žena\nDativ jednina — Žena\n\nŽena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Ženi"
+            }
+          },
+          "id": "srpski.padezi.analyse.cfa9935e1896",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv jednina — Žena\nNominativ množina — Žena\nAkusativ množina — Žena\n\nŽena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Žene"
+            }
+          },
+          "id": "srpski.padezi.analyse.d2cc99129ad4",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ množina — Žena\nDativ množina — Žena\n\nŽena — a + féminin (singulier / pluriel)\nNom : Žena / Žene\nAk : Ženu / Žene\nLok / Dat : Ženi / Ženama\nGen : Žene / Žena"
+            },
+            "forme": {
+              "text": "Ženama"
+            }
+          },
+          "id": "srpski.padezi.analyse.c52a307b208f",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ jednina — Selo\nAkusativ jednina — Selo\n\nSelo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selo"
+            }
+          },
+          "id": "srpski.padezi.analyse.c185d5cf05e6",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ jednina — Selo\nDativ jednina — Selo\n\nSelo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selu"
+            }
+          },
+          "id": "srpski.padezi.analyse.20246288d6dd",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv jednina — Selo\nNominativ množina — Selo\nAkusativ množina — Selo\nGenitiv množina — Selo\n\nSelo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Sela"
+            }
+          },
+          "id": "srpski.padezi.analyse.c318f617304c",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ množina — Selo\nDativ množina — Selo\n\nSelo — o/e + neutre (singulier / pluriel)\nNom : Selo / Sela\nAk : Selo / Sela\nLok / Dat : Selu / Selima\nGen : Sela / Sela"
+            },
+            "forme": {
+              "text": "Selima"
+            }
+          },
+          "id": "srpski.padezi.analyse.958414fdd394",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ jednina — nov stan\nAkusativ jednina — nov stan\n\nnov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "nov stan"
+            }
+          },
+          "id": "srpski.padezi.analyse.d9645f10c3cd",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ jednina — nov stan\nDativ jednina — nov stan\n\nnov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novom stanu"
+            }
+          },
+          "id": "srpski.padezi.analyse.982f27aa3bae",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv jednina — nov stan\n\nnov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novog stana"
+            }
+          },
+          "id": "srpski.padezi.analyse.6b68277b5b91",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ množina — nov stan\n\nnov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novi stanovi"
+            }
+          },
+          "id": "srpski.padezi.analyse.103839a555b6",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Akusativ množina — nov stan\n\nnov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "nove stanove"
+            }
+          },
+          "id": "srpski.padezi.analyse.451d4aa14427",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ množina — nov stan\nDativ množina — nov stan\n\nnov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novim stanovima"
+            }
+          },
+          "id": "srpski.padezi.analyse.152c7191ffc7",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv množina — nov stan\n\nnov + stan — adjectif accordé, masculin (singulier / pluriel)\nNom : nov stan / novi stanovi\nAk : nov stan / nove stanove\nLok / Dat : novom stanu / novim stanovima\nGen : novog stana / novih stanova"
+            },
+            "forme": {
+              "text": "novih stanova"
+            }
+          },
+          "id": "srpski.padezi.analyse.3ef3fecbc5ad",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ jednina — nov + žena\n\nnov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "nova žena"
+            }
+          },
+          "id": "srpski.padezi.analyse.d5bc8fe37700",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Akusativ jednina — nov + žena\n\nnov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novu ženu"
+            }
+          },
+          "id": "srpski.padezi.analyse.e4d8d60e5359",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ jednina — nov + žena\nDativ jednina — nov + žena\n\nnov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novoj ženi"
+            }
+          },
+          "id": "srpski.padezi.analyse.1f4b27bd63db",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv jednina — nov + žena\nNominativ množina — nov + žena\nAkusativ množina — nov + žena\n\nnov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "nove žene"
+            }
+          },
+          "id": "srpski.padezi.analyse.7b16e7080d68",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ množina — nov + žena\nDativ množina — nov + žena\n\nnov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novim ženama"
+            }
+          },
+          "id": "srpski.padezi.analyse.30301d15a158",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv množina — nov + žena\n\nnov + žena — adjectif accordé, féminin (singulier / pluriel)\nNom : nova žena / nove žene\nAk : novu ženu / nove žene\nLok / Dat : novoj ženi / novim ženama\nGen : nove žene / novih žena"
+            },
+            "forme": {
+              "text": "novih žena"
+            }
+          },
+          "id": "srpski.padezi.analyse.48f3bfe961d7",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ jednina — nov + selo\nAkusativ jednina — nov + selo\n\nnov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novo selo"
+            }
+          },
+          "id": "srpski.padezi.analyse.ab91583cede4",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ jednina — nov + selo\nDativ jednina — nov + selo\n\nnov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novom selu"
+            }
+          },
+          "id": "srpski.padezi.analyse.df7d39c6cffe",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv jednina — nov + selo\n\nnov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novog sela"
+            }
+          },
+          "id": "srpski.padezi.analyse.f521416b42dd",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Nominativ množina — nov + selo\nAkusativ množina — nov + selo\n\nnov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "nova sela"
+            }
+          },
+          "id": "srpski.padezi.analyse.6e484e02dfc4",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Lokativ množina — nov + selo\nDativ množina — nov + selo\n\nnov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novim selima"
+            }
+          },
+          "id": "srpski.padezi.analyse.62f6b67ec223",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        },
+        {
+          "fields": {
+            "analyse": {
+              "text": "Genitiv množina — nov + selo\n\nnov + selo — adjectif accordé, neutre (singulier / pluriel)\nNom : novo selo / nova sela\nAk : novo selo / nova sela\nLok / Dat : novom selu / novim selima\nGen : novog sela / novih sela"
+            },
+            "forme": {
+              "text": "novih sela"
+            }
+          },
+          "id": "srpski.padezi.analyse.a8fcf6950118",
+          "modelID": "srpski.padezi.model.formeVersCas",
+          "tags": [
+            "padeži"
+          ]
+        }
+      ],
+      "summary": "Les sept cas au singulier et au pluriel."
+    }
+  ],
+  "seedVersion": 1
+}

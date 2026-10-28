@@ -1,0 +1,1143 @@
+{
+  "collections": [
+    {
+      "id": "srpski.conversation",
+      "name": "Serbe — Vocabulaire — Salutations et petites conversations",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics",
+            "ignorePunctuation"
+          ],
+          "fields": [
+            {
+              "key": "latin",
+              "label": "Serbe (latin)",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "cyrillique",
+              "label": "Serbe (cyrillique)",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "francais",
+              "label": "Français",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "notes",
+              "label": "Notes",
+              "required": false,
+              "type": "richText"
+            }
+          ],
+          "id": "srpski.model.conversation",
+          "name": "Vocabulaire serbe",
+          "templates": [
+            {
+              "backKeys": [
+                "francais",
+                "notes"
+              ],
+              "frontKeys": [
+                "latin",
+                "cyrillique"
+              ],
+              "id": "sr2fr",
+              "inputMode": "reveal",
+              "name": "Serbe → Français"
+            },
+            {
+              "answerKey": "latin",
+              "backKeys": [
+                "latin",
+                "cyrillique",
+                "notes"
+              ],
+              "frontKeys": [
+                "francais"
+              ],
+              "id": "fr2sr",
+              "inputMode": "textEntry",
+              "name": "Français → Serbe"
+            }
+          ],
+          "variantGroups": [
+            {
+              "key": "alphabet",
+              "label": "Alphabet serbe",
+              "options": [
+                {
+                  "fieldKeys": [
+                    "latin"
+                  ],
+                  "key": "latin",
+                  "label": "Latin"
+                },
+                {
+                  "fieldKeys": [
+                    "cyrillique"
+                  ],
+                  "key": "cyrillic",
+                  "label": "Cyrillique"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Здраво!"
+            },
+            "francais": {
+              "text": "Salut !"
+            },
+            "latin": {
+              "text": "Zdravo!"
+            }
+          },
+          "id": "srpski.conv.12e13137926f",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Добар дан!"
+            },
+            "francais": {
+              "text": "Bonjour !"
+            },
+            "latin": {
+              "text": "Dobar dan!"
+            }
+          },
+          "id": "srpski.conv.f66c78402c5f",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Добро јутро!"
+            },
+            "francais": {
+              "text": "Bonjour !"
+            },
+            "latin": {
+              "text": "Dobro jutro!"
+            },
+            "notes": {
+              "text": "Le matin"
+            }
+          },
+          "id": "srpski.conv.5c5aa1aea6e3",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Добро вече!"
+            },
+            "francais": {
+              "text": "Bonsoir !"
+            },
+            "latin": {
+              "text": "Dobro veče!"
+            }
+          },
+          "id": "srpski.conv.8883cf1c81a2",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Како си?"
+            },
+            "francais": {
+              "text": "Comment vas-tu ? (familier)"
+            },
+            "latin": {
+              "text": "Kako si?"
+            }
+          },
+          "id": "srpski.conv.6b2eaf82a4cc",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Како сте?"
+            },
+            "francais": {
+              "text": "Comment allez-vous ? (poli ou pluriel)"
+            },
+            "latin": {
+              "text": "Kako ste?"
+            }
+          },
+          "id": "srpski.conv.f9966e9d4711",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Како иде?"
+            },
+            "francais": {
+              "text": "Comment ça va ?"
+            },
+            "latin": {
+              "text": "Kako ide?"
+            }
+          },
+          "id": "srpski.conv.6e68125c65d7",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Добро сам, хвала."
+            },
+            "francais": {
+              "text": "Je vais bien, merci."
+            },
+            "latin": {
+              "text": "Dobro sam, hvala."
+            }
+          },
+          "id": "srpski.conv.88d5a302ed75",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "А ти?"
+            },
+            "francais": {
+              "text": "Et toi ?"
+            },
+            "latin": {
+              "text": "A ti?"
+            }
+          },
+          "id": "srpski.conv.308dd96a21dc",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "А ви?"
+            },
+            "francais": {
+              "text": "Et vous ?"
+            },
+            "latin": {
+              "text": "A vi?"
+            }
+          },
+          "id": "srpski.conv.c25a3616c4aa",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Шта има?"
+            },
+            "francais": {
+              "text": "Quoi de neuf ?"
+            },
+            "latin": {
+              "text": "Šta ima?"
+            }
+          },
+          "id": "srpski.conv.ad3b2bd480fb",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Шта радиш?"
+            },
+            "francais": {
+              "text": "Qu'est-ce que tu fais ?"
+            },
+            "latin": {
+              "text": "Šta radiš?"
+            }
+          },
+          "id": "srpski.conv.1f7430a533b6",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Шта радите?"
+            },
+            "francais": {
+              "text": "Qu'est-ce que vous faites ?"
+            },
+            "latin": {
+              "text": "Šta radite?"
+            }
+          },
+          "id": "srpski.conv.920baad39ada",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Где си?"
+            },
+            "francais": {
+              "text": "Où es-tu ? / Te voilà !"
+            },
+            "latin": {
+              "text": "Gde si?"
+            }
+          },
+          "id": "srpski.conv.568706de8f73",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Шта има ново?"
+            },
+            "francais": {
+              "text": "Quoi de neuf ?"
+            },
+            "latin": {
+              "text": "Šta ima novo?"
+            }
+          },
+          "id": "srpski.conv.dcb28f950a98",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Како је породица?"
+            },
+            "francais": {
+              "text": "Comment va la famille ?"
+            },
+            "latin": {
+              "text": "Kako je porodica?"
+            }
+          },
+          "id": "srpski.conv.b088cc903297",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Како су твоји?"
+            },
+            "francais": {
+              "text": "Comment va ta famille ?"
+            },
+            "latin": {
+              "text": "Kako su tvoji?"
+            }
+          },
+          "id": "srpski.conv.74e6be21ecd6",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Драго ми је."
+            },
+            "francais": {
+              "text": "Enchanté(e)."
+            },
+            "latin": {
+              "text": "Drago mi je."
+            }
+          },
+          "id": "srpski.conv.61b88bb15b79",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Дуго се нисмо видели."
+            },
+            "francais": {
+              "text": "Ça fait longtemps qu'on ne s'est pas vus."
+            },
+            "latin": {
+              "text": "Dugo se nismo videli."
+            }
+          },
+          "id": "srpski.conv.19bdda058b10",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Лепо те је видети."
+            },
+            "francais": {
+              "text": "Ça fait plaisir de te voir."
+            },
+            "latin": {
+              "text": "Lepo te je videti."
+            }
+          },
+          "id": "srpski.conv.aaf35a58e980",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Шта радиш ових дана?"
+            },
+            "francais": {
+              "text": "Qu'est-ce que tu fais ces temps-ci ?"
+            },
+            "latin": {
+              "text": "Šta radiš ovih dana?"
+            }
+          },
+          "id": "srpski.conv.3d036b899d26",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Како посао?"
+            },
+            "francais": {
+              "text": "Comment ça se passe au travail ?"
+            },
+            "latin": {
+              "text": "Kako posao?"
+            }
+          },
+          "id": "srpski.conv.82e4d2ccddac",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Како су деца?"
+            },
+            "francais": {
+              "text": "Comment vont les enfants ?"
+            },
+            "latin": {
+              "text": "Kako su deca?"
+            }
+          },
+          "id": "srpski.conv.d80b28de7cea",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Видимо се!"
+            },
+            "francais": {
+              "text": "À bientôt !"
+            },
+            "latin": {
+              "text": "Vidimo se!"
+            }
+          },
+          "id": "srpski.conv.cc2662db30ba",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Чујемо се!"
+            },
+            "francais": {
+              "text": "On se reparle !"
+            },
+            "latin": {
+              "text": "Čujemo se!"
+            }
+          },
+          "id": "srpski.conv.484458b44a74",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Пријатан дан!"
+            },
+            "francais": {
+              "text": "Bonne journée !"
+            },
+            "latin": {
+              "text": "Prijatan dan!"
+            }
+          },
+          "id": "srpski.conv.6a6c0600a150",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Лаку ноћ!"
+            },
+            "francais": {
+              "text": "Bonne nuit !"
+            },
+            "latin": {
+              "text": "Laku noć!"
+            }
+          },
+          "id": "srpski.conv.b1942eb1ddec",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Ћао, ћао!"
+            },
+            "francais": {
+              "text": "Salut, à plus !"
+            },
+            "latin": {
+              "text": "Ćao, ćao!"
+            }
+          },
+          "id": "srpski.conv.6c1251dc6426",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Одакле си?"
+            },
+            "francais": {
+              "text": "Tu viens d'où ?"
+            },
+            "latin": {
+              "text": "Odakle si?"
+            }
+          },
+          "id": "srpski.conv.0af865e4e0db",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Чиме се бавиш?"
+            },
+            "francais": {
+              "text": "Qu'est-ce que tu fais dans la vie ?"
+            },
+            "latin": {
+              "text": "Čime se baviš?"
+            }
+          },
+          "id": "srpski.conv.161288afc9f8",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Где живиш?"
+            },
+            "francais": {
+              "text": "Où habites-tu ?"
+            },
+            "latin": {
+              "text": "Gde živiš?"
+            }
+          },
+          "id": "srpski.conv.a0f8af9e3e69",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Колико дуго си овде?"
+            },
+            "francais": {
+              "text": "Depuis combien de temps es-tu ici ?"
+            },
+            "latin": {
+              "text": "Koliko dugo si ovde?"
+            }
+          },
+          "id": "srpski.conv.b8ca042392cd",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Јеси ли добро?"
+            },
+            "francais": {
+              "text": "Est-ce que tu vas bien ?"
+            },
+            "latin": {
+              "text": "Jesi li dobro?"
+            }
+          },
+          "id": "srpski.conv.15bb3342c475",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Шта си радио јуче?"
+            },
+            "francais": {
+              "text": "Qu'est-ce que tu as fait hier ?"
+            },
+            "latin": {
+              "text": "Šta si radio juče?"
+            },
+            "notes": {
+              "text": "À un homme"
+            }
+          },
+          "id": "srpski.conv.e36005c525ab",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Шта си радила јуче?"
+            },
+            "francais": {
+              "text": "Qu'est-ce que tu as fait hier ?"
+            },
+            "latin": {
+              "text": "Šta si radila juče?"
+            },
+            "notes": {
+              "text": "À une femme"
+            }
+          },
+          "id": "srpski.conv.5db603015a61",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Како ти је прошао дан?"
+            },
+            "francais": {
+              "text": "Comment s'est passée ta journée ?"
+            },
+            "latin": {
+              "text": "Kako ti je prošao dan?"
+            }
+          },
+          "id": "srpski.conv.b3d09d030625",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Имаш ли неке планове за викенд?"
+            },
+            "francais": {
+              "text": "Tu as des projets pour le week-end ?"
+            },
+            "latin": {
+              "text": "Imaš li neke planove za vikend?"
+            }
+          },
+          "id": "srpski.conv.a56e754a88c2",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Хоћеш ли да попијемо кафу?"
+            },
+            "francais": {
+              "text": "Tu veux qu'on prenne un café ?"
+            },
+            "latin": {
+              "text": "Hoćeš li da popijemo kafu?"
+            }
+          },
+          "id": "srpski.conv.9e57aa18b888",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Јеси ли већ јео?"
+            },
+            "francais": {
+              "text": "Tu as déjà mangé ?"
+            },
+            "latin": {
+              "text": "Jesi li već jeo?"
+            },
+            "notes": {
+              "text": "À un homme"
+            }
+          },
+          "id": "srpski.conv.3b50dd70669c",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Јеси ли већ јела?"
+            },
+            "francais": {
+              "text": "Tu as déjà mangé ?"
+            },
+            "latin": {
+              "text": "Jesi li već jela?"
+            },
+            "notes": {
+              "text": "À une femme"
+            }
+          },
+          "id": "srpski.conv.b64c8ffbe7ea",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Нисам те дуго видео."
+            },
+            "francais": {
+              "text": "Ça fait longtemps que je ne t'ai pas vu."
+            },
+            "latin": {
+              "text": "Nisam te dugo video."
+            },
+            "notes": {
+              "text": "Dit par un homme"
+            }
+          },
+          "id": "srpski.conv.0ce434ac2765",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Нисам те дуго видела."
+            },
+            "francais": {
+              "text": "Ça fait longtemps que je ne t'ai pas vue."
+            },
+            "latin": {
+              "text": "Nisam te dugo videla."
+            },
+            "notes": {
+              "text": "Dit par une femme"
+            }
+          },
+          "id": "srpski.conv.9e5e6ee8a66b",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Баш ми је драго што смо се видели."
+            },
+            "francais": {
+              "text": "Je suis vraiment content(e) qu'on se soit vus."
+            },
+            "latin": {
+              "text": "Baš mi je drago što smo se videli."
+            }
+          },
+          "id": "srpski.conv.4e61914958d2",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Извини што касним."
+            },
+            "francais": {
+              "text": "Désolé(e) d'être en retard. (familier)"
+            },
+            "latin": {
+              "text": "Izvini što kasnim."
+            }
+          },
+          "id": "srpski.conv.367c71d9a17d",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Нема везе."
+            },
+            "francais": {
+              "text": "Ce n'est pas grave."
+            },
+            "latin": {
+              "text": "Nema veze."
+            }
+          },
+          "id": "srpski.conv.d4afdab44af0",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Нема на чему."
+            },
+            "francais": {
+              "text": "De rien."
+            },
+            "latin": {
+              "text": "Nema na čemu."
+            }
+          },
+          "id": "srpski.conv.e07e303b25f5",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Све је у реду."
+            },
+            "francais": {
+              "text": "Tout va bien."
+            },
+            "latin": {
+              "text": "Sve je u redu."
+            }
+          },
+          "id": "srpski.conv.18ca2c87e45a",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Ма, ништа посебно."
+            },
+            "francais": {
+              "text": "Bof, rien de spécial."
+            },
+            "latin": {
+              "text": "Ma, ništa posebno."
+            }
+          },
+          "id": "srpski.conv.1722d44c0050",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "У последње време имам много посла."
+            },
+            "francais": {
+              "text": "Ces derniers temps, j'ai beaucoup de travail."
+            },
+            "latin": {
+              "text": "U poslednje vreme imam mnogo posla."
+            }
+          },
+          "id": "srpski.conv.50a3a0768cda",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Баш ми је драго да то чујем."
+            },
+            "francais": {
+              "text": "Je suis vraiment content(e) d'entendre ça."
+            },
+            "latin": {
+              "text": "Baš mi je drago da to čujem."
+            }
+          },
+          "id": "srpski.conv.4ee342238aef",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        },
+        {
+          "fields": {
+            "cyrillique": {
+              "text": "Надам се да ћемо се ускоро опет видети."
+            },
+            "francais": {
+              "text": "J'espère qu'on se reverra bientôt."
+            },
+            "latin": {
+              "text": "Nadam se da ćemo se uskoro opet videti."
+            }
+          },
+          "id": "srpski.conv.3b5166744c9c",
+          "modelID": "srpski.model.conversation",
+          "tags": [
+            "serbe",
+            "phrase",
+            "conversation"
+          ]
+        }
+      ],
+      "summary": "Salutations et petites discussions, niveau A1-A2."
+    }
+  ],
+  "seedVersion": 1
+}

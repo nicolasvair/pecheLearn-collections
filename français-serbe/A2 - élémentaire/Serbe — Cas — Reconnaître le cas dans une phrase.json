@@ -1,0 +1,1296 @@
+{
+  "collections": [
+    {
+      "id": "sr.padezi.prepoznavanje",
+      "name": "Serbe — Cas — Reconnaître le cas dans une phrase",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "caseInsensitive",
+            "ignoreDiacritics"
+          ],
+          "fields": [
+            {
+              "key": "recenica",
+              "label": "Phrase",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "rec",
+              "label": "Mot décliné",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "padez",
+              "label": "Cas",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "zasto",
+              "label": "Pourquoi",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "prevod",
+              "label": "Traduction",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "id": "sr.padezi.prepoznavanje.model",
+          "name": "Phrase → cas",
+          "templates": [
+            {
+              "answerKey": "padez",
+              "backKeys": [
+                "padez",
+                "zasto",
+                "prevod"
+              ],
+              "frontKeys": [
+                "recenica",
+                "rec"
+              ],
+              "id": "recenica2padez",
+              "inputMode": "multipleChoice",
+              "name": "Phrase → cas"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "padez": {
+              "text": "nominativ"
+            },
+            "prevod": {
+              "text": "Ma sœur prépare le déjeuner."
+            },
+            "rec": {
+              "text": "sestra"
+            },
+            "recenica": {
+              "text": "Moja sestra kuva ručak."
+            },
+            "zasto": {
+              "text": "Sujet du verbe — forme de base."
+            }
+          },
+          "id": "sr.padezi.prep.001",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "nominativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "nominativ"
+            },
+            "prevod": {
+              "text": "C'est mon ami."
+            },
+            "rec": {
+              "text": "prijatelj"
+            },
+            "recenica": {
+              "text": "Ovo je moj prijatelj."
+            },
+            "zasto": {
+              "text": "Attribut après « je » (être) : reste au nominatif."
+            }
+          },
+          "id": "sr.padezi.prep.002",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "nominativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "nominativ"
+            },
+            "prevod": {
+              "text": "L'eau est froide."
+            },
+            "rec": {
+              "text": "voda"
+            },
+            "recenica": {
+              "text": "Voda je hladna."
+            },
+            "zasto": {
+              "text": "Sujet de la phrase."
+            }
+          },
+          "id": "sr.padezi.prep.003",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "nominativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Je n'ai pas le temps."
+            },
+            "rec": {
+              "text": "vremena"
+            },
+            "recenica": {
+              "text": "Nemam vremena."
+            },
+            "zasto": {
+              "text": "Verbe nié (nemam) : le complément passe au génitif."
+            }
+          },
+          "id": "sr.padezi.prep.004",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "C'est la maison de ma grand-mère."
+            },
+            "rec": {
+              "text": "bake"
+            },
+            "recenica": {
+              "text": "Ovo je kuća moje bake."
+            },
+            "zasto": {
+              "text": "Possession : la maison de qui."
+            }
+          },
+          "id": "sr.padezi.prep.005",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Je suis assis devant la maison."
+            },
+            "rec": {
+              "text": "kuće"
+            },
+            "recenica": {
+              "text": "Sedim ispred kuće."
+            },
+            "zasto": {
+              "text": "La préposition « ispred » régit le génitif."
+            }
+          },
+          "id": "sr.padezi.prep.006",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Il n'y a pas de lait dans le frigo."
+            },
+            "rec": {
+              "text": "mleka"
+            },
+            "recenica": {
+              "text": "Nema mleka u frižideru."
+            },
+            "zasto": {
+              "text": "« nema » (il n'y a pas) demande le génitif."
+            }
+          },
+          "id": "sr.padezi.prep.007",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "dativ"
+            },
+            "prevod": {
+              "text": "Je donne un cadeau à mon frère."
+            },
+            "rec": {
+              "text": "bratu"
+            },
+            "recenica": {
+              "text": "Dajem poklon bratu."
+            },
+            "zasto": {
+              "text": "Destinataire : à qui on donne."
+            }
+          },
+          "id": "sr.padezi.prep.008",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "dativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "dativ"
+            },
+            "prevod": {
+              "text": "J'aide ma mère."
+            },
+            "rec": {
+              "text": "majci"
+            },
+            "recenica": {
+              "text": "Pomažem majci."
+            },
+            "zasto": {
+              "text": "Le verbe « pomagati » se construit avec le datif."
+            }
+          },
+          "id": "sr.padezi.prep.009",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "dativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "dativ"
+            },
+            "prevod": {
+              "text": "J'écris une lettre à une amie."
+            },
+            "rec": {
+              "text": "prijateljici"
+            },
+            "recenica": {
+              "text": "Pišem pismo prijateljici."
+            },
+            "zasto": {
+              "text": "Destinataire de l'action (le COD est « pismo »)."
+            }
+          },
+          "id": "sr.padezi.prep.010",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "dativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "J'aime le café."
+            },
+            "rec": {
+              "text": "kafu"
+            },
+            "recenica": {
+              "text": "Volim kafu."
+            },
+            "zasto": {
+              "text": "Complément d'objet direct."
+            }
+          },
+          "id": "sr.padezi.prep.011",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "Je lis un livre intéressant."
+            },
+            "rec": {
+              "text": "knjigu"
+            },
+            "recenica": {
+              "text": "Čitam zanimljivu knjigu."
+            },
+            "zasto": {
+              "text": "COD de « čitam » ; l'adjectif suit le nom."
+            }
+          },
+          "id": "sr.padezi.prep.012",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "Je vais à l'école."
+            },
+            "rec": {
+              "text": "školu"
+            },
+            "recenica": {
+              "text": "Idem u školu."
+            },
+            "zasto": {
+              "text": "« u » + accusatif : déplacement vers un lieu."
+            }
+          },
+          "id": "sr.padezi.prep.013",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "Je regarde un film."
+            },
+            "rec": {
+              "text": "film"
+            },
+            "recenica": {
+              "text": "Gledam film."
+            },
+            "zasto": {
+              "text": "COD masculin inanimé : forme identique au nominatif."
+            }
+          },
+          "id": "sr.padezi.prep.014",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Mon ami, où est la gare ?"
+            },
+            "rec": {
+              "text": "druže"
+            },
+            "recenica": {
+              "text": "Druže, gde je stanica?"
+            },
+            "zasto": {
+              "text": "On interpelle quelqu'un : « drug » → « druže »."
+            }
+          },
+          "id": "sr.padezi.prep.015",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Monsieur, excusez-moi !"
+            },
+            "rec": {
+              "text": "gospodine"
+            },
+            "recenica": {
+              "text": "Gospodine, izvinite!"
+            },
+            "zasto": {
+              "text": "Apostrophe directe : « gospodin » → « gospodine »."
+            }
+          },
+          "id": "sr.padezi.prep.016",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je voyage en bus."
+            },
+            "rec": {
+              "text": "autobusom"
+            },
+            "recenica": {
+              "text": "Putujem autobusom."
+            },
+            "zasto": {
+              "text": "Moyen (transport, outil), sans préposition."
+            }
+          },
+          "id": "sr.padezi.prep.017",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je discute avec la professeure."
+            },
+            "rec": {
+              "text": "profesorkom"
+            },
+            "recenica": {
+              "text": "Razgovaram sa profesorkom."
+            },
+            "zasto": {
+              "text": "« sa » + instrumental : accompagnement."
+            }
+          },
+          "id": "sr.padezi.prep.018",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Le livre est sur la table."
+            },
+            "rec": {
+              "text": "stolu"
+            },
+            "recenica": {
+              "text": "Knjiga je na stolu."
+            },
+            "zasto": {
+              "text": "« na » + locatif : position, sans déplacement."
+            }
+          },
+          "id": "sr.padezi.prep.019",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Les enfants jouent dans le parc."
+            },
+            "rec": {
+              "text": "parku"
+            },
+            "recenica": {
+              "text": "Deca se igraju u parku."
+            },
+            "zasto": {
+              "text": "« u » + locatif : lieu où l'on est — à comparer avec « Idem u školu »."
+            }
+          },
+          "id": "sr.padezi.prep.020",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "nominativ"
+            },
+            "prevod": {
+              "text": "L'enfant dort dans la chambre."
+            },
+            "rec": {
+              "text": "dete"
+            },
+            "recenica": {
+              "text": "Dete spava u sobi."
+            },
+            "zasto": {
+              "text": "Sujet du verbe « spava »."
+            }
+          },
+          "id": "sr.padezi.prep.021",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "nominativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "nominativ"
+            },
+            "prevod": {
+              "text": "Mon frère est médecin."
+            },
+            "rec": {
+              "text": "lekar"
+            },
+            "recenica": {
+              "text": "Moj brat je lekar."
+            },
+            "zasto": {
+              "text": "Attribut après « je » (être) : nominatif, comme le sujet."
+            }
+          },
+          "id": "sr.padezi.prep.022",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "nominativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "nominativ"
+            },
+            "prevod": {
+              "text": "Le soleil brille aujourd'hui."
+            },
+            "rec": {
+              "text": "sunce"
+            },
+            "recenica": {
+              "text": "Sunce sija danas."
+            },
+            "zasto": {
+              "text": "Sujet du verbe « sija » (neutre : « sunce »)."
+            }
+          },
+          "id": "sr.padezi.prep.023",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "nominativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Je bois un verre d'eau."
+            },
+            "rec": {
+              "text": "vode"
+            },
+            "recenica": {
+              "text": "Pijem čašu vode."
+            },
+            "zasto": {
+              "text": "Un contenant + la matière : « čaša » + génitif."
+            }
+          },
+          "id": "sr.padezi.prep.025",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Je viens de France."
+            },
+            "rec": {
+              "text": "Francuske"
+            },
+            "recenica": {
+              "text": "Dolazim iz Francuske."
+            },
+            "zasto": {
+              "text": "La préposition « iz » (origine) régit le génitif."
+            }
+          },
+          "id": "sr.padezi.prep.026",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Je suis debout près de la fenêtre."
+            },
+            "rec": {
+              "text": "prozora"
+            },
+            "recenica": {
+              "text": "Stojim kod prozora."
+            },
+            "zasto": {
+              "text": "La préposition « kod » (près de, chez) régit le génitif."
+            }
+          },
+          "id": "sr.padezi.prep.029",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Je marche sans parapluie."
+            },
+            "rec": {
+              "text": "kišobrana"
+            },
+            "recenica": {
+              "text": "Hodam bez kišobrana."
+            },
+            "zasto": {
+              "text": "La préposition « bez » (sans) régit le génitif."
+            }
+          },
+          "id": "sr.padezi.prep.030",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "genitiv"
+            },
+            "prevod": {
+              "text": "Le cadeau vient de mon ami."
+            },
+            "rec": {
+              "text": "druga"
+            },
+            "recenica": {
+              "text": "Poklon je od mog druga."
+            },
+            "zasto": {
+              "text": "La préposition « od » (de la part de) régit le génitif."
+            }
+          },
+          "id": "sr.padezi.prep.031",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "genitiv"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "dativ"
+            },
+            "prevod": {
+              "text": "Ana montre l'image au maître."
+            },
+            "rec": {
+              "text": "učitelju"
+            },
+            "recenica": {
+              "text": "Ana pokazuje sliku učitelju."
+            },
+            "zasto": {
+              "text": "Destinataire : à qui on montre (le COD est « sliku »)."
+            }
+          },
+          "id": "sr.padezi.prep.035",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "dativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "dativ"
+            },
+            "prevod": {
+              "text": "J'envoie un message à un collègue."
+            },
+            "rec": {
+              "text": "kolegi"
+            },
+            "recenica": {
+              "text": "Šaljem poruku kolegi."
+            },
+            "zasto": {
+              "text": "Destinataire de l'action (le COD est « poruku »)."
+            }
+          },
+          "id": "sr.padezi.prep.041",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "dativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "J'achète une pomme rouge."
+            },
+            "rec": {
+              "text": "jabuku"
+            },
+            "recenica": {
+              "text": "Kupujem crvenu jabuku."
+            },
+            "zasto": {
+              "text": "COD féminin : « jabuka » → « jabuku » (-a devient -u)."
+            }
+          },
+          "id": "sr.padezi.prep.043",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "Je vais au travail."
+            },
+            "rec": {
+              "text": "posao"
+            },
+            "recenica": {
+              "text": "Idem na posao."
+            },
+            "zasto": {
+              "text": "« na » + accusatif : déplacement vers (réponse à « où vais-je ? »)."
+            }
+          },
+          "id": "sr.padezi.prep.044",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "J'attends le bus."
+            },
+            "rec": {
+              "text": "autobus"
+            },
+            "recenica": {
+              "text": "Čekam autobus."
+            },
+            "zasto": {
+              "text": "COD masculin inanimé : forme identique au nominatif."
+            }
+          },
+          "id": "sr.padezi.prep.046",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "J'invite Marie à dîner."
+            },
+            "rec": {
+              "text": "Mariju"
+            },
+            "recenica": {
+              "text": "Pozivam Mariju na večeru."
+            },
+            "zasto": {
+              "text": "COD féminin : « Marija » → « Mariju »."
+            }
+          },
+          "id": "sr.padezi.prep.047",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "akuzativ"
+            },
+            "prevod": {
+              "text": "Je vais à Belgrade."
+            },
+            "rec": {
+              "text": "Beograd"
+            },
+            "recenica": {
+              "text": "Putujem u Beograd."
+            },
+            "zasto": {
+              "text": "« u » + accusatif : destination (« u Beogradu » = position)."
+            }
+          },
+          "id": "sr.padezi.prep.049",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "akuzativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Mon fils, viens ici !"
+            },
+            "rec": {
+              "text": "sine"
+            },
+            "recenica": {
+              "text": "Sine, dođi ovamo!"
+            },
+            "zasto": {
+              "text": "On interpelle quelqu'un : « sin » → « sine »."
+            }
+          },
+          "id": "sr.padezi.prep.050",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Ma femme, où sont les clés ?"
+            },
+            "rec": {
+              "text": "ženo"
+            },
+            "recenica": {
+              "text": "Ženo, gde su ključevi?"
+            },
+            "zasto": {
+              "text": "Apostrophe directe : « žena » → « ženo » (-a devient -o)."
+            }
+          },
+          "id": "sr.padezi.prep.051",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Professeur, j'ai une question."
+            },
+            "rec": {
+              "text": "profesore"
+            },
+            "recenica": {
+              "text": "Profesore, imam pitanje."
+            },
+            "zasto": {
+              "text": "On s'adresse à quelqu'un : « profesor » → « profesore »."
+            }
+          },
+          "id": "sr.padezi.prep.052",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Ivan, merci !"
+            },
+            "rec": {
+              "text": "Ivane"
+            },
+            "recenica": {
+              "text": "Ivane, hvala ti!"
+            },
+            "zasto": {
+              "text": "Prénom employé pour interpeller : « Ivan » → « Ivane »."
+            }
+          },
+          "id": "sr.padezi.prep.053",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "vokativ"
+            },
+            "prevod": {
+              "text": "Ma sœur, aide-moi, s'il te plaît."
+            },
+            "rec": {
+              "text": "sestro"
+            },
+            "recenica": {
+              "text": "Sestro, pomozi mi, molim te."
+            },
+            "zasto": {
+              "text": "Apostrophe directe : « sestra » → « sestro »."
+            }
+          },
+          "id": "sr.padezi.prep.054",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "vokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je mange la soupe avec une cuillère."
+            },
+            "rec": {
+              "text": "kašikom"
+            },
+            "recenica": {
+              "text": "Jedem supu kašikom."
+            },
+            "zasto": {
+              "text": "Instrument : avec quoi on mange, sans préposition."
+            }
+          },
+          "id": "sr.padezi.prep.055",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je vais en ville avec un ami."
+            },
+            "rec": {
+              "text": "drugom"
+            },
+            "recenica": {
+              "text": "Idem u grad sa drugom."
+            },
+            "zasto": {
+              "text": "« sa » + instrumental : accompagnement."
+            }
+          },
+          "id": "sr.padezi.prep.056",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je bois du café au lait."
+            },
+            "rec": {
+              "text": "mlekom"
+            },
+            "recenica": {
+              "text": "Pijem kafu sa mlekom."
+            },
+            "zasto": {
+              "text": "« sa » + instrumental : « avec » (ajout, accompagnement)."
+            }
+          },
+          "id": "sr.padezi.prep.058",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "J'écris au crayon."
+            },
+            "rec": {
+              "text": "olovkom"
+            },
+            "recenica": {
+              "text": "Pišem olovkom."
+            },
+            "zasto": {
+              "text": "Instrument : avec quoi on écrit, sans préposition."
+            }
+          },
+          "id": "sr.padezi.prep.060",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "instrumental"
+            },
+            "prevod": {
+              "text": "Je parle au téléphone."
+            },
+            "rec": {
+              "text": "telefonom"
+            },
+            "recenica": {
+              "text": "Razgovaram telefonom."
+            },
+            "zasto": {
+              "text": "Moyen de communication, sans préposition."
+            }
+          },
+          "id": "sr.padezi.prep.061",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "instrumental"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "J'habite à Paris."
+            },
+            "rec": {
+              "text": "Parizu"
+            },
+            "recenica": {
+              "text": "Živim u Parizu."
+            },
+            "zasto": {
+              "text": "« u » + locatif : lieu où l'on est (pas de déplacement)."
+            }
+          },
+          "id": "sr.padezi.prep.063",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Nous parlons du film."
+            },
+            "rec": {
+              "text": "filmu"
+            },
+            "recenica": {
+              "text": "Razgovaramo o filmu."
+            },
+            "zasto": {
+              "text": "« o » (à propos de) régit toujours le locatif."
+            }
+          },
+          "id": "sr.padezi.prep.064",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Je suis assis dans la cuisine."
+            },
+            "rec": {
+              "text": "kuhinji"
+            },
+            "recenica": {
+              "text": "Sedim u kuhinji."
+            },
+            "zasto": {
+              "text": "« u » + locatif : position. Féminin en -a : « kuhinja » → « kuhinji »."
+            }
+          },
+          "id": "sr.padezi.prep.065",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Le tableau est accroché au mur."
+            },
+            "rec": {
+              "text": "zidu"
+            },
+            "recenica": {
+              "text": "Slika visi na zidu."
+            },
+            "zasto": {
+              "text": "« na » + locatif : position, sans déplacement."
+            }
+          },
+          "id": "sr.padezi.prep.067",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Je travaille à l'hôpital."
+            },
+            "rec": {
+              "text": "bolnici"
+            },
+            "recenica": {
+              "text": "Radim u bolnici."
+            },
+            "zasto": {
+              "text": "« u » + locatif : lieu où l'on travaille, pas de déplacement."
+            }
+          },
+          "id": "sr.padezi.prep.068",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "lokativ"
+          ]
+        },
+        {
+          "fields": {
+            "padez": {
+              "text": "lokativ"
+            },
+            "prevod": {
+              "text": "Nous parlons du voyage."
+            },
+            "rec": {
+              "text": "putovanju"
+            },
+            "recenica": {
+              "text": "Pričamo o putovanju."
+            },
+            "zasto": {
+              "text": "« o » + locatif : sujet de la conversation."
+            }
+          },
+          "id": "sr.padezi.prep.069",
+          "modelID": "sr.padezi.prepoznavanje.model",
+          "tags": [
+            "lokativ"
+          ]
+        }
+      ],
+      "summary": "51 phrases — identifier le cas du mot souligné"
+    }
+  ],
+  "seedVersion": 1
+}

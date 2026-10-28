@@ -1,0 +1,2394 @@
+{
+  "collections": [
+    {
+      "id": "srpski.konjugacija",
+      "name": "Serbe — Conjugaison — Présent de 65 verbes courants",
+      "noteModels": [
+        {
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace"
+          ],
+          "fields": [
+            {
+              "key": "mot",
+              "label": "Verbe",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "traduction",
+              "label": "Traduction",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "ja",
+              "label": "ja",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "ti",
+              "label": "ti",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "on_ona_ono",
+              "label": "on/ona/ono",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "mi",
+              "label": "mi",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "vi",
+              "label": "vi",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "oni_one_ona",
+              "label": "oni/one/ona",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "id": "srpski.konjugacija.model",
+          "name": "Conjugaison au présent",
+          "templates": [
+            {
+              "backKeys": [
+                "ja",
+                "ti",
+                "on_ona_ono",
+                "mi",
+                "vi",
+                "oni_one_ona"
+              ],
+              "frontKeys": [
+                "mot",
+                "traduction"
+              ],
+              "headerKeys": [
+                "mot",
+                "traduction"
+              ],
+              "id": "reordonnement",
+              "inputMode": "reordering",
+              "name": "Remettre les personnes en place",
+              "shuffleKeys": [
+                "ja",
+                "ti",
+                "on_ona_ono",
+                "mi",
+                "vi",
+                "oni_one_ona"
+              ],
+              "targetKeys": [
+                "ja",
+                "ti",
+                "on_ona_ono",
+                "mi",
+                "vi",
+                "oni_one_ona"
+              ],
+              "targetLabels": [
+                "ja",
+                "ti",
+                "on/ona/ono",
+                "mi",
+                "vi",
+                "oni/one/ona"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "fields": {
+            "ja": {
+              "text": "sam"
+            },
+            "mi": {
+              "text": "smo"
+            },
+            "mot": {
+              "text": "biti"
+            },
+            "on_ona_ono": {
+              "text": "je"
+            },
+            "oni_one_ona": {
+              "text": "su"
+            },
+            "ti": {
+              "text": "si"
+            },
+            "traduction": {
+              "text": "être"
+            },
+            "vi": {
+              "text": "ste"
+            }
+          },
+          "id": "srpski.konjugacija.biti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "biti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "imam"
+            },
+            "mi": {
+              "text": "imamo"
+            },
+            "mot": {
+              "text": "imati"
+            },
+            "on_ona_ono": {
+              "text": "ima"
+            },
+            "oni_one_ona": {
+              "text": "imaju"
+            },
+            "ti": {
+              "text": "imaš"
+            },
+            "traduction": {
+              "text": "avoir"
+            },
+            "vi": {
+              "text": "imate"
+            }
+          },
+          "id": "srpski.konjugacija.imati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "imati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "radim"
+            },
+            "mi": {
+              "text": "radimo"
+            },
+            "mot": {
+              "text": "raditi"
+            },
+            "on_ona_ono": {
+              "text": "radi"
+            },
+            "oni_one_ona": {
+              "text": "rade"
+            },
+            "ti": {
+              "text": "radiš"
+            },
+            "traduction": {
+              "text": "travailler / faire"
+            },
+            "vi": {
+              "text": "radite"
+            }
+          },
+          "id": "srpski.konjugacija.raditi",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "raditi"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "govorim"
+            },
+            "mi": {
+              "text": "govorimo"
+            },
+            "mot": {
+              "text": "govoriti"
+            },
+            "on_ona_ono": {
+              "text": "govori"
+            },
+            "oni_one_ona": {
+              "text": "govore"
+            },
+            "ti": {
+              "text": "govoriš"
+            },
+            "traduction": {
+              "text": "parler"
+            },
+            "vi": {
+              "text": "govorite"
+            }
+          },
+          "id": "srpski.konjugacija.govoriti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "govoriti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "idem"
+            },
+            "mi": {
+              "text": "idemo"
+            },
+            "mot": {
+              "text": "ići"
+            },
+            "on_ona_ono": {
+              "text": "ide"
+            },
+            "oni_one_ona": {
+              "text": "idu"
+            },
+            "ti": {
+              "text": "ideš"
+            },
+            "traduction": {
+              "text": "aller"
+            },
+            "vi": {
+              "text": "idete"
+            }
+          },
+          "id": "srpski.konjugacija.ici",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "ići"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "hoću"
+            },
+            "mi": {
+              "text": "hoćemo"
+            },
+            "mot": {
+              "text": "hteti"
+            },
+            "on_ona_ono": {
+              "text": "hoće"
+            },
+            "oni_one_ona": {
+              "text": "hoće"
+            },
+            "ti": {
+              "text": "hoćeš"
+            },
+            "traduction": {
+              "text": "vouloir"
+            },
+            "vi": {
+              "text": "hoćete"
+            }
+          },
+          "id": "srpski.konjugacija.hteti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "hteti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "mogu"
+            },
+            "mi": {
+              "text": "možemo"
+            },
+            "mot": {
+              "text": "moći"
+            },
+            "on_ona_ono": {
+              "text": "može"
+            },
+            "oni_one_ona": {
+              "text": "mogu"
+            },
+            "ti": {
+              "text": "možeš"
+            },
+            "traduction": {
+              "text": "pouvoir"
+            },
+            "vi": {
+              "text": "možete"
+            }
+          },
+          "id": "srpski.konjugacija.moci",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "moći"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "moram"
+            },
+            "mi": {
+              "text": "moramo"
+            },
+            "mot": {
+              "text": "morati"
+            },
+            "on_ona_ono": {
+              "text": "mora"
+            },
+            "oni_one_ona": {
+              "text": "moraju"
+            },
+            "ti": {
+              "text": "moraš"
+            },
+            "traduction": {
+              "text": "devoir"
+            },
+            "vi": {
+              "text": "morate"
+            }
+          },
+          "id": "srpski.konjugacija.morati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "morati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "trebam"
+            },
+            "mi": {
+              "text": "trebamo"
+            },
+            "mot": {
+              "text": "trebati"
+            },
+            "on_ona_ono": {
+              "text": "treba"
+            },
+            "oni_one_ona": {
+              "text": "trebaju"
+            },
+            "ti": {
+              "text": "trebaš"
+            },
+            "traduction": {
+              "text": "avoir besoin de / falloir"
+            },
+            "vi": {
+              "text": "trebate"
+            }
+          },
+          "id": "srpski.konjugacija.trebati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "trebati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "želim"
+            },
+            "mi": {
+              "text": "želimo"
+            },
+            "mot": {
+              "text": "želeti"
+            },
+            "on_ona_ono": {
+              "text": "želi"
+            },
+            "oni_one_ona": {
+              "text": "žele"
+            },
+            "ti": {
+              "text": "želiš"
+            },
+            "traduction": {
+              "text": "désirer, souhaiter"
+            },
+            "vi": {
+              "text": "želite"
+            }
+          },
+          "id": "srpski.konjugacija.zeleti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "želeti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "znam"
+            },
+            "mi": {
+              "text": "znamo"
+            },
+            "mot": {
+              "text": "znati"
+            },
+            "on_ona_ono": {
+              "text": "zna"
+            },
+            "oni_one_ona": {
+              "text": "znaju"
+            },
+            "ti": {
+              "text": "znaš"
+            },
+            "traduction": {
+              "text": "savoir"
+            },
+            "vi": {
+              "text": "znate"
+            }
+          },
+          "id": "srpski.konjugacija.znati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "znati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "mislim"
+            },
+            "mi": {
+              "text": "mislimo"
+            },
+            "mot": {
+              "text": "misliti"
+            },
+            "on_ona_ono": {
+              "text": "misli"
+            },
+            "oni_one_ona": {
+              "text": "misle"
+            },
+            "ti": {
+              "text": "misliš"
+            },
+            "traduction": {
+              "text": "penser"
+            },
+            "vi": {
+              "text": "mislite"
+            }
+          },
+          "id": "srpski.konjugacija.misliti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "misliti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "verujem"
+            },
+            "mi": {
+              "text": "verujemo"
+            },
+            "mot": {
+              "text": "verovati"
+            },
+            "on_ona_ono": {
+              "text": "veruje"
+            },
+            "oni_one_ona": {
+              "text": "veruju"
+            },
+            "ti": {
+              "text": "veruješ"
+            },
+            "traduction": {
+              "text": "croire"
+            },
+            "vi": {
+              "text": "verujete"
+            }
+          },
+          "id": "srpski.konjugacija.verovati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "verovati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "razumem"
+            },
+            "mi": {
+              "text": "razumemo"
+            },
+            "mot": {
+              "text": "razumeti"
+            },
+            "on_ona_ono": {
+              "text": "razume"
+            },
+            "oni_one_ona": {
+              "text": "razumeju"
+            },
+            "ti": {
+              "text": "razumeš"
+            },
+            "traduction": {
+              "text": "comprendre"
+            },
+            "vi": {
+              "text": "razumete"
+            }
+          },
+          "id": "srpski.konjugacija.razumeti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "razumeti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "učim"
+            },
+            "mi": {
+              "text": "učimo"
+            },
+            "mot": {
+              "text": "učiti"
+            },
+            "on_ona_ono": {
+              "text": "uči"
+            },
+            "oni_one_ona": {
+              "text": "uče"
+            },
+            "ti": {
+              "text": "učiš"
+            },
+            "traduction": {
+              "text": "apprendre, étudier"
+            },
+            "vi": {
+              "text": "učite"
+            }
+          },
+          "id": "srpski.konjugacija.uciti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "učiti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "čitam"
+            },
+            "mi": {
+              "text": "čitamo"
+            },
+            "mot": {
+              "text": "čitati"
+            },
+            "on_ona_ono": {
+              "text": "čita"
+            },
+            "oni_one_ona": {
+              "text": "čitaju"
+            },
+            "ti": {
+              "text": "čitaš"
+            },
+            "traduction": {
+              "text": "lire"
+            },
+            "vi": {
+              "text": "čitate"
+            }
+          },
+          "id": "srpski.konjugacija.citati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "čitati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "pišem"
+            },
+            "mi": {
+              "text": "pišemo"
+            },
+            "mot": {
+              "text": "pisati"
+            },
+            "on_ona_ono": {
+              "text": "piše"
+            },
+            "oni_one_ona": {
+              "text": "pišu"
+            },
+            "ti": {
+              "text": "pišeš"
+            },
+            "traduction": {
+              "text": "écrire"
+            },
+            "vi": {
+              "text": "pišete"
+            }
+          },
+          "id": "srpski.konjugacija.pisati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "pisati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "vidim"
+            },
+            "mi": {
+              "text": "vidimo"
+            },
+            "mot": {
+              "text": "videti"
+            },
+            "on_ona_ono": {
+              "text": "vidi"
+            },
+            "oni_one_ona": {
+              "text": "vide"
+            },
+            "ti": {
+              "text": "vidiš"
+            },
+            "traduction": {
+              "text": "voir"
+            },
+            "vi": {
+              "text": "vidite"
+            }
+          },
+          "id": "srpski.konjugacija.videti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "videti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "gledam"
+            },
+            "mi": {
+              "text": "gledamo"
+            },
+            "mot": {
+              "text": "gledati"
+            },
+            "on_ona_ono": {
+              "text": "gleda"
+            },
+            "oni_one_ona": {
+              "text": "gledaju"
+            },
+            "ti": {
+              "text": "gledaš"
+            },
+            "traduction": {
+              "text": "regarder"
+            },
+            "vi": {
+              "text": "gledate"
+            }
+          },
+          "id": "srpski.konjugacija.gledati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "gledati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "čujem"
+            },
+            "mi": {
+              "text": "čujemo"
+            },
+            "mot": {
+              "text": "čuti"
+            },
+            "on_ona_ono": {
+              "text": "čuje"
+            },
+            "oni_one_ona": {
+              "text": "čuju"
+            },
+            "ti": {
+              "text": "čuješ"
+            },
+            "traduction": {
+              "text": "entendre"
+            },
+            "vi": {
+              "text": "čujete"
+            }
+          },
+          "id": "srpski.konjugacija.cuti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "čuti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "slušam"
+            },
+            "mi": {
+              "text": "slušamo"
+            },
+            "mot": {
+              "text": "slušati"
+            },
+            "on_ona_ono": {
+              "text": "sluša"
+            },
+            "oni_one_ona": {
+              "text": "slušaju"
+            },
+            "ti": {
+              "text": "slušaš"
+            },
+            "traduction": {
+              "text": "écouter"
+            },
+            "vi": {
+              "text": "slušate"
+            }
+          },
+          "id": "srpski.konjugacija.slusati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "slušati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "kažem"
+            },
+            "mi": {
+              "text": "kažemo"
+            },
+            "mot": {
+              "text": "kazati"
+            },
+            "on_ona_ono": {
+              "text": "kaže"
+            },
+            "oni_one_ona": {
+              "text": "kažu"
+            },
+            "ti": {
+              "text": "kažeš"
+            },
+            "traduction": {
+              "text": "dire"
+            },
+            "vi": {
+              "text": "kažete"
+            }
+          },
+          "id": "srpski.konjugacija.kazati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "kazati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "pričam"
+            },
+            "mi": {
+              "text": "pričamo"
+            },
+            "mot": {
+              "text": "pričati"
+            },
+            "on_ona_ono": {
+              "text": "priča"
+            },
+            "oni_one_ona": {
+              "text": "pričaju"
+            },
+            "ti": {
+              "text": "pričaš"
+            },
+            "traduction": {
+              "text": "raconter, bavarder"
+            },
+            "vi": {
+              "text": "pričate"
+            }
+          },
+          "id": "srpski.konjugacija.pricati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "pričati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "pitam"
+            },
+            "mi": {
+              "text": "pitamo"
+            },
+            "mot": {
+              "text": "pitati"
+            },
+            "on_ona_ono": {
+              "text": "pita"
+            },
+            "oni_one_ona": {
+              "text": "pitaju"
+            },
+            "ti": {
+              "text": "pitaš"
+            },
+            "traduction": {
+              "text": "demander, poser une question"
+            },
+            "vi": {
+              "text": "pitate"
+            }
+          },
+          "id": "srpski.konjugacija.pitati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "pitati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "odgovorim"
+            },
+            "mi": {
+              "text": "odgovorimo"
+            },
+            "mot": {
+              "text": "odgovoriti"
+            },
+            "on_ona_ono": {
+              "text": "odgovori"
+            },
+            "oni_one_ona": {
+              "text": "odgovore"
+            },
+            "ti": {
+              "text": "odgovoriš"
+            },
+            "traduction": {
+              "text": "répondre"
+            },
+            "vi": {
+              "text": "odgovorite"
+            }
+          },
+          "id": "srpski.konjugacija.odgovoriti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "odgovoriti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "zovem"
+            },
+            "mi": {
+              "text": "zovemo"
+            },
+            "mot": {
+              "text": "zvati"
+            },
+            "on_ona_ono": {
+              "text": "zove"
+            },
+            "oni_one_ona": {
+              "text": "zovu"
+            },
+            "ti": {
+              "text": "zoveš"
+            },
+            "traduction": {
+              "text": "appeler"
+            },
+            "vi": {
+              "text": "zovete"
+            }
+          },
+          "id": "srpski.konjugacija.zvati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "zvati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "razgovaram"
+            },
+            "mi": {
+              "text": "razgovaramo"
+            },
+            "mot": {
+              "text": "razgovarati"
+            },
+            "on_ona_ono": {
+              "text": "razgovara"
+            },
+            "oni_one_ona": {
+              "text": "razgovaraju"
+            },
+            "ti": {
+              "text": "razgovaraš"
+            },
+            "traduction": {
+              "text": "converser, discuter"
+            },
+            "vi": {
+              "text": "razgovarate"
+            }
+          },
+          "id": "srpski.konjugacija.razgovarati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "razgovarati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "jedem"
+            },
+            "mi": {
+              "text": "jedemo"
+            },
+            "mot": {
+              "text": "jesti"
+            },
+            "on_ona_ono": {
+              "text": "jede"
+            },
+            "oni_one_ona": {
+              "text": "jedu"
+            },
+            "ti": {
+              "text": "jedeš"
+            },
+            "traduction": {
+              "text": "manger"
+            },
+            "vi": {
+              "text": "jedete"
+            }
+          },
+          "id": "srpski.konjugacija.jesti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "jesti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "pijem"
+            },
+            "mi": {
+              "text": "pijemo"
+            },
+            "mot": {
+              "text": "piti"
+            },
+            "on_ona_ono": {
+              "text": "pije"
+            },
+            "oni_one_ona": {
+              "text": "piju"
+            },
+            "ti": {
+              "text": "piješ"
+            },
+            "traduction": {
+              "text": "boire"
+            },
+            "vi": {
+              "text": "pijete"
+            }
+          },
+          "id": "srpski.konjugacija.piti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "piti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "kuvam"
+            },
+            "mi": {
+              "text": "kuvamo"
+            },
+            "mot": {
+              "text": "kuvati"
+            },
+            "on_ona_ono": {
+              "text": "kuva"
+            },
+            "oni_one_ona": {
+              "text": "kuvaju"
+            },
+            "ti": {
+              "text": "kuvaš"
+            },
+            "traduction": {
+              "text": "cuisiner"
+            },
+            "vi": {
+              "text": "kuvate"
+            }
+          },
+          "id": "srpski.konjugacija.kuvati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "kuvati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "spavam"
+            },
+            "mi": {
+              "text": "spavamo"
+            },
+            "mot": {
+              "text": "spavati"
+            },
+            "on_ona_ono": {
+              "text": "spava"
+            },
+            "oni_one_ona": {
+              "text": "spavaju"
+            },
+            "ti": {
+              "text": "spavaš"
+            },
+            "traduction": {
+              "text": "dormir"
+            },
+            "vi": {
+              "text": "spavate"
+            }
+          },
+          "id": "srpski.konjugacija.spavati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "spavati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "živim"
+            },
+            "mi": {
+              "text": "živimo"
+            },
+            "mot": {
+              "text": "živeti"
+            },
+            "on_ona_ono": {
+              "text": "živi"
+            },
+            "oni_one_ona": {
+              "text": "žive"
+            },
+            "ti": {
+              "text": "živiš"
+            },
+            "traduction": {
+              "text": "vivre"
+            },
+            "vi": {
+              "text": "živite"
+            }
+          },
+          "id": "srpski.konjugacija.ziveti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "živeti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "stanujem"
+            },
+            "mi": {
+              "text": "stanujemo"
+            },
+            "mot": {
+              "text": "stanovati"
+            },
+            "on_ona_ono": {
+              "text": "stanuje"
+            },
+            "oni_one_ona": {
+              "text": "stanuju"
+            },
+            "ti": {
+              "text": "stanuješ"
+            },
+            "traduction": {
+              "text": "habiter, loger"
+            },
+            "vi": {
+              "text": "stanujete"
+            }
+          },
+          "id": "srpski.konjugacija.stanovati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "stanovati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "sedim"
+            },
+            "mi": {
+              "text": "sedimo"
+            },
+            "mot": {
+              "text": "sedeti"
+            },
+            "on_ona_ono": {
+              "text": "sedi"
+            },
+            "oni_one_ona": {
+              "text": "sede"
+            },
+            "ti": {
+              "text": "sediš"
+            },
+            "traduction": {
+              "text": "être assis"
+            },
+            "vi": {
+              "text": "sedite"
+            }
+          },
+          "id": "srpski.konjugacija.sedeti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "sedeti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "stojim"
+            },
+            "mi": {
+              "text": "stojimo"
+            },
+            "mot": {
+              "text": "stajati"
+            },
+            "on_ona_ono": {
+              "text": "stoji"
+            },
+            "oni_one_ona": {
+              "text": "stoje"
+            },
+            "ti": {
+              "text": "stojiš"
+            },
+            "traduction": {
+              "text": "être debout, se tenir"
+            },
+            "vi": {
+              "text": "stojite"
+            }
+          },
+          "id": "srpski.konjugacija.stajati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "stajati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "ustanem"
+            },
+            "mi": {
+              "text": "ustanemo"
+            },
+            "mot": {
+              "text": "ustati"
+            },
+            "on_ona_ono": {
+              "text": "ustane"
+            },
+            "oni_one_ona": {
+              "text": "ustanu"
+            },
+            "ti": {
+              "text": "ustaneš"
+            },
+            "traduction": {
+              "text": "se lever"
+            },
+            "vi": {
+              "text": "ustanete"
+            }
+          },
+          "id": "srpski.konjugacija.ustati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "ustati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "hodam"
+            },
+            "mi": {
+              "text": "hodamo"
+            },
+            "mot": {
+              "text": "hodati"
+            },
+            "on_ona_ono": {
+              "text": "hoda"
+            },
+            "oni_one_ona": {
+              "text": "hodaju"
+            },
+            "ti": {
+              "text": "hodaš"
+            },
+            "traduction": {
+              "text": "marcher"
+            },
+            "vi": {
+              "text": "hodate"
+            }
+          },
+          "id": "srpski.konjugacija.hodati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "hodati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "šetam"
+            },
+            "mi": {
+              "text": "šetamo"
+            },
+            "mot": {
+              "text": "šetati"
+            },
+            "on_ona_ono": {
+              "text": "šeta"
+            },
+            "oni_one_ona": {
+              "text": "šetaju"
+            },
+            "ti": {
+              "text": "šetaš"
+            },
+            "traduction": {
+              "text": "se promener"
+            },
+            "vi": {
+              "text": "šetate"
+            }
+          },
+          "id": "srpski.konjugacija.setati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "šetati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "trčim"
+            },
+            "mi": {
+              "text": "trčimo"
+            },
+            "mot": {
+              "text": "trčati"
+            },
+            "on_ona_ono": {
+              "text": "trči"
+            },
+            "oni_one_ona": {
+              "text": "trče"
+            },
+            "ti": {
+              "text": "trčiš"
+            },
+            "traduction": {
+              "text": "courir"
+            },
+            "vi": {
+              "text": "trčite"
+            }
+          },
+          "id": "srpski.konjugacija.trcati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "trčati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "putujem"
+            },
+            "mi": {
+              "text": "putujemo"
+            },
+            "mot": {
+              "text": "putovati"
+            },
+            "on_ona_ono": {
+              "text": "putuje"
+            },
+            "oni_one_ona": {
+              "text": "putuju"
+            },
+            "ti": {
+              "text": "putuješ"
+            },
+            "traduction": {
+              "text": "voyager"
+            },
+            "vi": {
+              "text": "putujete"
+            }
+          },
+          "id": "srpski.konjugacija.putovati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "putovati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "vozim"
+            },
+            "mi": {
+              "text": "vozimo"
+            },
+            "mot": {
+              "text": "voziti"
+            },
+            "on_ona_ono": {
+              "text": "vozi"
+            },
+            "oni_one_ona": {
+              "text": "voze"
+            },
+            "ti": {
+              "text": "voziš"
+            },
+            "traduction": {
+              "text": "conduire"
+            },
+            "vi": {
+              "text": "vozite"
+            }
+          },
+          "id": "srpski.konjugacija.voziti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "voziti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "dođem"
+            },
+            "mi": {
+              "text": "dođemo"
+            },
+            "mot": {
+              "text": "doći"
+            },
+            "on_ona_ono": {
+              "text": "dođe"
+            },
+            "oni_one_ona": {
+              "text": "dođu"
+            },
+            "ti": {
+              "text": "dođeš"
+            },
+            "traduction": {
+              "text": "venir (perfectif)"
+            },
+            "vi": {
+              "text": "dođete"
+            }
+          },
+          "id": "srpski.konjugacija.doci",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "doći"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "dolazim"
+            },
+            "mi": {
+              "text": "dolazimo"
+            },
+            "mot": {
+              "text": "dolaziti"
+            },
+            "on_ona_ono": {
+              "text": "dolazi"
+            },
+            "oni_one_ona": {
+              "text": "dolaze"
+            },
+            "ti": {
+              "text": "dolaziš"
+            },
+            "traduction": {
+              "text": "venir, arriver (imperfectif)"
+            },
+            "vi": {
+              "text": "dolazite"
+            }
+          },
+          "id": "srpski.konjugacija.dolaziti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "dolaziti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "odem"
+            },
+            "mi": {
+              "text": "odemo"
+            },
+            "mot": {
+              "text": "otići"
+            },
+            "on_ona_ono": {
+              "text": "ode"
+            },
+            "oni_one_ona": {
+              "text": "odu"
+            },
+            "ti": {
+              "text": "odeš"
+            },
+            "traduction": {
+              "text": "partir, s'en aller"
+            },
+            "vi": {
+              "text": "odete"
+            }
+          },
+          "id": "srpski.konjugacija.otici",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "otići"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "ulazim"
+            },
+            "mi": {
+              "text": "ulazimo"
+            },
+            "mot": {
+              "text": "ulaziti"
+            },
+            "on_ona_ono": {
+              "text": "ulazi"
+            },
+            "oni_one_ona": {
+              "text": "ulaze"
+            },
+            "ti": {
+              "text": "ulaziš"
+            },
+            "traduction": {
+              "text": "entrer"
+            },
+            "vi": {
+              "text": "ulazite"
+            }
+          },
+          "id": "srpski.konjugacija.ulaziti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "ulaziti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "izlazim"
+            },
+            "mi": {
+              "text": "izlazimo"
+            },
+            "mot": {
+              "text": "izlaziti"
+            },
+            "on_ona_ono": {
+              "text": "izlazi"
+            },
+            "oni_one_ona": {
+              "text": "izlaze"
+            },
+            "ti": {
+              "text": "izlaziš"
+            },
+            "traduction": {
+              "text": "sortir"
+            },
+            "vi": {
+              "text": "izlazite"
+            }
+          },
+          "id": "srpski.konjugacija.izlaziti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "izlaziti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "čekam"
+            },
+            "mi": {
+              "text": "čekamo"
+            },
+            "mot": {
+              "text": "čekati"
+            },
+            "on_ona_ono": {
+              "text": "čeka"
+            },
+            "oni_one_ona": {
+              "text": "čekaju"
+            },
+            "ti": {
+              "text": "čekaš"
+            },
+            "traduction": {
+              "text": "attendre"
+            },
+            "vi": {
+              "text": "čekate"
+            }
+          },
+          "id": "srpski.konjugacija.cekati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "čekati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "tražim"
+            },
+            "mi": {
+              "text": "tražimo"
+            },
+            "mot": {
+              "text": "tražiti"
+            },
+            "on_ona_ono": {
+              "text": "traži"
+            },
+            "oni_one_ona": {
+              "text": "traže"
+            },
+            "ti": {
+              "text": "tražiš"
+            },
+            "traduction": {
+              "text": "chercher, demander"
+            },
+            "vi": {
+              "text": "tražite"
+            }
+          },
+          "id": "srpski.konjugacija.traziti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "tražiti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "nađem"
+            },
+            "mi": {
+              "text": "nađemo"
+            },
+            "mot": {
+              "text": "naći"
+            },
+            "on_ona_ono": {
+              "text": "nađe"
+            },
+            "oni_one_ona": {
+              "text": "nađu"
+            },
+            "ti": {
+              "text": "nađeš"
+            },
+            "traduction": {
+              "text": "trouver"
+            },
+            "vi": {
+              "text": "nađete"
+            }
+          },
+          "id": "srpski.konjugacija.naci",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "naći"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "dam"
+            },
+            "mi": {
+              "text": "damo"
+            },
+            "mot": {
+              "text": "dati"
+            },
+            "on_ona_ono": {
+              "text": "da"
+            },
+            "oni_one_ona": {
+              "text": "daju"
+            },
+            "ti": {
+              "text": "daš"
+            },
+            "traduction": {
+              "text": "donner"
+            },
+            "vi": {
+              "text": "date"
+            }
+          },
+          "id": "srpski.konjugacija.dati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "dati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "uzmem"
+            },
+            "mi": {
+              "text": "uzmemo"
+            },
+            "mot": {
+              "text": "uzeti"
+            },
+            "on_ona_ono": {
+              "text": "uzme"
+            },
+            "oni_one_ona": {
+              "text": "uzmu"
+            },
+            "ti": {
+              "text": "uzmeš"
+            },
+            "traduction": {
+              "text": "prendre"
+            },
+            "vi": {
+              "text": "uzmete"
+            }
+          },
+          "id": "srpski.konjugacija.uzeti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "uzeti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "kupujem"
+            },
+            "mi": {
+              "text": "kupujemo"
+            },
+            "mot": {
+              "text": "kupovati"
+            },
+            "on_ona_ono": {
+              "text": "kupuje"
+            },
+            "oni_one_ona": {
+              "text": "kupuju"
+            },
+            "ti": {
+              "text": "kupuješ"
+            },
+            "traduction": {
+              "text": "acheter"
+            },
+            "vi": {
+              "text": "kupujete"
+            }
+          },
+          "id": "srpski.konjugacija.kupovati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "kupovati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "platim"
+            },
+            "mi": {
+              "text": "platimo"
+            },
+            "mot": {
+              "text": "platiti"
+            },
+            "on_ona_ono": {
+              "text": "plati"
+            },
+            "oni_one_ona": {
+              "text": "plate"
+            },
+            "ti": {
+              "text": "platiš"
+            },
+            "traduction": {
+              "text": "payer"
+            },
+            "vi": {
+              "text": "platite"
+            }
+          },
+          "id": "srpski.konjugacija.platiti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "platiti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "nosim"
+            },
+            "mi": {
+              "text": "nosimo"
+            },
+            "mot": {
+              "text": "nositi"
+            },
+            "on_ona_ono": {
+              "text": "nosi"
+            },
+            "oni_one_ona": {
+              "text": "nose"
+            },
+            "ti": {
+              "text": "nosiš"
+            },
+            "traduction": {
+              "text": "porter"
+            },
+            "vi": {
+              "text": "nosite"
+            }
+          },
+          "id": "srpski.konjugacija.nositi",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "nositi"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "donesem"
+            },
+            "mi": {
+              "text": "donesemo"
+            },
+            "mot": {
+              "text": "doneti"
+            },
+            "on_ona_ono": {
+              "text": "donese"
+            },
+            "oni_one_ona": {
+              "text": "donesu"
+            },
+            "ti": {
+              "text": "doneseš"
+            },
+            "traduction": {
+              "text": "apporter"
+            },
+            "vi": {
+              "text": "donesete"
+            }
+          },
+          "id": "srpski.konjugacija.doneti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "doneti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "šaljem"
+            },
+            "mi": {
+              "text": "šaljemo"
+            },
+            "mot": {
+              "text": "slati"
+            },
+            "on_ona_ono": {
+              "text": "šalje"
+            },
+            "oni_one_ona": {
+              "text": "šalju"
+            },
+            "ti": {
+              "text": "šalješ"
+            },
+            "traduction": {
+              "text": "envoyer"
+            },
+            "vi": {
+              "text": "šaljete"
+            }
+          },
+          "id": "srpski.konjugacija.slati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "slati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "pravim"
+            },
+            "mi": {
+              "text": "pravimo"
+            },
+            "mot": {
+              "text": "praviti"
+            },
+            "on_ona_ono": {
+              "text": "pravi"
+            },
+            "oni_one_ona": {
+              "text": "prave"
+            },
+            "ti": {
+              "text": "praviš"
+            },
+            "traduction": {
+              "text": "faire, fabriquer"
+            },
+            "vi": {
+              "text": "pravite"
+            }
+          },
+          "id": "srpski.konjugacija.praviti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "praviti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "pomognem"
+            },
+            "mi": {
+              "text": "pomognemo"
+            },
+            "mot": {
+              "text": "pomoći"
+            },
+            "on_ona_ono": {
+              "text": "pomogne"
+            },
+            "oni_one_ona": {
+              "text": "pomognu"
+            },
+            "ti": {
+              "text": "pomogneš"
+            },
+            "traduction": {
+              "text": "aider"
+            },
+            "vi": {
+              "text": "pomognete"
+            }
+          },
+          "id": "srpski.konjugacija.pomoci",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "pomoći"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "počnem"
+            },
+            "mi": {
+              "text": "počnemo"
+            },
+            "mot": {
+              "text": "početi"
+            },
+            "on_ona_ono": {
+              "text": "počne"
+            },
+            "oni_one_ona": {
+              "text": "počnu"
+            },
+            "ti": {
+              "text": "počneš"
+            },
+            "traduction": {
+              "text": "commencer"
+            },
+            "vi": {
+              "text": "počnete"
+            }
+          },
+          "id": "srpski.konjugacija.poceti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "početi"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "završim"
+            },
+            "mi": {
+              "text": "završimo"
+            },
+            "mot": {
+              "text": "završiti"
+            },
+            "on_ona_ono": {
+              "text": "završi"
+            },
+            "oni_one_ona": {
+              "text": "završe"
+            },
+            "ti": {
+              "text": "završiš"
+            },
+            "traduction": {
+              "text": "terminer, finir"
+            },
+            "vi": {
+              "text": "završite"
+            }
+          },
+          "id": "srpski.konjugacija.zavrsiti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "završiti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "otvorim"
+            },
+            "mi": {
+              "text": "otvorimo"
+            },
+            "mot": {
+              "text": "otvoriti"
+            },
+            "on_ona_ono": {
+              "text": "otvori"
+            },
+            "oni_one_ona": {
+              "text": "otvore"
+            },
+            "ti": {
+              "text": "otvoriš"
+            },
+            "traduction": {
+              "text": "ouvrir"
+            },
+            "vi": {
+              "text": "otvorite"
+            }
+          },
+          "id": "srpski.konjugacija.otvoriti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "otvoriti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "zatvorim"
+            },
+            "mi": {
+              "text": "zatvorimo"
+            },
+            "mot": {
+              "text": "zatvoriti"
+            },
+            "on_ona_ono": {
+              "text": "zatvori"
+            },
+            "oni_one_ona": {
+              "text": "zatvore"
+            },
+            "ti": {
+              "text": "zatvoriš"
+            },
+            "traduction": {
+              "text": "fermer"
+            },
+            "vi": {
+              "text": "zatvorite"
+            }
+          },
+          "id": "srpski.konjugacija.zatvoriti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "zatvoriti"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "igram"
+            },
+            "mi": {
+              "text": "igramo"
+            },
+            "mot": {
+              "text": "igrati"
+            },
+            "on_ona_ono": {
+              "text": "igra"
+            },
+            "oni_one_ona": {
+              "text": "igraju"
+            },
+            "ti": {
+              "text": "igraš"
+            },
+            "traduction": {
+              "text": "jouer, danser"
+            },
+            "vi": {
+              "text": "igrate"
+            }
+          },
+          "id": "srpski.konjugacija.igrati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "igrati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "pevam"
+            },
+            "mi": {
+              "text": "pevamo"
+            },
+            "mot": {
+              "text": "pevati"
+            },
+            "on_ona_ono": {
+              "text": "peva"
+            },
+            "oni_one_ona": {
+              "text": "pevaju"
+            },
+            "ti": {
+              "text": "pevaš"
+            },
+            "traduction": {
+              "text": "chanter"
+            },
+            "vi": {
+              "text": "pevate"
+            }
+          },
+          "id": "srpski.konjugacija.pevati",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "pevati"
+          ]
+        },
+        {
+          "fields": {
+            "ja": {
+              "text": "volim"
+            },
+            "mi": {
+              "text": "volimo"
+            },
+            "mot": {
+              "text": "voleti"
+            },
+            "on_ona_ono": {
+              "text": "voli"
+            },
+            "oni_one_ona": {
+              "text": "vole"
+            },
+            "ti": {
+              "text": "voliš"
+            },
+            "traduction": {
+              "text": "aimer"
+            },
+            "vi": {
+              "text": "volite"
+            }
+          },
+          "id": "srpski.konjugacija.voleti",
+          "modelID": "srpski.konjugacija.model",
+          "tags": [
+            "konjugacija",
+            "prezent",
+            "voleti"
+          ]
+        }
+      ],
+      "summary": "65 verbes, un verbe à la fois"
+    }
+  ],
+  "seedVersion": 1
+}
