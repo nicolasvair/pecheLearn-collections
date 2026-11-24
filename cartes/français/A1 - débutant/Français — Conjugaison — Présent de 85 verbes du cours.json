@@ -1,0 +1,3600 @@
+{
+  "seedVersion": 1,
+  "collections": [
+    {
+      "id": "fr.conjugaison.present",
+      "name": "Français — Conjugaison — Présent de 85 verbes du cours",
+      "summary": "Tous les verbes du cours : remettre les formes du présent à leur place, et retrouver le modèle de chaque verbe.",
+      "noteModels": [
+        {
+          "id": "fr.conjugaison.present.model",
+          "name": "Conjugaison au présent",
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace"
+          ],
+          "fields": [
+            {
+              "key": "mot",
+              "label": "Verbe",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "traduction",
+              "label": "Traduction",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "modele",
+              "label": "Modèle",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "remarque",
+              "label": "À retenir",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "je",
+              "label": "je / j’",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "tu",
+              "label": "tu",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "il",
+              "label": "il / elle / on",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "nous",
+              "label": "nous",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "vous",
+              "label": "vous",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "ils",
+              "label": "ils / elles",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "templates": [
+            {
+              "id": "reordonnement",
+              "name": "Remettre les personnes en place",
+              "inputMode": "reordering",
+              "frontKeys": [
+                "mot",
+                "traduction"
+              ],
+              "headerKeys": [
+                "mot",
+                "traduction"
+              ],
+              "backKeys": [
+                "je",
+                "tu",
+                "il",
+                "nous",
+                "vous",
+                "ils"
+              ],
+              "targetKeys": [
+                "je",
+                "tu",
+                "il",
+                "nous",
+                "vous",
+                "ils"
+              ],
+              "targetLabels": [
+                "je / j’",
+                "tu",
+                "il / elle / on",
+                "nous",
+                "vous",
+                "ils / elles"
+              ],
+              "shuffleKeys": [
+                "je",
+                "tu",
+                "il",
+                "nous",
+                "vous",
+                "ils"
+              ]
+            },
+            {
+              "id": "modele",
+              "name": "Verbe → modèle",
+              "inputMode": "multipleChoice",
+              "answerKey": "modele",
+              "frontKeys": [
+                "mot",
+                "traduction"
+              ],
+              "backKeys": [
+                "modele",
+                "remarque"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "id": "fr.conjugaison.present.parler",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "parler"
+            },
+            "traduction": {
+              "text": "govoriti"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "ils parlent se prononce comme il parle : -ent ne s’entend pas."
+            },
+            "je": {
+              "text": "parle"
+            },
+            "tu": {
+              "text": "parles"
+            },
+            "il": {
+              "text": "parle"
+            },
+            "nous": {
+              "text": "parlons"
+            },
+            "vous": {
+              "text": "parlez"
+            },
+            "ils": {
+              "text": "parlent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.aimer",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "aimer"
+            },
+            "traduction": {
+              "text": "voleti"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "Devant une voyelle : j’aime ; à la négation : je n’aime pas."
+            },
+            "je": {
+              "text": "aime"
+            },
+            "tu": {
+              "text": "aimes"
+            },
+            "il": {
+              "text": "aime"
+            },
+            "nous": {
+              "text": "aimons"
+            },
+            "vous": {
+              "text": "aimez"
+            },
+            "ils": {
+              "text": "aiment"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.ecouter",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "écouter"
+            },
+            "traduction": {
+              "text": "slušati"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "j’écoute (élision devant voyelle)."
+            },
+            "je": {
+              "text": "écoute"
+            },
+            "tu": {
+              "text": "écoutes"
+            },
+            "il": {
+              "text": "écoute"
+            },
+            "nous": {
+              "text": "écoutons"
+            },
+            "vous": {
+              "text": "écoutez"
+            },
+            "ils": {
+              "text": "écoutent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.ignorer",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "ignorer"
+            },
+            "traduction": {
+              "text": "ignorisati"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "j’ignore (élision devant voyelle)."
+            },
+            "je": {
+              "text": "ignore"
+            },
+            "tu": {
+              "text": "ignores"
+            },
+            "il": {
+              "text": "ignore"
+            },
+            "nous": {
+              "text": "ignorons"
+            },
+            "vous": {
+              "text": "ignorez"
+            },
+            "ils": {
+              "text": "ignorent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.oublier",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "oublier"
+            },
+            "traduction": {
+              "text": "zaboravljati"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "j’oublie (élision devant voyelle)."
+            },
+            "je": {
+              "text": "oublie"
+            },
+            "tu": {
+              "text": "oublies"
+            },
+            "il": {
+              "text": "oublie"
+            },
+            "nous": {
+              "text": "oublions"
+            },
+            "vous": {
+              "text": "oubliez"
+            },
+            "ils": {
+              "text": "oublient"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.utiliser",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "utiliser"
+            },
+            "traduction": {
+              "text": "koristiti"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "j’utilise (élision devant voyelle)."
+            },
+            "je": {
+              "text": "utilise"
+            },
+            "tu": {
+              "text": "utilises"
+            },
+            "il": {
+              "text": "utilise"
+            },
+            "nous": {
+              "text": "utilisons"
+            },
+            "vous": {
+              "text": "utilisez"
+            },
+            "ils": {
+              "text": "utilisent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.habiter",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "habiter"
+            },
+            "traduction": {
+              "text": "stanovati"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "j’habite (élision devant h muet)."
+            },
+            "je": {
+              "text": "habite"
+            },
+            "tu": {
+              "text": "habites"
+            },
+            "il": {
+              "text": "habite"
+            },
+            "nous": {
+              "text": "habitons"
+            },
+            "vous": {
+              "text": "habitez"
+            },
+            "ils": {
+              "text": "habitent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.se-laver",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "se laver"
+            },
+            "traduction": {
+              "text": "prati se"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "Pronominal : je ne me lave pas."
+            },
+            "je": {
+              "text": "me lave"
+            },
+            "tu": {
+              "text": "te laves"
+            },
+            "il": {
+              "text": "se lave"
+            },
+            "nous": {
+              "text": "nous lavons"
+            },
+            "vous": {
+              "text": "vous lavez"
+            },
+            "ils": {
+              "text": "se lavent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.s-amuser",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "s’amuser"
+            },
+            "traduction": {
+              "text": "zabavljati se"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "remarque": {
+              "text": "Pronominal devant voyelle : je m’amuse, tu t’amuses, il s’amuse."
+            },
+            "je": {
+              "text": "m’amuse"
+            },
+            "tu": {
+              "text": "t’amuses"
+            },
+            "il": {
+              "text": "s’amuse"
+            },
+            "nous": {
+              "text": "nous amusons"
+            },
+            "vous": {
+              "text": "vous amusez"
+            },
+            "ils": {
+              "text": "s’amusent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.s-appeler",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "s’appeler"
+            },
+            "traduction": {
+              "text": "zvati se"
+            },
+            "modele": {
+              "text": "1er groupe — consonne doublée"
+            },
+            "remarque": {
+              "text": "ll partout sauf nous appelons, vous appelez."
+            },
+            "je": {
+              "text": "m’appelle"
+            },
+            "tu": {
+              "text": "t’appelles"
+            },
+            "il": {
+              "text": "s’appelle"
+            },
+            "nous": {
+              "text": "nous appelons"
+            },
+            "vous": {
+              "text": "vous appelez"
+            },
+            "ils": {
+              "text": "s’appellent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.jeter",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "jeter"
+            },
+            "traduction": {
+              "text": "bacati"
+            },
+            "modele": {
+              "text": "1er groupe — consonne doublée"
+            },
+            "remarque": {
+              "text": "tt partout sauf nous jetons, vous jetez."
+            },
+            "je": {
+              "text": "jette"
+            },
+            "tu": {
+              "text": "jettes"
+            },
+            "il": {
+              "text": "jette"
+            },
+            "nous": {
+              "text": "jetons"
+            },
+            "vous": {
+              "text": "jetez"
+            },
+            "ils": {
+              "text": "jettent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.modeler",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "modeler"
+            },
+            "traduction": {
+              "text": "oblikovati"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "remarque": {
+              "text": "è partout sauf nous modelons, vous modelez."
+            },
+            "je": {
+              "text": "modèle"
+            },
+            "tu": {
+              "text": "modèles"
+            },
+            "il": {
+              "text": "modèle"
+            },
+            "nous": {
+              "text": "modelons"
+            },
+            "vous": {
+              "text": "modelez"
+            },
+            "ils": {
+              "text": "modèlent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.acheter",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "acheter"
+            },
+            "traduction": {
+              "text": "kupovati"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "remarque": {
+              "text": "è partout sauf nous achetons, vous achetez. j’achète."
+            },
+            "je": {
+              "text": "achète"
+            },
+            "tu": {
+              "text": "achètes"
+            },
+            "il": {
+              "text": "achète"
+            },
+            "nous": {
+              "text": "achetons"
+            },
+            "vous": {
+              "text": "achetez"
+            },
+            "ils": {
+              "text": "achètent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.se-lever",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "se lever"
+            },
+            "traduction": {
+              "text": "ustajati"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "remarque": {
+              "text": "è partout sauf nous nous levons, vous vous levez."
+            },
+            "je": {
+              "text": "me lève"
+            },
+            "tu": {
+              "text": "te lèves"
+            },
+            "il": {
+              "text": "se lève"
+            },
+            "nous": {
+              "text": "nous levons"
+            },
+            "vous": {
+              "text": "vous levez"
+            },
+            "ils": {
+              "text": "se lèvent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.se-promener",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "se promener"
+            },
+            "traduction": {
+              "text": "šetati"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "remarque": {
+              "text": "è partout sauf nous nous promenons, vous vous promenez."
+            },
+            "je": {
+              "text": "me promène"
+            },
+            "tu": {
+              "text": "te promènes"
+            },
+            "il": {
+              "text": "se promène"
+            },
+            "nous": {
+              "text": "nous promenons"
+            },
+            "vous": {
+              "text": "vous promenez"
+            },
+            "ils": {
+              "text": "se promènent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.preferer",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "préférer"
+            },
+            "traduction": {
+              "text": "više voleti"
+            },
+            "modele": {
+              "text": "1er groupe — é → è"
+            },
+            "remarque": {
+              "text": "é (école) devient è (mère) sauf à nous et vous."
+            },
+            "je": {
+              "text": "préfère"
+            },
+            "tu": {
+              "text": "préfères"
+            },
+            "il": {
+              "text": "préfère"
+            },
+            "nous": {
+              "text": "préférons"
+            },
+            "vous": {
+              "text": "préférez"
+            },
+            "ils": {
+              "text": "préfèrent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.esperer",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "espérer"
+            },
+            "traduction": {
+              "text": "nadati se"
+            },
+            "modele": {
+              "text": "1er groupe — é → è"
+            },
+            "remarque": {
+              "text": "é (école) devient è (mère) sauf à nous et vous. j’espère."
+            },
+            "je": {
+              "text": "espère"
+            },
+            "tu": {
+              "text": "espères"
+            },
+            "il": {
+              "text": "espère"
+            },
+            "nous": {
+              "text": "espérons"
+            },
+            "vous": {
+              "text": "espérez"
+            },
+            "ils": {
+              "text": "espèrent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.envoyer",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "envoyer"
+            },
+            "traduction": {
+              "text": "slati"
+            },
+            "modele": {
+              "text": "1er groupe — y → i"
+            },
+            "remarque": {
+              "text": "y devient i sauf nous envoyons, vous envoyez. j’envoie."
+            },
+            "je": {
+              "text": "envoie"
+            },
+            "tu": {
+              "text": "envoies"
+            },
+            "il": {
+              "text": "envoie"
+            },
+            "nous": {
+              "text": "envoyons"
+            },
+            "vous": {
+              "text": "envoyez"
+            },
+            "ils": {
+              "text": "envoient"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.payer",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "payer"
+            },
+            "traduction": {
+              "text": "plaćati"
+            },
+            "modele": {
+              "text": "1er groupe — y → i"
+            },
+            "remarque": {
+              "text": "Deux formes possibles : je paye ou je paie."
+            },
+            "je": {
+              "text": "paye / paie"
+            },
+            "tu": {
+              "text": "payes / paies"
+            },
+            "il": {
+              "text": "paye / paie"
+            },
+            "nous": {
+              "text": "payons"
+            },
+            "vous": {
+              "text": "payez"
+            },
+            "ils": {
+              "text": "payent / paient"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.manger",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "manger"
+            },
+            "traduction": {
+              "text": "jesti"
+            },
+            "modele": {
+              "text": "1er groupe — nous mangeons (ge)"
+            },
+            "remarque": {
+              "text": "nous mangeons : le e garde le son « j » (gomme / génial)."
+            },
+            "je": {
+              "text": "mange"
+            },
+            "tu": {
+              "text": "manges"
+            },
+            "il": {
+              "text": "mange"
+            },
+            "nous": {
+              "text": "mangeons"
+            },
+            "vous": {
+              "text": "mangez"
+            },
+            "ils": {
+              "text": "mangent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.commencer",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "commencer"
+            },
+            "traduction": {
+              "text": "počinjati"
+            },
+            "modele": {
+              "text": "1er groupe — nous commençons (ç)"
+            },
+            "remarque": {
+              "text": "nous commençons : ç devant o pour garder le son « s » (comment / garçon)."
+            },
+            "je": {
+              "text": "commence"
+            },
+            "tu": {
+              "text": "commences"
+            },
+            "il": {
+              "text": "commence"
+            },
+            "nous": {
+              "text": "commençons"
+            },
+            "vous": {
+              "text": "commencez"
+            },
+            "ils": {
+              "text": "commencent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "1er-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.finir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "finir"
+            },
+            "traduction": {
+              "text": "završavati"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "remarque": {
+              "text": "-iss- au pluriel : nous finissons."
+            },
+            "je": {
+              "text": "finis"
+            },
+            "tu": {
+              "text": "finis"
+            },
+            "il": {
+              "text": "finit"
+            },
+            "nous": {
+              "text": "finissons"
+            },
+            "vous": {
+              "text": "finissez"
+            },
+            "ils": {
+              "text": "finissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.choisir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "choisir"
+            },
+            "traduction": {
+              "text": "birati"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "remarque": {
+              "text": "nous choisissons — le s se prononce « z »."
+            },
+            "je": {
+              "text": "choisis"
+            },
+            "tu": {
+              "text": "choisis"
+            },
+            "il": {
+              "text": "choisit"
+            },
+            "nous": {
+              "text": "choisissons"
+            },
+            "vous": {
+              "text": "choisissez"
+            },
+            "ils": {
+              "text": "choisissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.reagir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "réagir"
+            },
+            "traduction": {
+              "text": "reagovati"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "remarque": {
+              "text": "je réagis… nous réagissons."
+            },
+            "je": {
+              "text": "réagis"
+            },
+            "tu": {
+              "text": "réagis"
+            },
+            "il": {
+              "text": "réagit"
+            },
+            "nous": {
+              "text": "réagissons"
+            },
+            "vous": {
+              "text": "réagissez"
+            },
+            "ils": {
+              "text": "réagissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.agir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "agir"
+            },
+            "traduction": {
+              "text": "delovati"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "remarque": {
+              "text": "j’agis… nous agissons."
+            },
+            "je": {
+              "text": "agis"
+            },
+            "tu": {
+              "text": "agis"
+            },
+            "il": {
+              "text": "agit"
+            },
+            "nous": {
+              "text": "agissons"
+            },
+            "vous": {
+              "text": "agissez"
+            },
+            "ils": {
+              "text": "agissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.grandir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "grandir"
+            },
+            "traduction": {
+              "text": "rasti"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "je": {
+              "text": "grandis"
+            },
+            "tu": {
+              "text": "grandis"
+            },
+            "il": {
+              "text": "grandit"
+            },
+            "nous": {
+              "text": "grandissons"
+            },
+            "vous": {
+              "text": "grandissez"
+            },
+            "ils": {
+              "text": "grandissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.grossir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "grossir"
+            },
+            "traduction": {
+              "text": "gojiti se"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "je": {
+              "text": "grossis"
+            },
+            "tu": {
+              "text": "grossis"
+            },
+            "il": {
+              "text": "grossit"
+            },
+            "nous": {
+              "text": "grossissons"
+            },
+            "vous": {
+              "text": "grossissez"
+            },
+            "ils": {
+              "text": "grossissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.maigrir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "maigrir"
+            },
+            "traduction": {
+              "text": "mršaviti"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "je": {
+              "text": "maigris"
+            },
+            "tu": {
+              "text": "maigris"
+            },
+            "il": {
+              "text": "maigrit"
+            },
+            "nous": {
+              "text": "maigrissons"
+            },
+            "vous": {
+              "text": "maigrissez"
+            },
+            "ils": {
+              "text": "maigrissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.remplir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "remplir"
+            },
+            "traduction": {
+              "text": "puniti"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "je": {
+              "text": "remplis"
+            },
+            "tu": {
+              "text": "remplis"
+            },
+            "il": {
+              "text": "remplit"
+            },
+            "nous": {
+              "text": "remplissons"
+            },
+            "vous": {
+              "text": "remplissez"
+            },
+            "ils": {
+              "text": "remplissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.reussir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "réussir"
+            },
+            "traduction": {
+              "text": "uspevati"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "je": {
+              "text": "réussis"
+            },
+            "tu": {
+              "text": "réussis"
+            },
+            "il": {
+              "text": "réussit"
+            },
+            "nous": {
+              "text": "réussissons"
+            },
+            "vous": {
+              "text": "réussissez"
+            },
+            "ils": {
+              "text": "réussissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.rougir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "rougir"
+            },
+            "traduction": {
+              "text": "crveneti"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "je": {
+              "text": "rougis"
+            },
+            "tu": {
+              "text": "rougis"
+            },
+            "il": {
+              "text": "rougit"
+            },
+            "nous": {
+              "text": "rougissons"
+            },
+            "vous": {
+              "text": "rougissez"
+            },
+            "ils": {
+              "text": "rougissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.vomir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "vomir"
+            },
+            "traduction": {
+              "text": "povraćati"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "je": {
+              "text": "vomis"
+            },
+            "tu": {
+              "text": "vomis"
+            },
+            "il": {
+              "text": "vomit"
+            },
+            "nous": {
+              "text": "vomissons"
+            },
+            "vous": {
+              "text": "vomissez"
+            },
+            "ils": {
+              "text": "vomissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.obeir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "obéir"
+            },
+            "traduction": {
+              "text": "slušati (pokoravati se)"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "remarque": {
+              "text": "j’obéis… nous obéissons."
+            },
+            "je": {
+              "text": "obéis"
+            },
+            "tu": {
+              "text": "obéis"
+            },
+            "il": {
+              "text": "obéit"
+            },
+            "nous": {
+              "text": "obéissons"
+            },
+            "vous": {
+              "text": "obéissez"
+            },
+            "ils": {
+              "text": "obéissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "2e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.etre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "être"
+            },
+            "traduction": {
+              "text": "biti"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "remarque": {
+              "text": "À savoir par cœur. vous êtes, ils sont."
+            },
+            "je": {
+              "text": "suis"
+            },
+            "tu": {
+              "text": "es"
+            },
+            "il": {
+              "text": "est"
+            },
+            "nous": {
+              "text": "sommes"
+            },
+            "vous": {
+              "text": "êtes"
+            },
+            "ils": {
+              "text": "sont"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "irrégulier"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.avoir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "avoir"
+            },
+            "traduction": {
+              "text": "imati"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "remarque": {
+              "text": "À savoir par cœur. j’ai, ils ont."
+            },
+            "je": {
+              "text": "ai"
+            },
+            "tu": {
+              "text": "as"
+            },
+            "il": {
+              "text": "a"
+            },
+            "nous": {
+              "text": "avons"
+            },
+            "vous": {
+              "text": "avez"
+            },
+            "ils": {
+              "text": "ont"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "irrégulier"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.aller",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "aller"
+            },
+            "traduction": {
+              "text": "ići"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "remarque": {
+              "text": "À savoir par cœur. ils vont."
+            },
+            "je": {
+              "text": "vais"
+            },
+            "tu": {
+              "text": "vas"
+            },
+            "il": {
+              "text": "va"
+            },
+            "nous": {
+              "text": "allons"
+            },
+            "vous": {
+              "text": "allez"
+            },
+            "ils": {
+              "text": "vont"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "irrégulier"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.faire",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "faire"
+            },
+            "traduction": {
+              "text": "raditi / praviti"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "remarque": {
+              "text": "nous faisons : « fai » se prononce « fe ». vous faites, ils font."
+            },
+            "je": {
+              "text": "fais"
+            },
+            "tu": {
+              "text": "fais"
+            },
+            "il": {
+              "text": "fait"
+            },
+            "nous": {
+              "text": "faisons"
+            },
+            "vous": {
+              "text": "faites"
+            },
+            "ils": {
+              "text": "font"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "irrégulier"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.dormir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "dormir"
+            },
+            "traduction": {
+              "text": "spavati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Le singulier perd le m : dor-s / dorm-ons."
+            },
+            "je": {
+              "text": "dors"
+            },
+            "tu": {
+              "text": "dors"
+            },
+            "il": {
+              "text": "dort"
+            },
+            "nous": {
+              "text": "dormons"
+            },
+            "vous": {
+              "text": "dormez"
+            },
+            "ils": {
+              "text": "dorment"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.sortir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "sortir"
+            },
+            "traduction": {
+              "text": "izlaziti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme dormir : sor-s / sort-ons."
+            },
+            "je": {
+              "text": "sors"
+            },
+            "tu": {
+              "text": "sors"
+            },
+            "il": {
+              "text": "sort"
+            },
+            "nous": {
+              "text": "sortons"
+            },
+            "vous": {
+              "text": "sortez"
+            },
+            "ils": {
+              "text": "sortent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.partir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "partir"
+            },
+            "traduction": {
+              "text": "odlaziti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme dormir : par-s / part-ons."
+            },
+            "je": {
+              "text": "pars"
+            },
+            "tu": {
+              "text": "pars"
+            },
+            "il": {
+              "text": "part"
+            },
+            "nous": {
+              "text": "partons"
+            },
+            "vous": {
+              "text": "partez"
+            },
+            "ils": {
+              "text": "partent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.sentir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "sentir"
+            },
+            "traduction": {
+              "text": "osećati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme dormir : sen-s / sent-ons."
+            },
+            "je": {
+              "text": "sens"
+            },
+            "tu": {
+              "text": "sens"
+            },
+            "il": {
+              "text": "sent"
+            },
+            "nous": {
+              "text": "sentons"
+            },
+            "vous": {
+              "text": "sentez"
+            },
+            "ils": {
+              "text": "sentent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.servir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "servir"
+            },
+            "traduction": {
+              "text": "služiti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme dormir : ser-s / serv-ons."
+            },
+            "je": {
+              "text": "sers"
+            },
+            "tu": {
+              "text": "sers"
+            },
+            "il": {
+              "text": "sert"
+            },
+            "nous": {
+              "text": "servons"
+            },
+            "vous": {
+              "text": "servez"
+            },
+            "ils": {
+              "text": "servent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.savoir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "savoir"
+            },
+            "traduction": {
+              "text": "znati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "je": {
+              "text": "sais"
+            },
+            "tu": {
+              "text": "sais"
+            },
+            "il": {
+              "text": "sait"
+            },
+            "nous": {
+              "text": "savons"
+            },
+            "vous": {
+              "text": "savez"
+            },
+            "ils": {
+              "text": "savent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.venir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "venir"
+            },
+            "traduction": {
+              "text": "dolaziti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "ie au singulier et à ils : ils viennent (nn)."
+            },
+            "je": {
+              "text": "viens"
+            },
+            "tu": {
+              "text": "viens"
+            },
+            "il": {
+              "text": "vient"
+            },
+            "nous": {
+              "text": "venons"
+            },
+            "vous": {
+              "text": "venez"
+            },
+            "ils": {
+              "text": "viennent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.devenir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "devenir"
+            },
+            "traduction": {
+              "text": "postajati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme venir : ils deviennent."
+            },
+            "je": {
+              "text": "deviens"
+            },
+            "tu": {
+              "text": "deviens"
+            },
+            "il": {
+              "text": "devient"
+            },
+            "nous": {
+              "text": "devenons"
+            },
+            "vous": {
+              "text": "devenez"
+            },
+            "ils": {
+              "text": "deviennent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.vivre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "vivre"
+            },
+            "traduction": {
+              "text": "živeti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme dormir : vi-s / viv-ons."
+            },
+            "je": {
+              "text": "vis"
+            },
+            "tu": {
+              "text": "vis"
+            },
+            "il": {
+              "text": "vit"
+            },
+            "nous": {
+              "text": "vivons"
+            },
+            "vous": {
+              "text": "vivez"
+            },
+            "ils": {
+              "text": "vivent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.lire",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "lire"
+            },
+            "traduction": {
+              "text": "čitati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "je": {
+              "text": "lis"
+            },
+            "tu": {
+              "text": "lis"
+            },
+            "il": {
+              "text": "lit"
+            },
+            "nous": {
+              "text": "lisons"
+            },
+            "vous": {
+              "text": "lisez"
+            },
+            "ils": {
+              "text": "lisent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.dire",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "dire"
+            },
+            "traduction": {
+              "text": "reći / govoriti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Attention : vous dites (comme vous faites)."
+            },
+            "je": {
+              "text": "dis"
+            },
+            "tu": {
+              "text": "dis"
+            },
+            "il": {
+              "text": "dit"
+            },
+            "nous": {
+              "text": "disons"
+            },
+            "vous": {
+              "text": "dites"
+            },
+            "ils": {
+              "text": "disent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.ecrire",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "écrire"
+            },
+            "traduction": {
+              "text": "pisati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Un v apparaît au pluriel : nous écrivons. j’écris."
+            },
+            "je": {
+              "text": "écris"
+            },
+            "tu": {
+              "text": "écris"
+            },
+            "il": {
+              "text": "écrit"
+            },
+            "nous": {
+              "text": "écrivons"
+            },
+            "vous": {
+              "text": "écrivez"
+            },
+            "ils": {
+              "text": "écrivent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.voir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "voir"
+            },
+            "traduction": {
+              "text": "videti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "y à nous et vous : nous voyons, mais ils voient."
+            },
+            "je": {
+              "text": "vois"
+            },
+            "tu": {
+              "text": "vois"
+            },
+            "il": {
+              "text": "voit"
+            },
+            "nous": {
+              "text": "voyons"
+            },
+            "vous": {
+              "text": "voyez"
+            },
+            "ils": {
+              "text": "voient"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.boire",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "boire"
+            },
+            "traduction": {
+              "text": "piti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "nous buvons, vous buvez, mais ils boivent."
+            },
+            "je": {
+              "text": "bois"
+            },
+            "tu": {
+              "text": "bois"
+            },
+            "il": {
+              "text": "boit"
+            },
+            "nous": {
+              "text": "buvons"
+            },
+            "vous": {
+              "text": "buvez"
+            },
+            "ils": {
+              "text": "boivent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.devoir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "devoir"
+            },
+            "traduction": {
+              "text": "morati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "nous devons, mais ils doivent."
+            },
+            "je": {
+              "text": "dois"
+            },
+            "tu": {
+              "text": "dois"
+            },
+            "il": {
+              "text": "doit"
+            },
+            "nous": {
+              "text": "devons"
+            },
+            "vous": {
+              "text": "devez"
+            },
+            "ils": {
+              "text": "doivent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.recevoir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "recevoir"
+            },
+            "traduction": {
+              "text": "primati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "ç devant o : je reçois, ils reçoivent ; mais nous recevons."
+            },
+            "je": {
+              "text": "reçois"
+            },
+            "tu": {
+              "text": "reçois"
+            },
+            "il": {
+              "text": "reçoit"
+            },
+            "nous": {
+              "text": "recevons"
+            },
+            "vous": {
+              "text": "recevez"
+            },
+            "ils": {
+              "text": "reçoivent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.mettre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "mettre"
+            },
+            "traduction": {
+              "text": "stavljati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "il met : un seul t, pas de t ajouté."
+            },
+            "je": {
+              "text": "mets"
+            },
+            "tu": {
+              "text": "mets"
+            },
+            "il": {
+              "text": "met"
+            },
+            "nous": {
+              "text": "mettons"
+            },
+            "vous": {
+              "text": "mettez"
+            },
+            "ils": {
+              "text": "mettent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.promettre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "promettre"
+            },
+            "traduction": {
+              "text": "obećavati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme mettre : il promet."
+            },
+            "je": {
+              "text": "promets"
+            },
+            "tu": {
+              "text": "promets"
+            },
+            "il": {
+              "text": "promet"
+            },
+            "nous": {
+              "text": "promettons"
+            },
+            "vous": {
+              "text": "promettez"
+            },
+            "ils": {
+              "text": "promettent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.permettre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "permettre"
+            },
+            "traduction": {
+              "text": "dozvoljavati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme mettre : il permet."
+            },
+            "je": {
+              "text": "permets"
+            },
+            "tu": {
+              "text": "permets"
+            },
+            "il": {
+              "text": "permet"
+            },
+            "nous": {
+              "text": "permettons"
+            },
+            "vous": {
+              "text": "permettez"
+            },
+            "ils": {
+              "text": "permettent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.connaitre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "connaître"
+            },
+            "traduction": {
+              "text": "poznavati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "il connaît (î devant t) ; nous connaissons."
+            },
+            "je": {
+              "text": "connais"
+            },
+            "tu": {
+              "text": "connais"
+            },
+            "il": {
+              "text": "connaît"
+            },
+            "nous": {
+              "text": "connaissons"
+            },
+            "vous": {
+              "text": "connaissez"
+            },
+            "ils": {
+              "text": "connaissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.apparaitre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "apparaître"
+            },
+            "traduction": {
+              "text": "pojavljivati se"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme connaître : il apparaît, nous apparaissons. j’apparais."
+            },
+            "je": {
+              "text": "apparais"
+            },
+            "tu": {
+              "text": "apparais"
+            },
+            "il": {
+              "text": "apparaît"
+            },
+            "nous": {
+              "text": "apparaissons"
+            },
+            "vous": {
+              "text": "apparaissez"
+            },
+            "ils": {
+              "text": "apparaissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.disparaitre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "disparaître"
+            },
+            "traduction": {
+              "text": "nestajati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme connaître : il disparaît, nous disparaissons."
+            },
+            "je": {
+              "text": "disparais"
+            },
+            "tu": {
+              "text": "disparais"
+            },
+            "il": {
+              "text": "disparaît"
+            },
+            "nous": {
+              "text": "disparaissons"
+            },
+            "vous": {
+              "text": "disparaissez"
+            },
+            "ils": {
+              "text": "disparaissent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.conduire",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "conduire"
+            },
+            "traduction": {
+              "text": "voziti"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Un s apparaît au pluriel : nous conduisons."
+            },
+            "je": {
+              "text": "conduis"
+            },
+            "tu": {
+              "text": "conduis"
+            },
+            "il": {
+              "text": "conduit"
+            },
+            "nous": {
+              "text": "conduisons"
+            },
+            "vous": {
+              "text": "conduisez"
+            },
+            "ils": {
+              "text": "conduisent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.produire",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "produire"
+            },
+            "traduction": {
+              "text": "proizvoditi"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme conduire : nous produisons."
+            },
+            "je": {
+              "text": "produis"
+            },
+            "tu": {
+              "text": "produis"
+            },
+            "il": {
+              "text": "produit"
+            },
+            "nous": {
+              "text": "produisons"
+            },
+            "vous": {
+              "text": "produisez"
+            },
+            "ils": {
+              "text": "produisent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.traduire",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "traduire"
+            },
+            "traduction": {
+              "text": "prevoditi"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "Comme conduire : nous traduisons."
+            },
+            "je": {
+              "text": "traduis"
+            },
+            "tu": {
+              "text": "traduis"
+            },
+            "il": {
+              "text": "traduit"
+            },
+            "nous": {
+              "text": "traduisons"
+            },
+            "vous": {
+              "text": "traduisez"
+            },
+            "ils": {
+              "text": "traduisent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.mourir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "mourir"
+            },
+            "traduction": {
+              "text": "umirati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "remarque": {
+              "text": "eu au singulier et à ils : je meurs, ils meurent ; nous mourons."
+            },
+            "je": {
+              "text": "meurs"
+            },
+            "tu": {
+              "text": "meurs"
+            },
+            "il": {
+              "text": "meurt"
+            },
+            "nous": {
+              "text": "mourons"
+            },
+            "vous": {
+              "text": "mourez"
+            },
+            "ils": {
+              "text": "meurent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.courir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "courir"
+            },
+            "traduction": {
+              "text": "trčati"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "je": {
+              "text": "cours"
+            },
+            "tu": {
+              "text": "cours"
+            },
+            "il": {
+              "text": "court"
+            },
+            "nous": {
+              "text": "courons"
+            },
+            "vous": {
+              "text": "courez"
+            },
+            "ils": {
+              "text": "courent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.ouvrir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "ouvrir"
+            },
+            "traduction": {
+              "text": "otvarati"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "remarque": {
+              "text": "Terminaisons du 1er groupe (-e -es -e). j’ouvre."
+            },
+            "je": {
+              "text": "ouvre"
+            },
+            "tu": {
+              "text": "ouvres"
+            },
+            "il": {
+              "text": "ouvre"
+            },
+            "nous": {
+              "text": "ouvrons"
+            },
+            "vous": {
+              "text": "ouvrez"
+            },
+            "ils": {
+              "text": "ouvrent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.couvrir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "couvrir"
+            },
+            "traduction": {
+              "text": "pokrivati"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "remarque": {
+              "text": "Comme ouvrir : je couvre."
+            },
+            "je": {
+              "text": "couvre"
+            },
+            "tu": {
+              "text": "couvres"
+            },
+            "il": {
+              "text": "couvre"
+            },
+            "nous": {
+              "text": "couvrons"
+            },
+            "vous": {
+              "text": "couvrez"
+            },
+            "ils": {
+              "text": "couvrent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.decouvrir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "découvrir"
+            },
+            "traduction": {
+              "text": "otkrivati"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "remarque": {
+              "text": "Comme ouvrir : je découvre."
+            },
+            "je": {
+              "text": "découvre"
+            },
+            "tu": {
+              "text": "découvres"
+            },
+            "il": {
+              "text": "découvre"
+            },
+            "nous": {
+              "text": "découvrons"
+            },
+            "vous": {
+              "text": "découvrez"
+            },
+            "ils": {
+              "text": "découvrent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.offrir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "offrir"
+            },
+            "traduction": {
+              "text": "poklanjati"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "remarque": {
+              "text": "Comme ouvrir : j’offre."
+            },
+            "je": {
+              "text": "offre"
+            },
+            "tu": {
+              "text": "offres"
+            },
+            "il": {
+              "text": "offre"
+            },
+            "nous": {
+              "text": "offrons"
+            },
+            "vous": {
+              "text": "offrez"
+            },
+            "ils": {
+              "text": "offrent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.vendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "vendre"
+            },
+            "traduction": {
+              "text": "prodavati"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "il vend : rien après le d."
+            },
+            "je": {
+              "text": "vends"
+            },
+            "tu": {
+              "text": "vends"
+            },
+            "il": {
+              "text": "vend"
+            },
+            "nous": {
+              "text": "vendons"
+            },
+            "vous": {
+              "text": "vendez"
+            },
+            "ils": {
+              "text": "vendent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.attendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "attendre"
+            },
+            "traduction": {
+              "text": "čekati"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "il attend. j’attends."
+            },
+            "je": {
+              "text": "attends"
+            },
+            "tu": {
+              "text": "attends"
+            },
+            "il": {
+              "text": "attend"
+            },
+            "nous": {
+              "text": "attendons"
+            },
+            "vous": {
+              "text": "attendez"
+            },
+            "ils": {
+              "text": "attendent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.rendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "rendre"
+            },
+            "traduction": {
+              "text": "vraćati"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "il rend."
+            },
+            "je": {
+              "text": "rends"
+            },
+            "tu": {
+              "text": "rends"
+            },
+            "il": {
+              "text": "rend"
+            },
+            "nous": {
+              "text": "rendons"
+            },
+            "vous": {
+              "text": "rendez"
+            },
+            "ils": {
+              "text": "rendent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.descendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "descendre"
+            },
+            "traduction": {
+              "text": "silaziti"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "il descend."
+            },
+            "je": {
+              "text": "descends"
+            },
+            "tu": {
+              "text": "descends"
+            },
+            "il": {
+              "text": "descend"
+            },
+            "nous": {
+              "text": "descendons"
+            },
+            "vous": {
+              "text": "descendez"
+            },
+            "ils": {
+              "text": "descendent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.entendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "entendre"
+            },
+            "traduction": {
+              "text": "čuti"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "il entend. j’entends."
+            },
+            "je": {
+              "text": "entends"
+            },
+            "tu": {
+              "text": "entends"
+            },
+            "il": {
+              "text": "entend"
+            },
+            "nous": {
+              "text": "entendons"
+            },
+            "vous": {
+              "text": "entendez"
+            },
+            "ils": {
+              "text": "entendent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.perdre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "perdre"
+            },
+            "traduction": {
+              "text": "gubiti"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "il perd."
+            },
+            "je": {
+              "text": "perds"
+            },
+            "tu": {
+              "text": "perds"
+            },
+            "il": {
+              "text": "perd"
+            },
+            "nous": {
+              "text": "perdons"
+            },
+            "vous": {
+              "text": "perdez"
+            },
+            "ils": {
+              "text": "perdent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.prendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "prendre"
+            },
+            "traduction": {
+              "text": "uzimati"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "« nn » : nous prenons (un n), ils prennent (nn)."
+            },
+            "je": {
+              "text": "prends"
+            },
+            "tu": {
+              "text": "prends"
+            },
+            "il": {
+              "text": "prend"
+            },
+            "nous": {
+              "text": "prenons"
+            },
+            "vous": {
+              "text": "prenez"
+            },
+            "ils": {
+              "text": "prennent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.comprendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "comprendre"
+            },
+            "traduction": {
+              "text": "razumeti"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "Comme prendre : ils comprennent."
+            },
+            "je": {
+              "text": "comprends"
+            },
+            "tu": {
+              "text": "comprends"
+            },
+            "il": {
+              "text": "comprend"
+            },
+            "nous": {
+              "text": "comprenons"
+            },
+            "vous": {
+              "text": "comprenez"
+            },
+            "ils": {
+              "text": "comprennent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.apprendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "apprendre"
+            },
+            "traduction": {
+              "text": "učiti"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "Comme prendre : ils apprennent. j’apprends."
+            },
+            "je": {
+              "text": "apprends"
+            },
+            "tu": {
+              "text": "apprends"
+            },
+            "il": {
+              "text": "apprend"
+            },
+            "nous": {
+              "text": "apprenons"
+            },
+            "vous": {
+              "text": "apprenez"
+            },
+            "ils": {
+              "text": "apprennent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.surprendre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "surprendre"
+            },
+            "traduction": {
+              "text": "iznenađivati"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "Comme prendre : ils surprennent."
+            },
+            "je": {
+              "text": "surprends"
+            },
+            "tu": {
+              "text": "surprends"
+            },
+            "il": {
+              "text": "surprend"
+            },
+            "nous": {
+              "text": "surprenons"
+            },
+            "vous": {
+              "text": "surprenez"
+            },
+            "ils": {
+              "text": "surprennent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.peindre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "peindre"
+            },
+            "traduction": {
+              "text": "slikati"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "« artiste » : gn au pluriel (nous peignons). Attention : il peint, avec t."
+            },
+            "je": {
+              "text": "peins"
+            },
+            "tu": {
+              "text": "peins"
+            },
+            "il": {
+              "text": "peint"
+            },
+            "nous": {
+              "text": "peignons"
+            },
+            "vous": {
+              "text": "peignez"
+            },
+            "ils": {
+              "text": "peignent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.eteindre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "éteindre"
+            },
+            "traduction": {
+              "text": "gasiti"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "Comme peindre : il éteint, nous éteignons. j’éteins."
+            },
+            "je": {
+              "text": "éteins"
+            },
+            "tu": {
+              "text": "éteins"
+            },
+            "il": {
+              "text": "éteint"
+            },
+            "nous": {
+              "text": "éteignons"
+            },
+            "vous": {
+              "text": "éteignez"
+            },
+            "ils": {
+              "text": "éteignent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.joindre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "joindre"
+            },
+            "traduction": {
+              "text": "spajati"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "Comme peindre : il joint, nous joignons."
+            },
+            "je": {
+              "text": "joins"
+            },
+            "tu": {
+              "text": "joins"
+            },
+            "il": {
+              "text": "joint"
+            },
+            "nous": {
+              "text": "joignons"
+            },
+            "vous": {
+              "text": "joignez"
+            },
+            "ils": {
+              "text": "joignent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.craindre",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "craindre"
+            },
+            "traduction": {
+              "text": "plašiti se"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "remarque": {
+              "text": "Comme peindre : il craint, nous craignons."
+            },
+            "je": {
+              "text": "crains"
+            },
+            "tu": {
+              "text": "crains"
+            },
+            "il": {
+              "text": "craint"
+            },
+            "nous": {
+              "text": "craignons"
+            },
+            "vous": {
+              "text": "craignez"
+            },
+            "ils": {
+              "text": "craignent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.pouvoir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "pouvoir"
+            },
+            "traduction": {
+              "text": "moći"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "remarque": {
+              "text": "je peux, ils peuvent ; nous pouvons."
+            },
+            "je": {
+              "text": "peux"
+            },
+            "tu": {
+              "text": "peux"
+            },
+            "il": {
+              "text": "peut"
+            },
+            "nous": {
+              "text": "pouvons"
+            },
+            "vous": {
+              "text": "pouvez"
+            },
+            "ils": {
+              "text": "peuvent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.vouloir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "vouloir"
+            },
+            "traduction": {
+              "text": "hteti"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "remarque": {
+              "text": "je veux, ils veulent ; nous voulons."
+            },
+            "je": {
+              "text": "veux"
+            },
+            "tu": {
+              "text": "veux"
+            },
+            "il": {
+              "text": "veut"
+            },
+            "nous": {
+              "text": "voulons"
+            },
+            "vous": {
+              "text": "voulez"
+            },
+            "ils": {
+              "text": "veulent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.present.valoir",
+          "modelID": "fr.conjugaison.present.model",
+          "fields": {
+            "mot": {
+              "text": "valoir"
+            },
+            "traduction": {
+              "text": "vredeti"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "remarque": {
+              "text": "il vaut (souvent : ça vaut…)."
+            },
+            "je": {
+              "text": "vaux"
+            },
+            "tu": {
+              "text": "vaux"
+            },
+            "il": {
+              "text": "vaut"
+            },
+            "nous": {
+              "text": "valons"
+            },
+            "vous": {
+              "text": "valez"
+            },
+            "ils": {
+              "text": "valent"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "présent",
+            "3e-groupe"
+          ]
+        }
+      ]
+    }
+  ]
+}

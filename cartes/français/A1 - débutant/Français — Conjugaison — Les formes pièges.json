@@ -1,0 +1,1690 @@
+{
+  "seedVersion": 1,
+  "collections": [
+    {
+      "id": "fr.conjugaison.pieges",
+      "name": "Français — Conjugaison — Les formes pièges",
+      "summary": "65 formes difficiles du présent à taper : changements de radical, accents, ç, ge, nn, gn…",
+      "noteModels": [
+        {
+          "id": "fr.conjugaison.pieges.model",
+          "name": "Forme à taper",
+          "answerNormalization": [
+            "trimWhitespace",
+            "collapseWhitespace",
+            "caseInsensitive",
+            "ignorePunctuation",
+            "splitAlternatives"
+          ],
+          "fields": [
+            {
+              "key": "personne",
+              "label": "Personne",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "verbe",
+              "label": "Verbe",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "forme",
+              "label": "Forme",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "modele",
+              "label": "Modèle",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "pourquoi",
+              "label": "Pourquoi",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "templates": [
+            {
+              "id": "taper",
+              "name": "Taper la forme",
+              "inputMode": "textEntry",
+              "answerKey": "forme",
+              "frontKeys": [
+                "personne",
+                "verbe"
+              ],
+              "backKeys": [
+                "forme",
+                "modele",
+                "pourquoi"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "id": "fr.conjugaison.pieges.je.jeter",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "jeter"
+            },
+            "forme": {
+              "text": "jette"
+            },
+            "modele": {
+              "text": "1er groupe — consonne doublée"
+            },
+            "pourquoi": {
+              "text": "tt partout sauf nous jetons, vous jetez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.s-appeler",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "s’appeler"
+            },
+            "forme": {
+              "text": "s’appellent"
+            },
+            "modele": {
+              "text": "1er groupe — consonne doublée"
+            },
+            "pourquoi": {
+              "text": "ll partout sauf nous appelons, vous appelez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.s-appeler",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "s’appeler"
+            },
+            "forme": {
+              "text": "nous appelons"
+            },
+            "modele": {
+              "text": "1er groupe — consonne doublée"
+            },
+            "pourquoi": {
+              "text": "ll partout sauf nous appelons, vous appelez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.acheter",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "j’___"
+            },
+            "verbe": {
+              "text": "acheter"
+            },
+            "forme": {
+              "text": "achète"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "pourquoi": {
+              "text": "è partout sauf nous achetons, vous achetez. j’achète."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.se-lever",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "se lever"
+            },
+            "forme": {
+              "text": "se lèvent"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "pourquoi": {
+              "text": "è partout sauf nous nous levons, vous vous levez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.se-promener",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "se promener"
+            },
+            "forme": {
+              "text": "nous promenons"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "pourquoi": {
+              "text": "è partout sauf nous nous promenons, vous vous promenez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.preferer",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "préférer"
+            },
+            "forme": {
+              "text": "préfère"
+            },
+            "modele": {
+              "text": "1er groupe — é → è"
+            },
+            "pourquoi": {
+              "text": "é (école) devient è (mère) sauf à nous et vous."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.preferer",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "préférer"
+            },
+            "forme": {
+              "text": "préférons"
+            },
+            "modele": {
+              "text": "1er groupe — é → è"
+            },
+            "pourquoi": {
+              "text": "é (école) devient è (mère) sauf à nous et vous."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.esperer",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "espérer"
+            },
+            "forme": {
+              "text": "espèrent"
+            },
+            "modele": {
+              "text": "1er groupe — é → è"
+            },
+            "pourquoi": {
+              "text": "é (école) devient è (mère) sauf à nous et vous. j’espère."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.envoyer",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "j’___"
+            },
+            "verbe": {
+              "text": "envoyer"
+            },
+            "forme": {
+              "text": "envoie"
+            },
+            "modele": {
+              "text": "1er groupe — y → i"
+            },
+            "pourquoi": {
+              "text": "y devient i sauf nous envoyons, vous envoyez. j’envoie."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.envoyer",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "envoyer"
+            },
+            "forme": {
+              "text": "envoyons"
+            },
+            "modele": {
+              "text": "1er groupe — y → i"
+            },
+            "pourquoi": {
+              "text": "y devient i sauf nous envoyons, vous envoyez. j’envoie."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.payer",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "payer"
+            },
+            "forme": {
+              "text": "paye / paie"
+            },
+            "modele": {
+              "text": "1er groupe — y → i"
+            },
+            "pourquoi": {
+              "text": "Deux formes possibles : je paye ou je paie."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.manger",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "manger"
+            },
+            "forme": {
+              "text": "mangeons"
+            },
+            "modele": {
+              "text": "1er groupe — nous mangeons (ge)"
+            },
+            "pourquoi": {
+              "text": "nous mangeons : le e garde le son « j » (gomme / génial)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.commencer",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "commencer"
+            },
+            "forme": {
+              "text": "commençons"
+            },
+            "modele": {
+              "text": "1er groupe — nous commençons (ç)"
+            },
+            "pourquoi": {
+              "text": "nous commençons : ç devant o pour garder le son « s » (comment / garçon)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.finir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "finir"
+            },
+            "forme": {
+              "text": "finissons"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "pourquoi": {
+              "text": "-iss- au pluriel : nous finissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.choisir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "choisir"
+            },
+            "forme": {
+              "text": "choisissent"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "pourquoi": {
+              "text": "nous choisissons — le s se prononce « z »."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.reussir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "réussir"
+            },
+            "forme": {
+              "text": "réussit"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.etre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "être"
+            },
+            "forme": {
+              "text": "sommes"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "À savoir par cœur. vous êtes, ils sont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.vous.etre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "vous ___"
+            },
+            "verbe": {
+              "text": "être"
+            },
+            "forme": {
+              "text": "êtes"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "À savoir par cœur. vous êtes, ils sont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.etre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "être"
+            },
+            "forme": {
+              "text": "sont"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "À savoir par cœur. vous êtes, ils sont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.avoir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "avoir"
+            },
+            "forme": {
+              "text": "ont"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "À savoir par cœur. j’ai, ils ont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.aller",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "aller"
+            },
+            "forme": {
+              "text": "vais"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "À savoir par cœur. ils vont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.aller",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "aller"
+            },
+            "forme": {
+              "text": "vont"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "À savoir par cœur. ils vont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.faire",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "faire"
+            },
+            "forme": {
+              "text": "faisons"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "nous faisons : « fai » se prononce « fe ». vous faites, ils font."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.vous.faire",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "vous ___"
+            },
+            "verbe": {
+              "text": "faire"
+            },
+            "forme": {
+              "text": "faites"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "nous faisons : « fai » se prononce « fe ». vous faites, ils font."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.faire",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "faire"
+            },
+            "forme": {
+              "text": "font"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "pourquoi": {
+              "text": "nous faisons : « fai » se prononce « fe ». vous faites, ils font."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.dormir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "dormir"
+            },
+            "forme": {
+              "text": "dors"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Le singulier perd le m : dor-s / dorm-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.sortir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "sortir"
+            },
+            "forme": {
+              "text": "sort"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Comme dormir : sor-s / sort-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.partir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "partir"
+            },
+            "forme": {
+              "text": "pars"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Comme dormir : par-s / part-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.servir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "servir"
+            },
+            "forme": {
+              "text": "sers"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Comme dormir : ser-s / serv-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.savoir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "savoir"
+            },
+            "forme": {
+              "text": "sait"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.venir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "venir"
+            },
+            "forme": {
+              "text": "viennent"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "ie au singulier et à ils : ils viennent (nn)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.devenir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "devenir"
+            },
+            "forme": {
+              "text": "devient"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Comme venir : ils deviennent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.vivre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "vivre"
+            },
+            "forme": {
+              "text": "vit"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Comme dormir : vi-s / viv-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.vous.dire",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "vous ___"
+            },
+            "verbe": {
+              "text": "dire"
+            },
+            "forme": {
+              "text": "dites"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Attention : vous dites (comme vous faites)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.ecrire",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "écrire"
+            },
+            "forme": {
+              "text": "écrivons"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Un v apparaît au pluriel : nous écrivons. j’écris."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.voir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "voir"
+            },
+            "forme": {
+              "text": "voyons"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "y à nous et vous : nous voyons, mais ils voient."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.voir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "voir"
+            },
+            "forme": {
+              "text": "voient"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "y à nous et vous : nous voyons, mais ils voient."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.boire",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "boire"
+            },
+            "forme": {
+              "text": "buvons"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "nous buvons, vous buvez, mais ils boivent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.boire",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "boire"
+            },
+            "forme": {
+              "text": "boivent"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "nous buvons, vous buvez, mais ils boivent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.devoir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "devoir"
+            },
+            "forme": {
+              "text": "doivent"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "nous devons, mais ils doivent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.recevoir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "recevoir"
+            },
+            "forme": {
+              "text": "reçois"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "ç devant o : je reçois, ils reçoivent ; mais nous recevons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.recevoir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "recevoir"
+            },
+            "forme": {
+              "text": "reçoivent"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "ç devant o : je reçois, ils reçoivent ; mais nous recevons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.mettre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "mettre"
+            },
+            "forme": {
+              "text": "met"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "il met : un seul t, pas de t ajouté."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.connaitre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "connaître"
+            },
+            "forme": {
+              "text": "connaît"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "il connaît (î devant t) ; nous connaissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.connaitre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "connaître"
+            },
+            "forme": {
+              "text": "connaissons"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "il connaît (î devant t) ; nous connaissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.conduire",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "conduire"
+            },
+            "forme": {
+              "text": "conduisons"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "Un s apparaît au pluriel : nous conduisons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.mourir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "mourir"
+            },
+            "forme": {
+              "text": "meurs"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "eu au singulier et à ils : je meurs, ils meurent ; nous mourons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.mourir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "mourir"
+            },
+            "forme": {
+              "text": "mourons"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "pourquoi": {
+              "text": "eu au singulier et à ils : je meurs, ils meurent ; nous mourons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.courir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "courir"
+            },
+            "forme": {
+              "text": "court"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.ouvrir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "ouvrir"
+            },
+            "forme": {
+              "text": "ouvre"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "pourquoi": {
+              "text": "Terminaisons du 1er groupe (-e -es -e). j’ouvre."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.offrir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "j’___"
+            },
+            "verbe": {
+              "text": "offrir"
+            },
+            "forme": {
+              "text": "offre"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "pourquoi": {
+              "text": "Comme ouvrir : j’offre."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.vendre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "vendre"
+            },
+            "forme": {
+              "text": "vend"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "pourquoi": {
+              "text": "il vend : rien après le d."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.attendre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "attendre"
+            },
+            "forme": {
+              "text": "attend"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "pourquoi": {
+              "text": "il attend. j’attends."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.prendre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "prendre"
+            },
+            "forme": {
+              "text": "prenons"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "pourquoi": {
+              "text": "« nn » : nous prenons (un n), ils prennent (nn)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.prendre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "prendre"
+            },
+            "forme": {
+              "text": "prennent"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "pourquoi": {
+              "text": "« nn » : nous prenons (un n), ils prennent (nn)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.comprendre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "comprendre"
+            },
+            "forme": {
+              "text": "comprennent"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "pourquoi": {
+              "text": "Comme prendre : ils comprennent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.peindre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "peindre"
+            },
+            "forme": {
+              "text": "peint"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "pourquoi": {
+              "text": "« artiste » : gn au pluriel (nous peignons). Attention : il peint, avec t."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.peindre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "peindre"
+            },
+            "forme": {
+              "text": "peignons"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "pourquoi": {
+              "text": "« artiste » : gn au pluriel (nous peignons). Attention : il peint, avec t."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.nous.eteindre",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "nous ___"
+            },
+            "verbe": {
+              "text": "éteindre"
+            },
+            "forme": {
+              "text": "éteignons"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "pourquoi": {
+              "text": "Comme peindre : il éteint, nous éteignons. j’éteins."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.je.pouvoir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "je ___"
+            },
+            "verbe": {
+              "text": "pouvoir"
+            },
+            "forme": {
+              "text": "peux"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "pourquoi": {
+              "text": "je peux, ils peuvent ; nous pouvons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.pouvoir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "pouvoir"
+            },
+            "forme": {
+              "text": "peuvent"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "pourquoi": {
+              "text": "je peux, ils peuvent ; nous pouvons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.vouloir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "vouloir"
+            },
+            "forme": {
+              "text": "veut"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "pourquoi": {
+              "text": "je veux, ils veulent ; nous voulons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.ils.vouloir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "ils ___"
+            },
+            "verbe": {
+              "text": "vouloir"
+            },
+            "forme": {
+              "text": "veulent"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "pourquoi": {
+              "text": "je veux, ils veulent ; nous voulons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.pieges.il.valoir",
+          "modelID": "fr.conjugaison.pieges.model",
+          "fields": {
+            "personne": {
+              "text": "il ___"
+            },
+            "verbe": {
+              "text": "valoir"
+            },
+            "forme": {
+              "text": "vaut"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "pourquoi": {
+              "text": "il vaut (souvent : ça vaut…)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "piège"
+          ]
+        }
+      ]
+    }
+  ]
+}

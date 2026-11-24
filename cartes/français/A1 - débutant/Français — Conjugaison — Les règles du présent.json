@@ -1,0 +1,582 @@
+{
+  "seedVersion": 1,
+  "collections": [
+    {
+      "id": "fr.conjugaison.regles",
+      "name": "Français — Conjugaison — Les règles du présent",
+      "summary": "Les règles du cours : groupes, terminaisons, verbes irréguliers et modèles du 3e groupe.",
+      "noteModels": [
+        {
+          "id": "fr.conjugaison.regles.model",
+          "name": "Règle de conjugaison",
+          "fields": [
+            {
+              "key": "question",
+              "label": "Question",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "reponse",
+              "label": "Réponse",
+              "required": true,
+              "type": "richText"
+            },
+            {
+              "key": "exemple",
+              "label": "Exemple / à retenir",
+              "required": false,
+              "type": "richText"
+            }
+          ],
+          "templates": [
+            {
+              "id": "question-reponse",
+              "name": "Question → règle",
+              "inputMode": "reveal",
+              "frontKeys": [
+                "question"
+              ],
+              "backKeys": [
+                "reponse",
+                "exemple"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "id": "fr.conjugaison.regles.groupes",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "Les trois groupes de verbes"
+            },
+            "reponse": {
+              "text": "| Groupe | Infinitif | Exemple |\n|---|---|---|\n| 1er | -er | parler |\n| 2e | -ir (nous -issons) | finir |\n| 3e | tous les autres | sortir, prendre |"
+            },
+            "exemple": {
+              "text": "Le 1er et le 3e groupe ont des verbes irréguliers ; le 2e groupe est entièrement régulier."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.1er-terminaisons",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "1er groupe : les terminaisons du présent"
+            },
+            "reponse": {
+              "text": "| Personne | Fin | parler |\n|---|---|---|\n| je | -e | parle |\n| tu | -es | parles |\n| il/elle/on | -e | parle |\n| nous | -ons | parlons |\n| vous | -ez | parlez |\n| ils/elles | -ent | parlent |"
+            },
+            "exemple": {
+              "text": "parle, parles, parle, parlent se prononcent tous « parl »."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.ent-muet",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "Comment se prononce -ent à ils/elles ?"
+            },
+            "reponse": {
+              "text": "Il ne se prononce pas : ils parlent = « il parl », ils aiment = « il zèm »."
+            },
+            "exemple": {
+              "text": "Au pluriel, la liaison s’entend : ils_aiment (son z)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.elision",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "je devant une voyelle ou un h"
+            },
+            "reponse": {
+              "text": "je devient j’ devant a, e, i, o, u, h."
+            },
+            "exemple": {
+              "text": "j’aime, j’écoute, j’ignore, j’oublie, j’utilise, j’habite"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.negation",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "La négation au présent"
+            },
+            "reponse": {
+              "text": "ne + verbe + pas. ne devient n’ devant une voyelle. Avec un pronominal, ne se place avant le pronom."
+            },
+            "exemple": {
+              "text": "je ne parle pas — je n’aime pas — je ne me lave pas — je ne m’amuse pas"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.pronominaux",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "Les verbes pronominaux : les pronoms"
+            },
+            "reponse": {
+              "text": "| Personne | Pronom | se laver |\n|---|---|---|\n| je | me | me lave |\n| tu | te | te laves |\n| il/elle/on | se | se lave |\n| nous | nous | nous lavons |\n| vous | vous | vous lavez |\n| ils/elles | se | se lavent |"
+            },
+            "exemple": {
+              "text": "Le pronom change avec la personne, le verbe se conjugue normalement."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.pronominaux-voyelle",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "Pronominal devant une voyelle : s’amuser"
+            },
+            "reponse": {
+              "text": "| Personne | s’amuser |\n|---|---|\n| je | m’amuse |\n| tu | t’amuses |\n| il/elle/on | s’amuse |\n| nous | nous amusons |\n| vous | vous amusez |\n| ils/elles | s’amusent |"
+            },
+            "exemple": {
+              "text": "me, te, se deviennent m’, t’, s’ devant une voyelle."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.double-consonne",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "s’appeler, jeter : quelle irrégularité ?"
+            },
+            "reponse": {
+              "text": "La consonne est doublée (ll, tt) partout sauf à nous et vous.\n\n| Personne | jeter | s’appeler |\n|---|---|---|\n| je | jette | m’appelle |\n| nous | jetons | nous appelons |\n| ils | jettent | s’appellent |"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.e-grave",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "modeler, acheter, se lever, se promener : quelle irrégularité ?"
+            },
+            "reponse": {
+              "text": "e devient è partout sauf à nous et vous.\n\n| Personne | acheter | se lever |\n|---|---|---|\n| je | achète | me lève |\n| nous | achetons | nous levons |\n| ils | achètent | se lèvent |"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.e-aigu",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "préférer, espérer : quelle irrégularité ?"
+            },
+            "reponse": {
+              "text": "é (comme école) devient è (comme mère) partout sauf à nous et vous.\n\n| Personne | préférer |\n|---|---|\n| je | préfère |\n| nous | préférons |\n| vous | préférez |\n| ils | préfèrent |"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.y-i",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "envoyer, payer : quelle irrégularité ?"
+            },
+            "reponse": {
+              "text": "y devient i partout sauf à nous et vous. Pour payer, les deux formes sont correctes.\n\n| Personne | envoyer | payer |\n|---|---|---|\n| je | envoie | paye / paie |\n| nous | envoyons | payons |\n| ils | envoient | payent / paient |"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.manger",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "manger : pourquoi nous mangeons ?"
+            },
+            "reponse": {
+              "text": "Devant o, g se prononce « g » (gomme). On ajoute un e pour garder le son « j » (génial)."
+            },
+            "exemple": {
+              "text": "nous mangeons — mais je mange, vous mangez"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.commencer",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "commencer : pourquoi nous commençons ?"
+            },
+            "reponse": {
+              "text": "Devant o, c se prononce « k » (comment). On met ç pour garder le son « s » (garçon)."
+            },
+            "exemple": {
+              "text": "nous commençons — même chose : je reçois (recevoir)"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.2e-groupe",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "2e groupe : les terminaisons du présent"
+            },
+            "reponse": {
+              "text": "| Personne | Fin | finir |\n|---|---|---|\n| je | -is | finis |\n| tu | -is | finis |\n| il/elle/on | -it | finit |\n| nous | -issons | finissons |\n| vous | -issez | finissez |\n| ils/elles | -issent | finissent |"
+            },
+            "exemple": {
+              "text": "choisir, réagir, agir, grandir, grossir, maigrir, remplir, réussir, rougir, vomir, obéir"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.ir-groupe",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "finir ou dormir : comment savoir le groupe d’un verbe en -ir ?"
+            },
+            "reponse": {
+              "text": "On regarde nous : nous finissons (-iss-) → 2e groupe ; nous dormons (pas de -iss-) → 3e groupe."
+            },
+            "exemple": {
+              "text": "2e : choisir, grandir, réussir — 3e : dormir, sortir, partir, ouvrir, venir"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.3e-normal",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "3e groupe : le modèle « normal »"
+            },
+            "reponse": {
+              "text": "| Personne | Fin | lire |\n|---|---|---|\n| je | -s | lis |\n| tu | -s | lis |\n| il/elle/on | -t | lit |\n| nous | -ons | lisons |\n| vous | -ez | lisez |\n| ils/elles | -ent | lisent |"
+            },
+            "exemple": {
+              "text": "dormir, savoir, venir, vivre, lire, dire, écrire, voir, boire, devoir, recevoir, mettre, connaître, conduire, mourir, courir"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.3e-nescafe",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "3e groupe : le modèle « nescafé » (3 en 1)"
+            },
+            "reponse": {
+              "text": "| Personne | Fin | ouvrir |\n|---|---|---|\n| je | -e | ouvre |\n| tu | -es | ouvres |\n| il/elle/on | -e | ouvre |\n| nous | -ons | ouvrons |\n| vous | -ez | ouvrez |\n| ils/elles | -ent | ouvrent |"
+            },
+            "exemple": {
+              "text": "Mêmes terminaisons que le 1er groupe : ouvrir, couvrir, découvrir, offrir"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.3e-docteur",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "3e groupe : le modèle « docteur »"
+            },
+            "reponse": {
+              "text": "| Personne | Fin | vendre |\n|---|---|---|\n| je | -s | vends |\n| tu | -s | vends |\n| il/elle/on | rien | vend |\n| nous | -ons | vendons |\n| vous | -ez | vendez |\n| ils/elles | -ent | vendent |"
+            },
+            "exemple": {
+              "text": "vendre, attendre, rendre, descendre, entendre, perdre, prendre, peindre"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.3e-bizarre",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "3e groupe : le modèle « bizarre »"
+            },
+            "reponse": {
+              "text": "| Personne | Fin | pouvoir |\n|---|---|---|\n| je | -x | peux |\n| tu | -x | peux |\n| il/elle/on | -t | peut |\n| nous | -ons | pouvons |\n| vous | -ez | pouvez |\n| ils/elles | -ent | peuvent |"
+            },
+            "exemple": {
+              "text": "pouvoir, vouloir, valoir"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.prendre-nn",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "prendre : le modèle « nn »"
+            },
+            "reponse": {
+              "text": "| Personne | prendre |\n|---|---|\n| je | prends |\n| tu | prends |\n| il/elle/on | prend |\n| nous | prenons |\n| vous | prenez |\n| ils/elles | prennent |"
+            },
+            "exemple": {
+              "text": "Un seul n à nous et vous, deux n à ils. Pareil : comprendre, apprendre, surprendre."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.peindre-artiste",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "peindre : le modèle « artiste »"
+            },
+            "reponse": {
+              "text": "| Personne | peindre |\n|---|---|\n| je | peins |\n| tu | peins |\n| il/elle/on | peint |\n| nous | peignons |\n| vous | peignez |\n| ils/elles | peignent |"
+            },
+            "exemple": {
+              "text": "gn apparaît au pluriel. Pareil : éteindre, joindre, craindre. Attention : il peint, avec un t."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.dormir",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "dormir, sortir, partir, sentir, servir : que devient le radical ?"
+            },
+            "reponse": {
+              "text": "Au singulier, le radical perd sa dernière consonne ; au pluriel, il la garde.\n\n| Singulier | Pluriel |\n|---|---|\n| je dors | nous dormons |\n| je sors | nous sortons |\n| je pars | nous partons |\n| je sers | nous servons |"
+            },
+            "exemple": {
+              "text": "Même chose pour vivre : je vis / nous vivons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.botte",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "boire, devoir, recevoir, venir, vouloir, mourir : quelles personnes changent ?"
+            },
+            "reponse": {
+              "text": "nous et vous gardent le radical de l’infinitif ; je, tu, il et ils ont un autre radical.\n\n| Verbe | nous | ils |\n|---|---|---|\n| boire | buvons | boivent |\n| devoir | devons | doivent |\n| venir | venons | viennent |\n| vouloir | voulons | veulent |\n| mourir | mourons | meurent |"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.etre",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "être au présent"
+            },
+            "reponse": {
+              "text": "| Personne | être |\n|---|---|\n| je | suis |\n| tu | es |\n| il/elle/on | est |\n| nous | sommes |\n| vous | êtes |\n| ils/elles | sont |"
+            },
+            "exemple": {
+              "text": "À savoir par cœur."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.avoir",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "avoir au présent"
+            },
+            "reponse": {
+              "text": "| Personne | avoir |\n|---|---|\n| je / j’ | ai |\n| tu | as |\n| il/elle/on | a |\n| nous | avons |\n| vous | avez |\n| ils/elles | ont |"
+            },
+            "exemple": {
+              "text": "À savoir par cœur."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.aller",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "aller au présent"
+            },
+            "reponse": {
+              "text": "| Personne | aller |\n|---|---|\n| je | vais |\n| tu | vas |\n| il/elle/on | va |\n| nous | allons |\n| vous | allez |\n| ils/elles | vont |"
+            },
+            "exemple": {
+              "text": "À savoir par cœur."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.faire",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "faire au présent"
+            },
+            "reponse": {
+              "text": "| Personne | faire |\n|---|---|\n| je | fais |\n| tu | fais |\n| il/elle/on | fait |\n| nous | faisons |\n| vous | faites |\n| ils/elles | font |"
+            },
+            "exemple": {
+              "text": "nous faisons se prononce « nous fesons »."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.vous-tes",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "Quels verbes font -tes à vous (et pas -ez) ?"
+            },
+            "reponse": {
+              "text": "Seulement trois : vous êtes, vous faites, vous dites."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.regles.ils-ont",
+          "modelID": "fr.conjugaison.regles.model",
+          "fields": {
+            "question": {
+              "text": "Quels verbes font -ont à ils (et pas -ent) ?"
+            },
+            "reponse": {
+              "text": "Quatre : ils sont, ils ont, ils vont, ils font."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "règle"
+          ]
+        }
+      ]
+    }
+  ]
+}
