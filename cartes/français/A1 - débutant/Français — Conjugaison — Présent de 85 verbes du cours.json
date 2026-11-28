@@ -21,6 +21,12 @@
               "type": "text"
             },
             {
+              "key": "exemple",
+              "label": "Exemple",
+              "required": false,
+              "type": "text"
+            },
+            {
               "key": "modele",
               "label": "Modèle",
               "required": true,
@@ -75,10 +81,12 @@
               "name": "Remettre les personnes en place",
               "inputMode": "reordering",
               "frontKeys": [
-                "mot"
+                "mot",
+                "exemple"
               ],
               "headerKeys": [
-                "mot"
+                "mot",
+                "exemple"
               ],
               "backKeys": [
                 "je",
@@ -124,6 +132,9 @@
             "mot": {
               "text": "parler"
             },
+            "exemple": {
+              "text": "parler français avec des amis"
+            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -161,6 +172,9 @@
           "fields": {
             "mot": {
               "text": "aimer"
+            },
+            "exemple": {
+              "text": "aimer le chocolat"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -200,6 +214,9 @@
             "mot": {
               "text": "écouter"
             },
+            "exemple": {
+              "text": "écouter de la musique"
+            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -237,6 +254,9 @@
           "fields": {
             "mot": {
               "text": "ignorer"
+            },
+            "exemple": {
+              "text": "ignorer un message"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -276,6 +296,9 @@
             "mot": {
               "text": "oublier"
             },
+            "exemple": {
+              "text": "oublier ses clés"
+            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -313,6 +336,9 @@
           "fields": {
             "mot": {
               "text": "utiliser"
+            },
+            "exemple": {
+              "text": "utiliser un ordinateur"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -352,6 +378,9 @@
             "mot": {
               "text": "habiter"
             },
+            "exemple": {
+              "text": "habiter à Paris"
+            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -389,6 +418,9 @@
           "fields": {
             "mot": {
               "text": "se laver"
+            },
+            "exemple": {
+              "text": "se laver les mains"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -428,6 +460,9 @@
             "mot": {
               "text": "s’amuser"
             },
+            "exemple": {
+              "text": "s’amuser au parc"
+            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -465,6 +500,9 @@
           "fields": {
             "mot": {
               "text": "s’appeler"
+            },
+            "exemple": {
+              "text": "s’appeler Marie"
             },
             "modele": {
               "text": "1er groupe — consonne doublée"
@@ -504,6 +542,9 @@
             "mot": {
               "text": "jeter"
             },
+            "exemple": {
+              "text": "jeter un papier à la poubelle"
+            },
             "modele": {
               "text": "1er groupe — consonne doublée"
             },
@@ -541,6 +582,9 @@
           "fields": {
             "mot": {
               "text": "modeler"
+            },
+            "exemple": {
+              "text": "modeler une statue en argile"
             },
             "modele": {
               "text": "1er groupe — e → è"
@@ -580,6 +624,9 @@
             "mot": {
               "text": "acheter"
             },
+            "exemple": {
+              "text": "acheter du pain"
+            },
             "modele": {
               "text": "1er groupe — e → è"
             },
@@ -617,6 +664,9 @@
           "fields": {
             "mot": {
               "text": "se lever"
+            },
+            "exemple": {
+              "text": "se lever à 7 heures"
             },
             "modele": {
               "text": "1er groupe — e → è"
@@ -656,6 +706,9 @@
             "mot": {
               "text": "se promener"
             },
+            "exemple": {
+              "text": "se promener au bord de la mer"
+            },
             "modele": {
               "text": "1er groupe — e → è"
             },
@@ -693,6 +746,9 @@
           "fields": {
             "mot": {
               "text": "préférer"
+            },
+            "exemple": {
+              "text": "préférer le thé au café"
             },
             "modele": {
               "text": "1er groupe — é → è"
@@ -732,6 +788,9 @@
             "mot": {
               "text": "espérer"
             },
+            "exemple": {
+              "text": "espérer du beau temps"
+            },
             "modele": {
               "text": "1er groupe — é → è"
             },
@@ -769,6 +828,9 @@
           "fields": {
             "mot": {
               "text": "envoyer"
+            },
+            "exemple": {
+              "text": "envoyer une lettre"
             },
             "modele": {
               "text": "1er groupe — y → i"
@@ -808,6 +870,9 @@
             "mot": {
               "text": "payer"
             },
+            "exemple": {
+              "text": "payer l’addition"
+            },
             "modele": {
               "text": "1er groupe — y → i"
             },
@@ -845,6 +910,9 @@
           "fields": {
             "mot": {
               "text": "manger"
+            },
+            "exemple": {
+              "text": "manger une pomme"
             },
             "modele": {
               "text": "1er groupe — nous mangeons (ge)"
@@ -884,6 +952,9 @@
             "mot": {
               "text": "commencer"
             },
+            "exemple": {
+              "text": "commencer un livre"
+            },
             "modele": {
               "text": "1er groupe — nous commençons (ç)"
             },
@@ -921,6 +992,9 @@
           "fields": {
             "mot": {
               "text": "finir"
+            },
+            "exemple": {
+              "text": "finir ses devoirs"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -960,6 +1034,9 @@
             "mot": {
               "text": "choisir"
             },
+            "exemple": {
+              "text": "choisir un film"
+            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -997,6 +1074,9 @@
           "fields": {
             "mot": {
               "text": "réagir"
+            },
+            "exemple": {
+              "text": "réagir vite"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1036,6 +1116,9 @@
             "mot": {
               "text": "agir"
             },
+            "exemple": {
+              "text": "agir pour la planète"
+            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1074,6 +1157,9 @@
             "mot": {
               "text": "grandir"
             },
+            "exemple": {
+              "text": "grandir à la campagne"
+            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1108,6 +1194,9 @@
           "fields": {
             "mot": {
               "text": "grossir"
+            },
+            "exemple": {
+              "text": "grossir pendant les vacances"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1144,6 +1233,9 @@
             "mot": {
               "text": "maigrir"
             },
+            "exemple": {
+              "text": "maigrir un peu"
+            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1178,6 +1270,9 @@
           "fields": {
             "mot": {
               "text": "remplir"
+            },
+            "exemple": {
+              "text": "remplir un verre d’eau"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1214,6 +1309,9 @@
             "mot": {
               "text": "réussir"
             },
+            "exemple": {
+              "text": "réussir un examen"
+            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1248,6 +1346,9 @@
           "fields": {
             "mot": {
               "text": "rougir"
+            },
+            "exemple": {
+              "text": "rougir de timidité"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1284,6 +1385,9 @@
             "mot": {
               "text": "vomir"
             },
+            "exemple": {
+              "text": "vomir en bateau"
+            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1318,6 +1422,9 @@
           "fields": {
             "mot": {
               "text": "obéir"
+            },
+            "exemple": {
+              "text": "obéir à ses parents"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1357,6 +1464,9 @@
             "mot": {
               "text": "être"
             },
+            "exemple": {
+              "text": "être fatigué"
+            },
             "modele": {
               "text": "Irrégulier"
             },
@@ -1394,6 +1504,9 @@
           "fields": {
             "mot": {
               "text": "avoir"
+            },
+            "exemple": {
+              "text": "avoir faim"
             },
             "modele": {
               "text": "Irrégulier"
@@ -1433,6 +1546,9 @@
             "mot": {
               "text": "aller"
             },
+            "exemple": {
+              "text": "aller au cinéma"
+            },
             "modele": {
               "text": "Irrégulier"
             },
@@ -1470,6 +1586,9 @@
           "fields": {
             "mot": {
               "text": "faire"
+            },
+            "exemple": {
+              "text": "faire la cuisine"
             },
             "modele": {
               "text": "Irrégulier"
@@ -1509,6 +1628,9 @@
             "mot": {
               "text": "dormir"
             },
+            "exemple": {
+              "text": "dormir huit heures"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1546,6 +1668,9 @@
           "fields": {
             "mot": {
               "text": "sortir"
+            },
+            "exemple": {
+              "text": "sortir le soir"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1585,6 +1710,9 @@
             "mot": {
               "text": "partir"
             },
+            "exemple": {
+              "text": "partir en vacances"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1622,6 +1750,9 @@
           "fields": {
             "mot": {
               "text": "sentir"
+            },
+            "exemple": {
+              "text": "sentir une fleur"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1661,6 +1792,9 @@
             "mot": {
               "text": "servir"
             },
+            "exemple": {
+              "text": "servir le café"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1699,6 +1833,9 @@
             "mot": {
               "text": "savoir"
             },
+            "exemple": {
+              "text": "savoir nager"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1733,6 +1870,9 @@
           "fields": {
             "mot": {
               "text": "venir"
+            },
+            "exemple": {
+              "text": "venir à la fête"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1772,6 +1912,9 @@
             "mot": {
               "text": "devenir"
             },
+            "exemple": {
+              "text": "devenir médecin"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1809,6 +1952,9 @@
           "fields": {
             "mot": {
               "text": "vivre"
+            },
+            "exemple": {
+              "text": "vivre en France"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1848,6 +1994,9 @@
             "mot": {
               "text": "lire"
             },
+            "exemple": {
+              "text": "lire le journal"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1882,6 +2031,9 @@
           "fields": {
             "mot": {
               "text": "dire"
+            },
+            "exemple": {
+              "text": "dire bonjour"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1921,6 +2073,9 @@
             "mot": {
               "text": "écrire"
             },
+            "exemple": {
+              "text": "écrire un message"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1958,6 +2113,9 @@
           "fields": {
             "mot": {
               "text": "voir"
+            },
+            "exemple": {
+              "text": "voir un film"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1997,6 +2155,9 @@
             "mot": {
               "text": "boire"
             },
+            "exemple": {
+              "text": "boire de l’eau"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2034,6 +2195,9 @@
           "fields": {
             "mot": {
               "text": "devoir"
+            },
+            "exemple": {
+              "text": "devoir partir tôt"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2073,6 +2237,9 @@
             "mot": {
               "text": "recevoir"
             },
+            "exemple": {
+              "text": "recevoir un cadeau"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2110,6 +2277,9 @@
           "fields": {
             "mot": {
               "text": "mettre"
+            },
+            "exemple": {
+              "text": "mettre la table"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2149,6 +2319,9 @@
             "mot": {
               "text": "promettre"
             },
+            "exemple": {
+              "text": "promettre de venir"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2186,6 +2359,9 @@
           "fields": {
             "mot": {
               "text": "permettre"
+            },
+            "exemple": {
+              "text": "permettre à un enfant de sortir"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2225,6 +2401,9 @@
             "mot": {
               "text": "connaître"
             },
+            "exemple": {
+              "text": "connaître une ville"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2262,6 +2441,9 @@
           "fields": {
             "mot": {
               "text": "apparaître"
+            },
+            "exemple": {
+              "text": "apparaître à la télévision"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2301,6 +2483,9 @@
             "mot": {
               "text": "disparaître"
             },
+            "exemple": {
+              "text": "disparaître dans la nuit"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2338,6 +2523,9 @@
           "fields": {
             "mot": {
               "text": "conduire"
+            },
+            "exemple": {
+              "text": "conduire une voiture"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2377,6 +2565,9 @@
             "mot": {
               "text": "produire"
             },
+            "exemple": {
+              "text": "produire du vin"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2414,6 +2605,9 @@
           "fields": {
             "mot": {
               "text": "traduire"
+            },
+            "exemple": {
+              "text": "traduire un texte"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2453,6 +2647,9 @@
             "mot": {
               "text": "mourir"
             },
+            "exemple": {
+              "text": "mourir de rire"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2491,6 +2688,9 @@
             "mot": {
               "text": "courir"
             },
+            "exemple": {
+              "text": "courir dans le parc"
+            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2525,6 +2725,9 @@
           "fields": {
             "mot": {
               "text": "ouvrir"
+            },
+            "exemple": {
+              "text": "ouvrir la fenêtre"
             },
             "modele": {
               "text": "3e groupe — « nescafé » (-e -es -e)"
@@ -2564,6 +2767,9 @@
             "mot": {
               "text": "couvrir"
             },
+            "exemple": {
+              "text": "couvrir un livre"
+            },
             "modele": {
               "text": "3e groupe — « nescafé » (-e -es -e)"
             },
@@ -2601,6 +2807,9 @@
           "fields": {
             "mot": {
               "text": "découvrir"
+            },
+            "exemple": {
+              "text": "découvrir une ville"
             },
             "modele": {
               "text": "3e groupe — « nescafé » (-e -es -e)"
@@ -2640,6 +2849,9 @@
             "mot": {
               "text": "offrir"
             },
+            "exemple": {
+              "text": "offrir des fleurs"
+            },
             "modele": {
               "text": "3e groupe — « nescafé » (-e -es -e)"
             },
@@ -2677,6 +2889,9 @@
           "fields": {
             "mot": {
               "text": "vendre"
+            },
+            "exemple": {
+              "text": "vendre sa voiture"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -2716,6 +2931,9 @@
             "mot": {
               "text": "attendre"
             },
+            "exemple": {
+              "text": "attendre le bus"
+            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -2753,6 +2971,9 @@
           "fields": {
             "mot": {
               "text": "rendre"
+            },
+            "exemple": {
+              "text": "rendre un livre"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -2792,6 +3013,9 @@
             "mot": {
               "text": "descendre"
             },
+            "exemple": {
+              "text": "descendre l’escalier"
+            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -2829,6 +3053,9 @@
           "fields": {
             "mot": {
               "text": "entendre"
+            },
+            "exemple": {
+              "text": "entendre un bruit"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -2868,6 +3095,9 @@
             "mot": {
               "text": "perdre"
             },
+            "exemple": {
+              "text": "perdre ses lunettes"
+            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -2905,6 +3135,9 @@
           "fields": {
             "mot": {
               "text": "prendre"
+            },
+            "exemple": {
+              "text": "prendre le métro"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -2944,6 +3177,9 @@
             "mot": {
               "text": "comprendre"
             },
+            "exemple": {
+              "text": "comprendre la question"
+            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -2981,6 +3217,9 @@
           "fields": {
             "mot": {
               "text": "apprendre"
+            },
+            "exemple": {
+              "text": "apprendre le français"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3020,6 +3259,9 @@
             "mot": {
               "text": "surprendre"
             },
+            "exemple": {
+              "text": "surprendre un ami"
+            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3057,6 +3299,9 @@
           "fields": {
             "mot": {
               "text": "peindre"
+            },
+            "exemple": {
+              "text": "peindre un mur"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3096,6 +3341,9 @@
             "mot": {
               "text": "éteindre"
             },
+            "exemple": {
+              "text": "éteindre la lumière"
+            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3133,6 +3381,9 @@
           "fields": {
             "mot": {
               "text": "joindre"
+            },
+            "exemple": {
+              "text": "joindre quelqu’un par téléphone"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3172,6 +3423,9 @@
             "mot": {
               "text": "craindre"
             },
+            "exemple": {
+              "text": "craindre le froid"
+            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3209,6 +3463,9 @@
           "fields": {
             "mot": {
               "text": "pouvoir"
+            },
+            "exemple": {
+              "text": "pouvoir venir"
             },
             "modele": {
               "text": "3e groupe — « bizarre » (-x -x -t)"
@@ -3248,6 +3505,9 @@
             "mot": {
               "text": "vouloir"
             },
+            "exemple": {
+              "text": "vouloir un café"
+            },
             "modele": {
               "text": "3e groupe — « bizarre » (-x -x -t)"
             },
@@ -3285,6 +3545,9 @@
           "fields": {
             "mot": {
               "text": "valoir"
+            },
+            "exemple": {
+              "text": "valoir cher"
             },
             "modele": {
               "text": "3e groupe — « bizarre » (-x -x -t)"
