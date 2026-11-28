@@ -1,0 +1,1900 @@
+{
+  "seedVersion": 1,
+  "collections": [
+    {
+      "id": "fr.conjugaison.modeles",
+      "name": "Français — Conjugaison — Retrouver le modèle de chaque verbe",
+      "summary": "QCM : à quel modèle appartient ce verbe ? (normal, nescafé, docteur, bizarre, irrégularités du 1er groupe…)",
+      "noteModels": [
+        {
+          "id": "fr.conjugaison.modeles.model",
+          "name": "Verbe → modèle",
+          "fields": [
+            {
+              "key": "mot",
+              "label": "Verbe",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "modele",
+              "label": "Modèle",
+              "required": true,
+              "type": "text"
+            },
+            {
+              "key": "formes",
+              "label": "je, tu, il",
+              "required": false,
+              "type": "text"
+            },
+            {
+              "key": "remarque",
+              "label": "À retenir",
+              "required": false,
+              "type": "text"
+            }
+          ],
+          "templates": [
+            {
+              "id": "modele",
+              "name": "Verbe → modèle",
+              "inputMode": "multipleChoice",
+              "answerKey": "modele",
+              "frontKeys": [
+                "mot"
+              ],
+              "backKeys": [
+                "modele",
+                "formes",
+                "remarque"
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "id": "fr.conjugaison.modeles.parler",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "parler"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "parle, parles, parle"
+            },
+            "remarque": {
+              "text": "ils parlent se prononce comme il parle : -ent ne s’entend pas."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.aimer",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "aimer"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "aime, aimes, aime"
+            },
+            "remarque": {
+              "text": "Devant une voyelle : j’aime ; à la négation : je n’aime pas."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.ecouter",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "écouter"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "écoute, écoutes, écoute"
+            },
+            "remarque": {
+              "text": "j’écoute (élision devant voyelle)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.ignorer",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "ignorer"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "ignore, ignores, ignore"
+            },
+            "remarque": {
+              "text": "j’ignore (élision devant voyelle)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.oublier",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "oublier"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "oublie, oublies, oublie"
+            },
+            "remarque": {
+              "text": "j’oublie (élision devant voyelle)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.utiliser",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "utiliser"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "utilise, utilises, utilise"
+            },
+            "remarque": {
+              "text": "j’utilise (élision devant voyelle)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.habiter",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "habiter"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "habite, habites, habite"
+            },
+            "remarque": {
+              "text": "j’habite (élision devant h muet)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.se-laver",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "se laver"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "me lave, te laves, se lave"
+            },
+            "remarque": {
+              "text": "Pronominal : je ne me lave pas."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.s-amuser",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "s’amuser"
+            },
+            "modele": {
+              "text": "1er groupe — régulier"
+            },
+            "formes": {
+              "text": "m’amuse, t’amuses, s’amuse"
+            },
+            "remarque": {
+              "text": "Pronominal devant voyelle : je m’amuse, tu t’amuses, il s’amuse."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.s-appeler",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "s’appeler"
+            },
+            "modele": {
+              "text": "1er groupe — consonne doublée"
+            },
+            "formes": {
+              "text": "m’appelle, t’appelles, s’appelle"
+            },
+            "remarque": {
+              "text": "ll partout sauf nous appelons, vous appelez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.jeter",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "jeter"
+            },
+            "modele": {
+              "text": "1er groupe — consonne doublée"
+            },
+            "formes": {
+              "text": "jette, jettes, jette"
+            },
+            "remarque": {
+              "text": "tt partout sauf nous jetons, vous jetez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.modeler",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "modeler"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "formes": {
+              "text": "modèle, modèles, modèle"
+            },
+            "remarque": {
+              "text": "è partout sauf nous modelons, vous modelez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.acheter",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "acheter"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "formes": {
+              "text": "achète, achètes, achète"
+            },
+            "remarque": {
+              "text": "è partout sauf nous achetons, vous achetez. j’achète."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.se-lever",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "se lever"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "formes": {
+              "text": "me lève, te lèves, se lève"
+            },
+            "remarque": {
+              "text": "è partout sauf nous nous levons, vous vous levez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.se-promener",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "se promener"
+            },
+            "modele": {
+              "text": "1er groupe — e → è"
+            },
+            "formes": {
+              "text": "me promène, te promènes, se promène"
+            },
+            "remarque": {
+              "text": "è partout sauf nous nous promenons, vous vous promenez."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.preferer",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "préférer"
+            },
+            "modele": {
+              "text": "1er groupe — é → è"
+            },
+            "formes": {
+              "text": "préfère, préfères, préfère"
+            },
+            "remarque": {
+              "text": "é (école) devient è (mère) sauf à nous et vous."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.esperer",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "espérer"
+            },
+            "modele": {
+              "text": "1er groupe — é → è"
+            },
+            "formes": {
+              "text": "espère, espères, espère"
+            },
+            "remarque": {
+              "text": "é (école) devient è (mère) sauf à nous et vous. j’espère."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.envoyer",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "envoyer"
+            },
+            "modele": {
+              "text": "1er groupe — y → i"
+            },
+            "formes": {
+              "text": "envoie, envoies, envoie"
+            },
+            "remarque": {
+              "text": "y devient i sauf nous envoyons, vous envoyez. j’envoie."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.payer",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "payer"
+            },
+            "modele": {
+              "text": "1er groupe — y → i"
+            },
+            "formes": {
+              "text": "paye / paie, payes / paies, paye / paie"
+            },
+            "remarque": {
+              "text": "Deux formes possibles : je paye ou je paie."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.manger",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "manger"
+            },
+            "modele": {
+              "text": "1er groupe — nous mangeons (ge)"
+            },
+            "formes": {
+              "text": "mange, manges, mange"
+            },
+            "remarque": {
+              "text": "nous mangeons : le e garde le son « j » (gomme / génial)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.commencer",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "commencer"
+            },
+            "modele": {
+              "text": "1er groupe — nous commençons (ç)"
+            },
+            "formes": {
+              "text": "commence, commences, commence"
+            },
+            "remarque": {
+              "text": "nous commençons : ç devant o pour garder le son « s » (comment / garçon)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.finir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "finir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "finis, finis, finit"
+            },
+            "remarque": {
+              "text": "-iss- au pluriel : nous finissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.choisir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "choisir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "choisis, choisis, choisit"
+            },
+            "remarque": {
+              "text": "nous choisissons — le s se prononce « z »."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.reagir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "réagir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "réagis, réagis, réagit"
+            },
+            "remarque": {
+              "text": "je réagis… nous réagissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.agir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "agir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "agis, agis, agit"
+            },
+            "remarque": {
+              "text": "j’agis… nous agissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.grandir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "grandir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "grandis, grandis, grandit"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.grossir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "grossir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "grossis, grossis, grossit"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.maigrir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "maigrir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "maigris, maigris, maigrit"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.remplir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "remplir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "remplis, remplis, remplit"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.reussir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "réussir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "réussis, réussis, réussit"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.rougir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "rougir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "rougis, rougis, rougit"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.vomir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "vomir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "vomis, vomis, vomit"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.obeir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "obéir"
+            },
+            "modele": {
+              "text": "2e groupe — finir (-iss-)"
+            },
+            "formes": {
+              "text": "obéis, obéis, obéit"
+            },
+            "remarque": {
+              "text": "j’obéis… nous obéissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.etre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "être"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "formes": {
+              "text": "suis, es, est"
+            },
+            "remarque": {
+              "text": "À savoir par cœur. vous êtes, ils sont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.avoir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "avoir"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "formes": {
+              "text": "ai, as, a"
+            },
+            "remarque": {
+              "text": "À savoir par cœur. j’ai, ils ont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.aller",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "aller"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "formes": {
+              "text": "vais, vas, va"
+            },
+            "remarque": {
+              "text": "À savoir par cœur. ils vont."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.faire",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "faire"
+            },
+            "modele": {
+              "text": "Irrégulier"
+            },
+            "formes": {
+              "text": "fais, fais, fait"
+            },
+            "remarque": {
+              "text": "nous faisons : « fai » se prononce « fe ». vous faites, ils font."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.dormir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "dormir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "dors, dors, dort"
+            },
+            "remarque": {
+              "text": "Le singulier perd le m : dor-s / dorm-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.sortir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "sortir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "sors, sors, sort"
+            },
+            "remarque": {
+              "text": "Comme dormir : sor-s / sort-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.partir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "partir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "pars, pars, part"
+            },
+            "remarque": {
+              "text": "Comme dormir : par-s / part-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.sentir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "sentir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "sens, sens, sent"
+            },
+            "remarque": {
+              "text": "Comme dormir : sen-s / sent-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.servir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "servir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "sers, sers, sert"
+            },
+            "remarque": {
+              "text": "Comme dormir : ser-s / serv-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.savoir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "savoir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "sais, sais, sait"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.venir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "venir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "viens, viens, vient"
+            },
+            "remarque": {
+              "text": "ie au singulier et à ils : ils viennent (nn)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.devenir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "devenir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "deviens, deviens, devient"
+            },
+            "remarque": {
+              "text": "Comme venir : ils deviennent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.vivre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "vivre"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "vis, vis, vit"
+            },
+            "remarque": {
+              "text": "Comme dormir : vi-s / viv-ons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.lire",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "lire"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "lis, lis, lit"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.dire",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "dire"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "dis, dis, dit"
+            },
+            "remarque": {
+              "text": "Attention : vous dites (comme vous faites)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.ecrire",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "écrire"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "écris, écris, écrit"
+            },
+            "remarque": {
+              "text": "Un v apparaît au pluriel : nous écrivons. j’écris."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.voir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "voir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "vois, vois, voit"
+            },
+            "remarque": {
+              "text": "y à nous et vous : nous voyons, mais ils voient."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.boire",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "boire"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "bois, bois, boit"
+            },
+            "remarque": {
+              "text": "nous buvons, vous buvez, mais ils boivent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.devoir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "devoir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "dois, dois, doit"
+            },
+            "remarque": {
+              "text": "nous devons, mais ils doivent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.recevoir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "recevoir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "reçois, reçois, reçoit"
+            },
+            "remarque": {
+              "text": "ç devant o : je reçois, ils reçoivent ; mais nous recevons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.mettre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "mettre"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "mets, mets, met"
+            },
+            "remarque": {
+              "text": "il met : un seul t, pas de t ajouté."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.promettre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "promettre"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "promets, promets, promet"
+            },
+            "remarque": {
+              "text": "Comme mettre : il promet."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.permettre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "permettre"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "permets, permets, permet"
+            },
+            "remarque": {
+              "text": "Comme mettre : il permet."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.connaitre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "connaître"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "connais, connais, connaît"
+            },
+            "remarque": {
+              "text": "il connaît (î devant t) ; nous connaissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.apparaitre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "apparaître"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "apparais, apparais, apparaît"
+            },
+            "remarque": {
+              "text": "Comme connaître : il apparaît, nous apparaissons. j’apparais."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.disparaitre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "disparaître"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "disparais, disparais, disparaît"
+            },
+            "remarque": {
+              "text": "Comme connaître : il disparaît, nous disparaissons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.conduire",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "conduire"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "conduis, conduis, conduit"
+            },
+            "remarque": {
+              "text": "Un s apparaît au pluriel : nous conduisons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.produire",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "produire"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "produis, produis, produit"
+            },
+            "remarque": {
+              "text": "Comme conduire : nous produisons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.traduire",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "traduire"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "traduis, traduis, traduit"
+            },
+            "remarque": {
+              "text": "Comme conduire : nous traduisons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.mourir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "mourir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "meurs, meurs, meurt"
+            },
+            "remarque": {
+              "text": "eu au singulier et à ils : je meurs, ils meurent ; nous mourons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.courir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "courir"
+            },
+            "modele": {
+              "text": "3e groupe — « normal » (-s -s -t)"
+            },
+            "formes": {
+              "text": "cours, cours, court"
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.ouvrir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "ouvrir"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "formes": {
+              "text": "ouvre, ouvres, ouvre"
+            },
+            "remarque": {
+              "text": "Terminaisons du 1er groupe (-e -es -e). j’ouvre."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.couvrir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "couvrir"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "formes": {
+              "text": "couvre, couvres, couvre"
+            },
+            "remarque": {
+              "text": "Comme ouvrir : je couvre."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.decouvrir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "découvrir"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "formes": {
+              "text": "découvre, découvres, découvre"
+            },
+            "remarque": {
+              "text": "Comme ouvrir : je découvre."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.offrir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "offrir"
+            },
+            "modele": {
+              "text": "3e groupe — « nescafé » (-e -es -e)"
+            },
+            "formes": {
+              "text": "offre, offres, offre"
+            },
+            "remarque": {
+              "text": "Comme ouvrir : j’offre."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.vendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "vendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "vends, vends, vend"
+            },
+            "remarque": {
+              "text": "il vend : rien après le d."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.attendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "attendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "attends, attends, attend"
+            },
+            "remarque": {
+              "text": "il attend. j’attends."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.rendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "rendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "rends, rends, rend"
+            },
+            "remarque": {
+              "text": "il rend."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.descendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "descendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "descends, descends, descend"
+            },
+            "remarque": {
+              "text": "il descend."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.entendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "entendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "entends, entends, entend"
+            },
+            "remarque": {
+              "text": "il entend. j’entends."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.perdre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "perdre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "perds, perds, perd"
+            },
+            "remarque": {
+              "text": "il perd."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.prendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "prendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "prends, prends, prend"
+            },
+            "remarque": {
+              "text": "« nn » : nous prenons (un n), ils prennent (nn)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.comprendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "comprendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "comprends, comprends, comprend"
+            },
+            "remarque": {
+              "text": "Comme prendre : ils comprennent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.apprendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "apprendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "apprends, apprends, apprend"
+            },
+            "remarque": {
+              "text": "Comme prendre : ils apprennent. j’apprends."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.surprendre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "surprendre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "surprends, surprends, surprend"
+            },
+            "remarque": {
+              "text": "Comme prendre : ils surprennent."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.peindre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "peindre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "peins, peins, peint"
+            },
+            "remarque": {
+              "text": "« artiste » : gn au pluriel (nous peignons). Attention : il peint, avec t."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.eteindre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "éteindre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "éteins, éteins, éteint"
+            },
+            "remarque": {
+              "text": "Comme peindre : il éteint, nous éteignons. j’éteins."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.joindre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "joindre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "joins, joins, joint"
+            },
+            "remarque": {
+              "text": "Comme peindre : il joint, nous joignons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.craindre",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "craindre"
+            },
+            "modele": {
+              "text": "3e groupe — « docteur » (-s -s -∅)"
+            },
+            "formes": {
+              "text": "crains, crains, craint"
+            },
+            "remarque": {
+              "text": "Comme peindre : il craint, nous craignons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.pouvoir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "pouvoir"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "formes": {
+              "text": "peux, peux, peut"
+            },
+            "remarque": {
+              "text": "je peux, ils peuvent ; nous pouvons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.vouloir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "vouloir"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "formes": {
+              "text": "veux, veux, veut"
+            },
+            "remarque": {
+              "text": "je veux, ils veulent ; nous voulons."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        },
+        {
+          "id": "fr.conjugaison.modeles.valoir",
+          "modelID": "fr.conjugaison.modeles.model",
+          "fields": {
+            "mot": {
+              "text": "valoir"
+            },
+            "modele": {
+              "text": "3e groupe — « bizarre » (-x -x -t)"
+            },
+            "formes": {
+              "text": "vaux, vaux, vaut"
+            },
+            "remarque": {
+              "text": "il vaut (souvent : ça vaut…)."
+            }
+          },
+          "tags": [
+            "conjugaison",
+            "modèle"
+          ]
+        }
+      ]
+    }
+  ]
+}

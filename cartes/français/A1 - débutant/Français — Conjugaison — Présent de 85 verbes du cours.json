@@ -4,7 +4,7 @@
     {
       "id": "fr.conjugaison.present",
       "name": "Français — Conjugaison — Présent de 85 verbes du cours",
-      "summary": "Tous les verbes du cours : remettre les formes du présent à leur place, et retrouver le modèle de chaque verbe.",
+      "summary": "Tous les verbes du cours : remettre les 6 formes du présent à leur place.",
       "noteModels": [
         {
           "id": "fr.conjugaison.present.model",
@@ -18,12 +18,6 @@
               "key": "mot",
               "label": "Verbe",
               "required": true,
-              "type": "text"
-            },
-            {
-              "key": "traduction",
-              "label": "Traduction",
-              "required": false,
               "type": "text"
             },
             {
@@ -81,12 +75,10 @@
               "name": "Remettre les personnes en place",
               "inputMode": "reordering",
               "frontKeys": [
-                "mot",
-                "traduction"
+                "mot"
               ],
               "headerKeys": [
-                "mot",
-                "traduction"
+                "mot"
               ],
               "backKeys": [
                 "je",
@@ -120,20 +112,6 @@
                 "vous",
                 "ils"
               ]
-            },
-            {
-              "id": "modele",
-              "name": "Verbe → modèle",
-              "inputMode": "multipleChoice",
-              "answerKey": "modele",
-              "frontKeys": [
-                "mot",
-                "traduction"
-              ],
-              "backKeys": [
-                "modele",
-                "remarque"
-              ]
             }
           ]
         }
@@ -145,9 +123,6 @@
           "fields": {
             "mot": {
               "text": "parler"
-            },
-            "traduction": {
-              "text": "govoriti"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -187,9 +162,6 @@
             "mot": {
               "text": "aimer"
             },
-            "traduction": {
-              "text": "voleti"
-            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -227,9 +199,6 @@
           "fields": {
             "mot": {
               "text": "écouter"
-            },
-            "traduction": {
-              "text": "slušati"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -269,9 +238,6 @@
             "mot": {
               "text": "ignorer"
             },
-            "traduction": {
-              "text": "ignorisati"
-            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -309,9 +275,6 @@
           "fields": {
             "mot": {
               "text": "oublier"
-            },
-            "traduction": {
-              "text": "zaboravljati"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -351,9 +314,6 @@
             "mot": {
               "text": "utiliser"
             },
-            "traduction": {
-              "text": "koristiti"
-            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -391,9 +351,6 @@
           "fields": {
             "mot": {
               "text": "habiter"
-            },
-            "traduction": {
-              "text": "stanovati"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -433,9 +390,6 @@
             "mot": {
               "text": "se laver"
             },
-            "traduction": {
-              "text": "prati se"
-            },
             "modele": {
               "text": "1er groupe — régulier"
             },
@@ -473,9 +427,6 @@
           "fields": {
             "mot": {
               "text": "s’amuser"
-            },
-            "traduction": {
-              "text": "zabavljati se"
             },
             "modele": {
               "text": "1er groupe — régulier"
@@ -515,9 +466,6 @@
             "mot": {
               "text": "s’appeler"
             },
-            "traduction": {
-              "text": "zvati se"
-            },
             "modele": {
               "text": "1er groupe — consonne doublée"
             },
@@ -555,9 +503,6 @@
           "fields": {
             "mot": {
               "text": "jeter"
-            },
-            "traduction": {
-              "text": "bacati"
             },
             "modele": {
               "text": "1er groupe — consonne doublée"
@@ -597,9 +542,6 @@
             "mot": {
               "text": "modeler"
             },
-            "traduction": {
-              "text": "oblikovati"
-            },
             "modele": {
               "text": "1er groupe — e → è"
             },
@@ -637,9 +579,6 @@
           "fields": {
             "mot": {
               "text": "acheter"
-            },
-            "traduction": {
-              "text": "kupovati"
             },
             "modele": {
               "text": "1er groupe — e → è"
@@ -679,9 +618,6 @@
             "mot": {
               "text": "se lever"
             },
-            "traduction": {
-              "text": "ustajati"
-            },
             "modele": {
               "text": "1er groupe — e → è"
             },
@@ -719,9 +655,6 @@
           "fields": {
             "mot": {
               "text": "se promener"
-            },
-            "traduction": {
-              "text": "šetati"
             },
             "modele": {
               "text": "1er groupe — e → è"
@@ -761,9 +694,6 @@
             "mot": {
               "text": "préférer"
             },
-            "traduction": {
-              "text": "više voleti"
-            },
             "modele": {
               "text": "1er groupe — é → è"
             },
@@ -801,9 +731,6 @@
           "fields": {
             "mot": {
               "text": "espérer"
-            },
-            "traduction": {
-              "text": "nadati se"
             },
             "modele": {
               "text": "1er groupe — é → è"
@@ -843,9 +770,6 @@
             "mot": {
               "text": "envoyer"
             },
-            "traduction": {
-              "text": "slati"
-            },
             "modele": {
               "text": "1er groupe — y → i"
             },
@@ -883,9 +807,6 @@
           "fields": {
             "mot": {
               "text": "payer"
-            },
-            "traduction": {
-              "text": "plaćati"
             },
             "modele": {
               "text": "1er groupe — y → i"
@@ -925,9 +846,6 @@
             "mot": {
               "text": "manger"
             },
-            "traduction": {
-              "text": "jesti"
-            },
             "modele": {
               "text": "1er groupe — nous mangeons (ge)"
             },
@@ -965,9 +883,6 @@
           "fields": {
             "mot": {
               "text": "commencer"
-            },
-            "traduction": {
-              "text": "počinjati"
             },
             "modele": {
               "text": "1er groupe — nous commençons (ç)"
@@ -1007,9 +922,6 @@
             "mot": {
               "text": "finir"
             },
-            "traduction": {
-              "text": "završavati"
-            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1047,9 +959,6 @@
           "fields": {
             "mot": {
               "text": "choisir"
-            },
-            "traduction": {
-              "text": "birati"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1089,9 +998,6 @@
             "mot": {
               "text": "réagir"
             },
-            "traduction": {
-              "text": "reagovati"
-            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1129,9 +1035,6 @@
           "fields": {
             "mot": {
               "text": "agir"
-            },
-            "traduction": {
-              "text": "delovati"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1171,9 +1074,6 @@
             "mot": {
               "text": "grandir"
             },
-            "traduction": {
-              "text": "rasti"
-            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1208,9 +1108,6 @@
           "fields": {
             "mot": {
               "text": "grossir"
-            },
-            "traduction": {
-              "text": "gojiti se"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1247,9 +1144,6 @@
             "mot": {
               "text": "maigrir"
             },
-            "traduction": {
-              "text": "mršaviti"
-            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1284,9 +1178,6 @@
           "fields": {
             "mot": {
               "text": "remplir"
-            },
-            "traduction": {
-              "text": "puniti"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1323,9 +1214,6 @@
             "mot": {
               "text": "réussir"
             },
-            "traduction": {
-              "text": "uspevati"
-            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1360,9 +1248,6 @@
           "fields": {
             "mot": {
               "text": "rougir"
-            },
-            "traduction": {
-              "text": "crveneti"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1399,9 +1284,6 @@
             "mot": {
               "text": "vomir"
             },
-            "traduction": {
-              "text": "povraćati"
-            },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
             },
@@ -1436,9 +1318,6 @@
           "fields": {
             "mot": {
               "text": "obéir"
-            },
-            "traduction": {
-              "text": "slušati (pokoravati se)"
             },
             "modele": {
               "text": "2e groupe — finir (-iss-)"
@@ -1478,9 +1357,6 @@
             "mot": {
               "text": "être"
             },
-            "traduction": {
-              "text": "biti"
-            },
             "modele": {
               "text": "Irrégulier"
             },
@@ -1518,9 +1394,6 @@
           "fields": {
             "mot": {
               "text": "avoir"
-            },
-            "traduction": {
-              "text": "imati"
             },
             "modele": {
               "text": "Irrégulier"
@@ -1560,9 +1433,6 @@
             "mot": {
               "text": "aller"
             },
-            "traduction": {
-              "text": "ići"
-            },
             "modele": {
               "text": "Irrégulier"
             },
@@ -1600,9 +1470,6 @@
           "fields": {
             "mot": {
               "text": "faire"
-            },
-            "traduction": {
-              "text": "raditi / praviti"
             },
             "modele": {
               "text": "Irrégulier"
@@ -1642,9 +1509,6 @@
             "mot": {
               "text": "dormir"
             },
-            "traduction": {
-              "text": "spavati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1682,9 +1546,6 @@
           "fields": {
             "mot": {
               "text": "sortir"
-            },
-            "traduction": {
-              "text": "izlaziti"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1724,9 +1585,6 @@
             "mot": {
               "text": "partir"
             },
-            "traduction": {
-              "text": "odlaziti"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1764,9 +1622,6 @@
           "fields": {
             "mot": {
               "text": "sentir"
-            },
-            "traduction": {
-              "text": "osećati"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1806,9 +1661,6 @@
             "mot": {
               "text": "servir"
             },
-            "traduction": {
-              "text": "služiti"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1847,9 +1699,6 @@
             "mot": {
               "text": "savoir"
             },
-            "traduction": {
-              "text": "znati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1884,9 +1733,6 @@
           "fields": {
             "mot": {
               "text": "venir"
-            },
-            "traduction": {
-              "text": "dolaziti"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -1926,9 +1772,6 @@
             "mot": {
               "text": "devenir"
             },
-            "traduction": {
-              "text": "postajati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -1966,9 +1809,6 @@
           "fields": {
             "mot": {
               "text": "vivre"
-            },
-            "traduction": {
-              "text": "živeti"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2008,9 +1848,6 @@
             "mot": {
               "text": "lire"
             },
-            "traduction": {
-              "text": "čitati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2045,9 +1882,6 @@
           "fields": {
             "mot": {
               "text": "dire"
-            },
-            "traduction": {
-              "text": "reći / govoriti"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2087,9 +1921,6 @@
             "mot": {
               "text": "écrire"
             },
-            "traduction": {
-              "text": "pisati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2127,9 +1958,6 @@
           "fields": {
             "mot": {
               "text": "voir"
-            },
-            "traduction": {
-              "text": "videti"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2169,9 +1997,6 @@
             "mot": {
               "text": "boire"
             },
-            "traduction": {
-              "text": "piti"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2209,9 +2034,6 @@
           "fields": {
             "mot": {
               "text": "devoir"
-            },
-            "traduction": {
-              "text": "morati"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2251,9 +2073,6 @@
             "mot": {
               "text": "recevoir"
             },
-            "traduction": {
-              "text": "primati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2291,9 +2110,6 @@
           "fields": {
             "mot": {
               "text": "mettre"
-            },
-            "traduction": {
-              "text": "stavljati"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2333,9 +2149,6 @@
             "mot": {
               "text": "promettre"
             },
-            "traduction": {
-              "text": "obećavati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2373,9 +2186,6 @@
           "fields": {
             "mot": {
               "text": "permettre"
-            },
-            "traduction": {
-              "text": "dozvoljavati"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2415,9 +2225,6 @@
             "mot": {
               "text": "connaître"
             },
-            "traduction": {
-              "text": "poznavati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2455,9 +2262,6 @@
           "fields": {
             "mot": {
               "text": "apparaître"
-            },
-            "traduction": {
-              "text": "pojavljivati se"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2497,9 +2301,6 @@
             "mot": {
               "text": "disparaître"
             },
-            "traduction": {
-              "text": "nestajati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2537,9 +2338,6 @@
           "fields": {
             "mot": {
               "text": "conduire"
-            },
-            "traduction": {
-              "text": "voziti"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2579,9 +2377,6 @@
             "mot": {
               "text": "produire"
             },
-            "traduction": {
-              "text": "proizvoditi"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2619,9 +2414,6 @@
           "fields": {
             "mot": {
               "text": "traduire"
-            },
-            "traduction": {
-              "text": "prevoditi"
             },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
@@ -2661,9 +2453,6 @@
             "mot": {
               "text": "mourir"
             },
-            "traduction": {
-              "text": "umirati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2702,9 +2491,6 @@
             "mot": {
               "text": "courir"
             },
-            "traduction": {
-              "text": "trčati"
-            },
             "modele": {
               "text": "3e groupe — « normal » (-s -s -t)"
             },
@@ -2739,9 +2525,6 @@
           "fields": {
             "mot": {
               "text": "ouvrir"
-            },
-            "traduction": {
-              "text": "otvarati"
             },
             "modele": {
               "text": "3e groupe — « nescafé » (-e -es -e)"
@@ -2781,9 +2564,6 @@
             "mot": {
               "text": "couvrir"
             },
-            "traduction": {
-              "text": "pokrivati"
-            },
             "modele": {
               "text": "3e groupe — « nescafé » (-e -es -e)"
             },
@@ -2821,9 +2601,6 @@
           "fields": {
             "mot": {
               "text": "découvrir"
-            },
-            "traduction": {
-              "text": "otkrivati"
             },
             "modele": {
               "text": "3e groupe — « nescafé » (-e -es -e)"
@@ -2863,9 +2640,6 @@
             "mot": {
               "text": "offrir"
             },
-            "traduction": {
-              "text": "poklanjati"
-            },
             "modele": {
               "text": "3e groupe — « nescafé » (-e -es -e)"
             },
@@ -2903,9 +2677,6 @@
           "fields": {
             "mot": {
               "text": "vendre"
-            },
-            "traduction": {
-              "text": "prodavati"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -2945,9 +2716,6 @@
             "mot": {
               "text": "attendre"
             },
-            "traduction": {
-              "text": "čekati"
-            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -2985,9 +2753,6 @@
           "fields": {
             "mot": {
               "text": "rendre"
-            },
-            "traduction": {
-              "text": "vraćati"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3027,9 +2792,6 @@
             "mot": {
               "text": "descendre"
             },
-            "traduction": {
-              "text": "silaziti"
-            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3067,9 +2829,6 @@
           "fields": {
             "mot": {
               "text": "entendre"
-            },
-            "traduction": {
-              "text": "čuti"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3109,9 +2868,6 @@
             "mot": {
               "text": "perdre"
             },
-            "traduction": {
-              "text": "gubiti"
-            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3149,9 +2905,6 @@
           "fields": {
             "mot": {
               "text": "prendre"
-            },
-            "traduction": {
-              "text": "uzimati"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3191,9 +2944,6 @@
             "mot": {
               "text": "comprendre"
             },
-            "traduction": {
-              "text": "razumeti"
-            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3231,9 +2981,6 @@
           "fields": {
             "mot": {
               "text": "apprendre"
-            },
-            "traduction": {
-              "text": "učiti"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3273,9 +3020,6 @@
             "mot": {
               "text": "surprendre"
             },
-            "traduction": {
-              "text": "iznenađivati"
-            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3313,9 +3057,6 @@
           "fields": {
             "mot": {
               "text": "peindre"
-            },
-            "traduction": {
-              "text": "slikati"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3355,9 +3096,6 @@
             "mot": {
               "text": "éteindre"
             },
-            "traduction": {
-              "text": "gasiti"
-            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3395,9 +3133,6 @@
           "fields": {
             "mot": {
               "text": "joindre"
-            },
-            "traduction": {
-              "text": "spajati"
             },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
@@ -3437,9 +3172,6 @@
             "mot": {
               "text": "craindre"
             },
-            "traduction": {
-              "text": "plašiti se"
-            },
             "modele": {
               "text": "3e groupe — « docteur » (-s -s -∅)"
             },
@@ -3477,9 +3209,6 @@
           "fields": {
             "mot": {
               "text": "pouvoir"
-            },
-            "traduction": {
-              "text": "moći"
             },
             "modele": {
               "text": "3e groupe — « bizarre » (-x -x -t)"
@@ -3519,9 +3248,6 @@
             "mot": {
               "text": "vouloir"
             },
-            "traduction": {
-              "text": "hteti"
-            },
             "modele": {
               "text": "3e groupe — « bizarre » (-x -x -t)"
             },
@@ -3559,9 +3285,6 @@
           "fields": {
             "mot": {
               "text": "valoir"
-            },
-            "traduction": {
-              "text": "vredeti"
             },
             "modele": {
               "text": "3e groupe — « bizarre » (-x -x -t)"
